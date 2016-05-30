@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Core Java Operators| JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<a href="#top" class="top" title="Back to Top">&#8593;</a>
+<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                             <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp">Login</a></li> 
+                                                        <li><a href="signup.jsp">Sign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li class="active"><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="advance.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a> 
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                      
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+<br>
+	<div class="container">
+	<hr class="hr">
+<div class="row" >
+	  <div id="sidebar-wrapper" style="float:left">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand main">
+                  <a href="core.html">Core</a>
+                </li>
+				<li class="main">
+				    <a href="core_fundamentals.html">  Java Fundamentals </a></li>
+					<li class="main"><a href="jdk.html"> JDK File Structure </a></li>
+                    <li > <a href="core_development.html">Development  </a></li>
+					<li class="active_page">
+                     <a href="core_operators.html">  Operators and Assignments </a></li>
+					 <li>
+                     <a href="core_flowcontrol.html"> Flow Control </a></li>
+					 <li><a href="core_accessmodifiers.html">  Declarations and Access Modifiers</a></li>
+                     <li class="main"> <a href="core_garbage.html">Garbage Collector  </a></li>
+					 	<li class="main"><a href="core_oops.html"> Oops Concepts </a></li>
+							<li class="active_page"><a href="core_oops class and object.html"> Class and Object </a></li>
+							<li class="active_page"><a href="core_oops interface.html"> Interface </a></li>
+						<li class="active_page"><a href="core_oops abstraction.html"> Abstraction </a></li>
+						<li class="active_page"><a href="core_oops polymorphism.html"> polymorphisam</a></li>
+						<li class="active_page"><a href="core_oops inheritance.html">Inheritance</a></li>
+						<li class="active_page"><a href="core_oops encapsulation.html"> Encapsulation</a></li>
+						<li class ="main"><a href="java_object.html"> Java Object Class </a> </li>
+				   <li><a href="core_innerclasses.html">Inner classes  </a></li>
+				   <li><a href="core_package.html">Java Package</a></li>
+				    <li class="main"> <a href="core_lang.html">Java.lang package  </a></li>
+                    <li class="main"> <a href="core_io.html">Java.io package     </a></li>
+					 <li class="main"> <a href="core_exception.html">Exception handling </a></li>
+					 <li class="main"> <a href="core_multithreading.html">Multithreading </a>
+				<li><a href="core_expression.html">  Regular Expressions   </a></li>
+					 <li><a href="core_enumeration.html">  Enumerations </a></li>  
+                    <li> <a href="core_internationalization.html">	Internationalization   </a></li>
+					 <li><a href="core_assertion.html">Assertions  </a></li>
+					 <li class="main"><a href="core_collection.html">Collection Framework     </a></li>
+					 <li><a href="core_generics.html">  Generics   </a></li>
+					<li class="main"><a href="core_jdbc.html"> JDBC </a></li>
+					<li class="main"><a href="features_5.html"> Features of Java 5 </a></li>
+			</ul>
+			</div>
+	<div class="right">
+	<div class="8u important(collapse)" id="content">
+							<article id="main">
+								<header>
+									<h1>Operators And Assignments </h1><br>
+									<b>Increment /Decrement<br>
+Arithmetic Operators<br>
+Concatenation<br>
+Relational Operators<br>
+Equality Operators<br>
+Bitwise Operators<br>
+Short-Circuit<br>
+instanceOf<br>
+Typecast Operator<br>
+Assignment Operator<br>
+Conditional Operator<br>
+new Operator<br>
+[ ] Operator<br>
+Operator Precedence<br>
+Evaluation Order of Java Operands<br>
+</b>
+<h3>Increment And Decrement Operator</h3><br>
+<div class="border"><img src="images/core_img/operator_images/1.png"><br></div><br><br>
+<div class="border"><img src="images/core_img/operator_images/2.png"><br></div><br>
+We can apply increment and decrement only for variables but not for constant values.<br>
+<b>Example:</b><br>
+1)	int x=4;<br>
+2)	int y = ++4;  // C.E. unexpected type<br>
+                                   required: variable<br>
+                                   found: value<br>
+                                   
+Nesting of increment and decrement operators is not allowed otherwise we will get compile time error.<br>
+<div class="border"> <b>  Example:</b><br>
+                 1)   int x = 4;<br>
+                 2)    int y = ++(++x);               //C.E. unexpected type<br>
+                        System.out.println(y);                  required: variable<br>
+                                                     found: value<br></div>
+
+                       
+We can't apply increment and decrement operators for the final variables.<br>
+<div class="border">Example:<br>
+1)	final int x = 4;<br>
+x++;<br>
+                                 C.E. Can,t assign a value to final  <br>          
+2)	final int x=4;                     variable x.<br>
+x=5; <br></div>
+
+We can apply increment and decrement operators for every primitive data type except Boolean.<br>
+ <div class="border"><b>Example:</b><br>
+1)	double d = 10.5;<br>
+d++;<br>
+System.out.println(d);  //Output= 11.5<br>
+
+	2) char ch = 'a';<br>
+ch++;<br>
+System.out.println(ch); //  Output= b<br>
+
+3)	boolean b = true;<br>
+++b;
+System.out.println(b);  //C.E.  operator ++ can't applied to boolean.<br>
+   
+4)	int x = 10;<br>
+x++;<br>
+ System.out.println(x); //  Output= 11<br>
+
+</div>
+<br><br>
+
+
+Difference between b++ and b=b+1:<br>
+
+<div class="border"><b>Example:</b>
+1)	byte b = 10;<br>
+b++;<br>
+System.out.println(b); //Output=11<br>
+
+2)	byte b = 10;<br>
+b = b+1;                          //C.E. possible loss of precision<br>
+System.out.println(b);                            required: byte<br>
+                                                                found: int<br>
+3)	byte b = 10;<br>
+b = (byte)b+1; <br>                   
+System.out.println(b); // Output= 11<br>
+
+4)	byte a = 10;<br>
+byte b = 20;<br>
+byte c = a+b; <br>                        // C.E. - possible loss of precision<br>
+System.out.println(c);                           required: byte<br>
+                                                               found: int<br></div>
+
+Whenever we are performing any arithmetic operations (+, -, *, %, /) between two variables a and b, the result type is always,<br>
+<div class="border"><img src="images/core_img/operator_images/3.png"></div><br><br>
+<h3>Arithmetic Operators</h3><br>
+
+The arithmetic operators are (+, -,*, /, %)<br>
+ If we are applying any arithmetic operators between two variables a and b, the result type is always,<br>
+
+            
+<div class="border"><img src="images/core_img/operator_images/4.png"></div><br><br>
+
+
+
+
+
+
+
+Infinity:<br>
+In case of the integral arithmetic (int, short, long, byte) there is no way to represent infinity. Hence, if the infinity is the result we will always get ArithmeticException(AE:/ by zero)<br><br>
+<b>Example:</b><br><div class="border">
+           System.out.println(10/0);  //R.E. (AE:/ by zero)<br>
+
+But in case of floating point arithmetic (float and double) there is always a way to represent infinity. For this float and double classes contains the following two constants.<br>
+          Positive -Infinity = Infinity<br>
+          Negative -Infinity = -Infinity<br></div>
+Hence, in the case of floating point arithmetic we won't get any ArithmeticException.<br><br>
+
+<b>Example:</b><br><div class="border">
+1)	System.out.println(10/0.0);  //Infinity<br>
+2)	System.out.println(-10/0.0);  //-Infinity<br></div>
+
+     Not as Number(NaN): <br>
+In integral arithmetic (int, short, long, byte) there is no way to represent undefined results. Hence, if the result is undefined we will get ArithmeticException in case of integral Arithmetic.<br><br>
+ 
+<b>Example:</b><br>
+<div class='border'>
+             2)  Public static double sqrt(double d);<br>
+                 System.out.println(math.sqrt(4));  //Output=2.0<br>
+                 System.out.println(math.sqrt(-4)) //NaN<br>
+For any x value including NaN the below expressions always returns false, except the (! 
+				=) expression returns &quot;true&quot;.<br>
+
+
+
+     
+at  x = 10;<br>
+                                        System.out.println(10>Float . NaN);   // false<br>
+                                        System.out.println(10&gtFloat . NaN);   // false<br>
+                                        System.out.println(10 = =Float . NaN);   // false<br>
+                                        System.out.println(10! =Float . NaN);   // true<br>
+                                        System.out.println(Float.NaN = = Float . NaN);   // false<br>
+                                        System.out.println(Float . NaN! = Float. NaN);   // true<br>
+                                        </div>
+
+         Conclusion about ArithmeticException:<br>
+It is a RuntimeException but not compile time error.<br> 
+Possible only in Integral Arithmetic(int, byte, short, char) but not floating point Arithmetic (float, double).<br>
+The only operators which cause ArithmeticException are '/ and %'.<br>
+							<b>String Concatenation Operator (+)</b><br>
+The only overloaded operator in java is '+' operator.<br>
+Sometimes it acts as arithmetic addition operator and sometimes acts as string arithmetic operator or string concatenation operator.<br>
+<b>Example: </b><div class='border'>
+int a = 10, b=20, c=30;<br>
+              String  d = "gaurav&quot;; System.out.println (a+b+c+d); 
+//Output=60gaurav<br>
+              System.out.println (a+b+d+a); // Output=30gaurav30<br>
+              System.out.println (d+a+b+c); // Output=gaurav2030<br>
+              System.out.println (a+d+b+c); // Output=10gaurav2030<br>
+If at least one operand is string type then '+' operator acts as concatenation otherwise '+' acts as arithmetic operator. <br>
+Here 
+ System.out.println() is evaluated from left to right.<br></div><br>
+
+<b>Example: </b><div class='border'><br><br>
+
+                        int a = 10, b=20;<br>
+                        String  c = "gaurav";<br>
+                        a = b+c;   // C.E. -incompatible type <br>
+                                                       required: int<br>
+                                                       found:string<br>
+                      c=a+c;   //Valid<br>
+                      b=a+b;  //Valid<br>
+                       c = a+b;   // C.E. -incompatible type <br>
+                                                       required: int<br>
+                                                       found:string<br>
+</div><br><br>
+                         <b>Relational Operator</b> <br>
+
+The relational operators are (>, < ,>=, <=)<br>
+We can apply relational operator for every primitive data type except boolean.<br>
+							<b>Example</b><div class='border'><br>
+1)	10>20;  //false<br>
+2)	'a'< 'b'; // true<br>
+3)	10>=10.0; //true<br>
+4)	'a'< 125;  //true<br>
+5)	true<=true;            C.E. operator<=can't be applied to <br>    
+6)	true&ltfalse;                      boolean, boolean.<br></div>
+ 
+We can't apply relational operators for the object type.<br>
+<b>Example:</b><div class='border'><br>
+1)	"gaurav"< "gaurav";         C.E. operator<=can't be <br>
+2)	"snehal" < "Snehal123";             applied to String, string.<br>  
+
+Nesting of relational operators we are not allow to apply.<br>
+</div>
+<b>Example:</b><div class='border'>
+                  System.out.println(10<20);  //Valid<br>
+                   System.out.println(10<20<30)  //Invalid  C.E. <br>
+                                                                       Operator < can't be <br>
+                                                                        applied to boolean.<br>
+</div>
+								<b>Example:</b><br><div class='border'>
+String s1 = new String("javat");<br>
+ String s1 = new String("javat");<br>
+System.out.println(s1= = s2);  // false<br>
+System.out.println(s1.equals(s2));  // true<br>
+
+                             Equality Operators (= =, ! =)<b></b>
+These are = =, ! =<br>
+We can apply equality operators for every primitive type including boolean type. <br></div>
+								<b>Example:</b><br><div class='border'>
+1)	10 == 10.0  //true<br>
+2)	'a' == 97  // true<br>
+3)	True = = false //false<br>
+4)	10.5 = =12.3 // false<br></div>
+
+We can apply equality operators even for object reference also.<br>
+For the two object references and r1 and  r2 and r1= = r2 returns true iff both r1 and r2 are pointing to the same object. i.e. equality operators (= = ) is always meant for reference / address comparison.<br>
+</div>
+								<b>Example:</b><br><div class='border'>
+1)	Thread t1= new Thread ();<br>
+Thread t2= new Thread ();<br>
+Thread t3= t1;<br>
+System.out.println(t1= =t2); // false<br>
+System.out.println(t1==t3); //true<br></div>
+To apply equality operators between the object references compulsory these should be some relationship between argument types.<br>
+[Either parent to child or child to parent or same type] otherwise we will get C.E- Incompatible type.<br>
+							<b>Example:</b><div class='border'>
+                 Object o1=new object ();     <br>
+                  Thread t1= new Thread ();<br>
+                String s1 = new String ("anil");<br>
+                 System.out.println(t1= =s1); //C.E. Incompatible type<br>
+                                                                      java.lang.Thread and<br>
+                                                                       java.lang.String<br>
+                  System.out.println(t1= =o1); // false<br>
+                     System.out.println(s1= =o1); // false<br></div>
+For any object reference r, if r is pointing to any object<br>
+
+
+Otherwise r contains null value. So, <br>
+
+
+             Note:<br>
+In general , == operator meant for reference comparison where as <br>
+.equal() method means for content comparision.<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  instanceOf Operators<br>
+By using this operator we can check whether the given object is of a particular type or not.<br>
+Syntax: <br>
+           r   instanceOf  x<br>
+
+                 any reference type                class/interface  <br>
+
+<b>Example:</b><br><div class='border'>
+               Short s=15;<br>
+               boolean b;<br>
+                b=(s instanceOf Short); // true<br>
+                b=(s instanceOf Number);// false<br></div>
+
+<b>Example</b>:<br><div class='border'>
+1)	Thread t =new Thread();<br>
+System.out.println(t instanceOf Thread); // true<br>
+System.out.println(t instanceOf Object); // true<br>
+System.out.println(t instanceOf Runnable); // true<br></div>
+
+To use instanceOf operator, compulsory there should be some relationship between argument type, otherwise we will get compile time error saying Inconvertable type.<br>
+<b>Example:</b>  <div class='border'> <br>
+                                              Thread t =new Thread();<br>
+              System.out.println(t instanceOf  String);// C.E. <br>
+                                                                         Inconvertable type<br>
+                                                                         required: String<br><br>
+                                                                         found: Thread<br>
+Whenever we are checking parent object is of child type then, we will get false as output.<br>
+Example: <br>
+              Object o = new Integer(10);<br>
+              System.out.println(o instanceOf  String);// false<br>
+
+For any class or interface x, null instanceOf x always return "false".<br>
+System.out.println(t instanceOf  String);//false<br></div>
+
+<b>Example</b>: <br><div class='border'>
+               Iterator itr = l.iterator();<br>
+                while(itr.hasnext())<br>
+            {<br>
+                Object o=itr.next();<br>
+                 if(o instanceOf Student)<br>
+                {<br>
+                   System.out.println("I am a student");<br>
+                 }<br>
+              elseif(o instanceOf Customer)<br>
+                 {<br>
+                   System.out.println("I am a Customer");<br>
+                 }<br>
+              }<br>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<b>Bitwise Operator</b><br>
+& - AND          if both operands are True then result is True.<br>
+| - AND           if at least one operands True  then result is True.<br>
+&nbsp;^- AND          if both operands are different  then result is True.<br>
+
+<b>Example</b>:<br><div class='border'>
+            System.out.println(T & T); //true<br>
+            System.out.println(T | T); //true<br>
+            System.out.println(T ^ T); //true<br></div>
+
+Summery:<br>
+    &, |, ^ :We can apply for both integral and Boolean types,<br>
+     ~    :We can apply only for integral types but not for Boolean types.<br>
+     !     :We can apply only for Boolean types but not for integral types.<br>
+
+<h1>Short Circuit Operator(&&,||)</h1> 
+
+We can apply these operator Just to improve performance of the system.<br>
+These are exactly same as normal bitwise operators &,| except the following   difference.<br>
+<div class='border'><img src="images/core_img/operator_images/5.png"></div><br>
+X&&y  - y will be evaluated iff x is true.<br>
+X||y  - y will be evaluated iff x is false.<br>
+
+<b>Example1:</b><br><div class='border'>
+
+public class shortandbitwise {<br>
+    public static void main(String[] args) {<br>
+        
+    int x=10;<br>
+    int y=15;<br>
+    if(++x>10||++y<15)<br>
+    {<br>
+    ++x;<br>
+    }<br>
+    else<br>
+    {<br>
+    ++y;<br>
+    }<br>
+    System.out.println(x+"  "+y);<br>
+    
+    }  <br>
+}</div>
+
+<div class='border'><img src="images/core_img/operator_images/6.png"></div><br><br>
+<b>Type Casting Operator</b><br>
+There are two types of primitive type casting.<br>
+1)	Implicit type casting<br>
+2)	Explicit type casting<br>
+
+<b>1)Implicit type casting:</b><br>
+Compiler is the responsible to perform this type casting.<br>
+This Typecasting is required whenever we are assigning amaller datatype value to the bigger data type variable.<br>
+It is also known as "widening (or) upcasting".<br>
+No loss of information in this type casting.<br>
+
+The following are various possible implicit type casting.<br>
+
+byte               short                                              
+                                          int             long            float            double<br>
+char<br>
+
+
+<b>Example:</b><br><div class='border'>
+                 1)double d=10;                 [Compiler convert automatically int to double]<br>
+                  System.out.println(d)      //10<br>
+                 2)int  x='a';                     [Compiler convert automatically int to double]<br>
+                 System.out.println(x)        //97 </div><br>
+
+<b>1)Explicit type casting:</b><br>
+Programmer is responsible to perform this typecasting.<br>
+It is required whenever we are assigning bigger datatype value to the smaller datatype variable.<br>
+It is also known as "Narrowing or down casting".<br>
+There may be a chance of loss of information  in this type casting.<br>
+The following are various possible conversion where explicite typecasting is required. <br> 
+
+   The following are various possible implicit type casting.<br>
+
+byte               short                                              
+                                          int             long            float            double<br>
+char
+<br>
+
+<b>Example1:</b><div class='border'>
+                          1)byte b=130;                 // C.E. Possible loss of precision<br>
+                                                                  Required:byte<br>
+                                                                  Found:byte<br>
+2)byte b=(byte)130; <br>
+                            System.out .println(b);     // -126 <br>
+Whenever we are assigning bigger datatype value to the smaller datatype variable.Then the most significant bit will be lossed.   </div><br><br>
+<b>Assignment Operator</b><br><br>
+There are two types of primitive type casting.<br>
+1)	Simple Assignment operator.<br>
+2)	Chained assignment operator.<br>
+3)	Compound assignment operator <br>
+         1)Simple assignment operator:<br>
+               <b>  Example1:</b> int x=10;<br>
+
+        2)Chained  assignment operator:<br>
+                 <b>Example1:</b> int a,b,c,d;<br>
+                                    a=b=c=d=20;<br>
+We can't perform chained assignment at the time of declaration<br>
+     <b>  Example1:</b> <br><br>
+     <div class='border'>
+                       int  a=b=c=d=20;   //C.E. can't find symbol <br>
+                                                      //symbol:variable b<br>
+                                                      //location:class Test</div>
+
+     <b>   3)Compound  assignment operator:</b><br>
+Some times we can mix assignment operator with some other operator to form compound assignment operator.<br>
+
+
+       <b>Example1:</b> <br><br><div class='border'>
+                       int  a=20; <br>
+                           a+=30 ;<br>
+                       System.out.println(a)         //40<br> 	
+
+</div>
+<br>
+
+<div class='border'><img src="images/core_img/operator_images/7.png"></div><br>
+In compound assignment operators the required typecasting will be performed automatically by the compiler .<br>
+
+<b>Example1:</b><br>
+<div class='border'><br>
+     public class compoundassignment {<br>
+    public static void main(String[] args) {<br>
+          byte b=10;<br>
+          b=(byte) (b+1);<br>
+          System.out.println(b);<br>
+    }<br>
+    <br>
+}<br>
+Output: 11</div><br><br>
+<b>Conditional Operator</b><br>
+
+The only ternary operator available in java is a ternary operator (or) conditional operator.<br>
+Example1:<br><div class='border'>
+             int a=10,b=20;<br>
+            int x=(a>b)?40:50;<br></div>
+Nesting of conditional operator is possible.<br>
+Example2:<br><div class='border'>
+
+     public class conditionaloperator {<br>
+     public static void main(String[] args) { <br>     
+    int a=10;<br>
+    int b=20;<br>
+    byte ch=(true)?40:50;<br>
+     byte c=(false)?40:50;<br>
+}<br>
+}<br></div>
+
+
+
+
+
+
+
+<b>Example 3</b>:<br><div class='border'>
+
+    public class finalconditional {<br>
+    public static void main(String[] args) {<br>
+      final  int a=10;<br>
+      final int b=10;<br>
+      byte c=(a<b)?40:50;<br>
+      byte s=(a>b)?40:50;<br>
+    }    <br>
+}<br>
+</div>
+
+
+<b>new operator:</b> <br>
+We can use this operator for creation of object.<br>
+In java there is no delete operator because distraction of useless object is responsibilt of garbage collector.<br>
+
+[] operator<br>
+We can use this operator for declaring and creating array.<br>
+
+              operator Precidence<br>
+1)	Unary operators:<br>
+[],x++,x--;<br>
+++x;--x,~,!;<br>
+New,<type> (used to type cast)<br>
+
+
+
+
+2)	Arithmetic operators:<br>
+*,/,%<br>
++,-<br>
+3)	shift operators:<br>
+>>>,>>,<<<br>
+4)	comparision operators:<br>
+<,<=,>,>=,instanceof<br>
+5)	equality operators:<br>
+=,!= <br>
+6)	bitwise operators:<br>
+&,^,|<br>
+7)	short circuit operators:<br>
+&&,||<br>
+8)	conditional operators:<br>
+?:<br>
+9)	assignment operators:<br>
++=,-+,%=,*=,/=,&=,|=,^=,>>=,>>>=,<<=<br>
+
+
+	<b>Evaluation order of operators:</b><br>
+There is no precedence for operands before applying any operator.All operands will be evaluated from left to right.<br>
+
+<b>Example1</b>:<br><div class='border'>
+public class Evaluationprecedance {<br>
+    public static void main(String[] args) {<br>
+        System.out.println(m1(1)+m1(2)*m1(3)+m1(4)*m1(5)/m1(6));<br>
+    }<br>
+    public static int m1(int i)<br>
+    {<br>
+        System.out.println(i);<br>
+        return i;<br>
+    
+    }<br>
+}<br>
+
+Output:<br>
+1<br>
+2<br>
+3<br>
+4<br>
+5<br>
+6<br>
+10<br>
+
+Explanation:1+2*3+$*5/6<br>
+                        1+6+4*5/6<br>
+                            1+6+3<br>
+                             7+3<br>
+                             = 10<br>
+
+</div>
+
+
+
+
+
+							<b>Example 2:</b><br><div class='border'>
+public class compoundassignment {<br>
+    public static void main(String[] args) {<br>
+          byte b=127;<br>
+          b+=3;<br>
+          System.out.println(b);<br>
+    }<br>
+    
+}<br>
+Output: -126<br></div>
+
+
+                                                     
+                                 						
+							</article>
+						</div>
+
+	</div>
+	</div>   
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>

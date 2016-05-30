@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Hibernate Table Per Subclass| JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<a href="#top" class="top" title="Back to Top">&#8593;</a>
+
+	<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                             <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp">Login</a></li> 
+                                                        <li><a hrref="signup.jsp">Sign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li class="active"><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="advance.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a> 
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                   
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+<br>
+	<div class="container">
+	<hr class="hr">
+<div class="row" >
+	  <div id="sidebar-wrapper" style="float:left">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                  
+                </li>
+				<li class="main">
+			<a href="hibernate.html">Hibernate</a>
+				</li>
+                <li >
+				
+                    <a href="hibernate_intro.html">Introduction</a>
+                </li>
+                <li >
+                    <a href="hibernate_architecture.html">Architecture</a>
+                </li>
+                <li>
+                    <a href="hibernate_filesystem.html">File System<a>
+                </li>
+	
+                <li >
+                    <a href="hibernate_annotation.html">Hibernate with  Annotation</a>
+                </li>
+                <li>
+                    <a href="hibernate_webapplication.html">Web Application</a>
+                </li>
+                <li class="main">
+                    <a href="hibernate_mapping.html">Hibernate Mapping</a>
+                </li>
+				    <li >
+                    <a href="hibernate_tableperhierarchy.html">Table Per Hierarchy </a>
+                </li>
+				<li>
+				 <a href="hibernate_concreate.html">Table Per Concrete </a>
+                </li>
+                <li class="active_page">
+                    <a href="hibernate_subclass.html">Table Per Subclass</a>
+                </li>
+                <li class="main">
+                    <a href="hibernate_collection.html">Hibernate Collection</a>
+                </li>
+				<li class="main">
+                    <a href="hibernate_list.html">Collection list Example </a>
+                </li>
+				
+				
+				<li class="main">
+				<a href="hibernate_bagmap.htm">BagMap Example</a>
+				</li>
+				
+							
+				<li class="main">
+                    <a href="hibernate_onetomany.html">One to Many Mapping</a>
+                </li>
+                <li>
+                <li class="main">
+                    <a href="hibernate_namingqueries.html">Hibernate Naming Queries</a>
+                </li>
+                <li >
+                    <a href="hibernate_caching.html">Hibernate Caching</a>
+                </li>
+                <li >
+                    <a href="hibernate_second.html">Hibernate Second Level Caching</a>
+                </li>
+              
+            </ul>
+        </div>
+	<div class="right" >
+
+<h1><b>Table Per SubClass</b></h1>&nbsp
+<b>Steps to use Table Per SubClass in Hibernate Inheritance</b></p>
+<br>1. Suppose we are making an application of Employee data; we need to create a table named EMP1 with the following parameters:<br>
+
+<b>* Emp1 Table in DataBase</b>
+<p>&nbsp;&nbsp;<br> <img border="0" class="border" src="images/hibernate/inheritance/tps/Capture6.PNG" width="715" height="187"></p>
+<br>3. Make another table named CONEMP1 with its respective parameters:<br>
+<b>* conemp1 Table in DataBase</b>
+<p>
+&nbsp;<br>
+<img border="0" class="border" src="images/hibernate/inheritance/tps/Capture7.PNG" width="712" height="212"></p>
+<br>3. Now make another table in database named REGEMP1 with the following parameters:<br>
+
+<b>* Regemp1 Table in DataBase</b>
+<p>
+&nbsp;<br>
+<img border="0" class="border" src="images/hibernate/inheritance/tps/Capture8.PNG" width="706" height="209"></p>
+<br>4. It is time to create another POJO class named as Employee2.java with parameters int id and String name. Create its setters and getters.<br>
+<b>* Employee2.java </b>
+<p>
+&nbsp;<br>
+<img border="0" class="border" src="images/hibernate/inheritance/tps/Capture.PNG" width="356" height="168"></p>
+<br>5. Make another POJO class named as Contract_Employee2.java with parameters pay_per_hour and String duration. Create its setters and getters.<br>
+<b>* Contract_Employee2.java</b>
+<p>
+&nbsp;<br>
+<img border="0" class="border" src="images/hibernate/inheritance/tps/Capture1.PNG" width="443" height="152"></p>
+<br>6.  It is time to create another POJO class named as Regular_Employee2.java with parameters int salary and int bonus. Create its setters and getters.<br>
+
+<b>* Regular_Employee2.java</b>
+<p>
+&nbsp;<br>
+<img border="0" class="border" src="images/hibernate/inheritance/tps/Capture2.PNG" width="444" height="157"></p>
+<br>7. Create the servlet for configuring these POJO class' objects. Enter the values and save it to database.<br>
+
+<b>* Servlet.java</b>
+<p>
+&nbsp;<br>
+<img border="0" class="border" src="images/hibernate/inheritance/tps/Capture3.PNG" width="735" height="568"></p>
+<br>8. In hibernate1]2.cfg.xml, add mapping resource by giving the name of mapping xml.<br>
+
+<b>8.hibernate2.cfg.xml</b>
+<p>
+&nbsp;<br>
+<img border="0" class="border" src="images/hibernate/inheritance/tps/Capture4.PNG" width="754" height="273"></p>
+9. Enter the objects' name and their properties in mapping xml.<br>
+
+<b>* hibernate2.hbm.xml</b>
+<p>
+&nbsp;<br>
+<img border="0" class="border" src="images/hibernate/inheritance/tps/Capture5.PNG" width="647" height="516"></p>
+<p>&nbsp;</p>
+<p><b>Output</b></p>
+<p>
+&nbsp;<br>
+<img border="0" class="border" src="images/hibernate/inheritance/tps/Capture9.PNG" width="659" height="237"></p>
+<p>
+&nbsp;
+<img border="0" class="border" src="images/hibernate/inheritance/tps/Capture10.PNG" width="669" height="173"></p>
+<p>
+&nbsp;
+<img border="0" class="border" src="images/hibernate/inheritance/tps/Capture11.PNG" width="653" height="174">
+<b><a href ="Example rar\hibernate\hiberinheritance.rar"> 
+						<font size="3">Download example and run it on Netbeans IDE</font></a></b>
+						<br><br><br><br>
+
+</div>
+	</div>
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>

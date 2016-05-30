@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Hibernate Web Application| JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<a href="#top" class="top" title="Back to Top">&#8593;</a>
+
+	<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                             <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp">Login</a></li> 
+                                                        <li><a href="signup.jsp">ign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li class="active"><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="advance.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a> 
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                      
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+<br>
+	
+	<div class="container">
+	<hr class="hr">
+<div class="row" >
+	  <div id="sidebar-wrapper" style="float:left">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                  
+                </li>
+				<li class="main">
+			<a href="hibernate.html">Hibernate</a>
+				</li>
+                <li >
+				
+                    <a href="hibernate_intro.html">Introduction</a>
+                </li>
+                <li >
+                    <a href="hibernate_architecture.html">Architecture</a>
+                </li>
+                <li>
+                    <a href="hibernate_filesystem.html">File System<a>
+                </li>
+	
+                <li >
+                    <a href="hibernate_annotation.html">Hibernate with  Annotation</a>
+                </li>
+                <li class="active_page">
+                    <a href="hibernate_webapplication.html">Web Application</a>
+                </li>
+                <li class="main">
+                    <a href="hibernate_mapping.html">Hibernate Mapping</a>
+                </li>
+				    <li >
+                    <a href="hibernate_tableperhierarchy.html">Table Per Hierarchy </a>
+                </li>
+				<li>
+				 <a href="hibernate_concreate.html">Table Per Concrete </a>
+                </li>
+                <li >
+                    <a href="hibernate_subclass.html">Table Per Subclass</a>
+                </li>
+                <li class="main">
+                    <a href="hibernate_collection.html">Hibernate Collection</a>
+                </li>
+				<li class="main">
+                    <a href="hibernate_list.html">Collection list Example </a>
+                </li>
+				
+				
+				<li class="main">
+				<a href="hibernate_bagmap.htm">BagMap Example</a>
+				</li>
+				
+							
+				<li class="main">
+                    <a href="hibernate_onetomany.html">One to Many Mapping</a>
+                </li>
+                <li>
+                <li class="main">
+                    <a href="hibernate_namingqueries.html">Hibernate Naming Queries</a>
+                </li>
+                <li >
+                    <a href="hibernate_caching.html">Hibernate Caching</a>
+                </li>
+                <li >
+                    <a href="hibernate_second.html">Hibernate Second Level Caching</a>
+                </li>
+              
+            </ul>
+        </div>
+	<div class="right" style="width: 900px; height: 3830px" >
+
+<h1><b>Web Application</b></h1><br>
+Whether Java Application runs with the help of server or without server, or whether application is desktop or standalone but the steps are common for all cases. In order to work with hibernate no server is mandatory but we need hibernate software (.jars(s) files).<br>
+<b>Basic Example 
+in Hibernate to Store Data in DataBase</b><br><b>1.</b>Create table in <b>Database</b> with 
+three parameters ID, NAME and PASS.
+&nbsp;<br>
+<br><img border="0" class="border" src="images/hibernate/basic/Capture4.PNG" width="707" height="215"><br><br>
+<b>2.</b>Create plain old java object class, named as <b>pojo.java</b>.<br>
+&nbsp;
+<br><img border="0" class="border" src="images/hibernate/basic/Capture.PNG" width="411" height="165"><br><br>
+<b>3.</b>Create <b>Servlet</b> that uses the methods of pojo.class.<br>
+To run the servlet class hibernate API needs to be imported which are-<br>
+i.  <b>import org.hibernate.*;</b><br>
+ii. <b>import org.hibernate.cfg.*;</b><br>
+This servlet class also contains the Configuration object cfg, that is used to call configure(),<br>
+SessionFactory object fct. <br>
+The org.hibernate.SessionFactory interface provides factory method to get the object of Session.<br>Session object is used to open session. <br>
+The org.hibernate.Session interface provides methods to insert, update and delete the object. 
+A Session is used to get a physical connection with a database.
+&nbsp;<br>
+<img border="0" class="border" src="images/hibernate/basic/Capture1.PNG" width="731" height="566"><br><br>
+<b>4.</b>Among Configuration, Mapping xml files, first we need to load configuration xml, because once we load the configuration file, automatically mapping file will be loaded as we registered this mapping xml in the configuration file.<br>
+So, to load the configuration xml, we need to create object of <b>Configuration</b> class, which is given in
+<b>org.hibernate.cfg.*;</b> and we need to call <b>configure()</b> method in that class, by passing xml configuration file name as parameter.<br>
+<div class="border">
+        <b>Configuration cfg=new Configuration();<br>
+        cfg.configure("hibernate.cfg.xml");</b><br></div>
+        Here the configuration file name is the choice of the programmer but by default it is given as "hibernate.cfg.xml". Once we write the line 
+<b>cfg.configure("hibernate.cfg.xml")</b>, configuration object cfg reads this xml file by using DOM parsers.<br>
+        So, finally <br>
+        i. cfg reads data from hibernate.cfg.xml.<br>
+        ii. stores the data in different variables.<br>
+        iii. all the created variables are grouped together to make one high level hibernate object known as SessionFactory object.<br>
+        iv.  Configuration class is the one that can create SessionFactory object.<br>
+            <div class="border"><b>SessionFactory fct=cfg.buildSessionFactory();</b></div><br>
+<b>5.</b> Now, <b>Session</b> is an interface and <b>SessionImpl</b> is the implemented class, both are specified under 
+<b>org.hibernate.*;</b> <br>
+Whenever session is opened then, internally a database connection is opened. In order to get a session or open a session, we need to call 
+<b>openSession()</b> method in SessionFactory which means SessiionFactory produces sessions.<br>
+<div class="border">
+<b>Session sec=fct.openSession(); </b>
+</div> <br>
+<b>6.</b>  Create a logical transaction.<br>
+While working with insert, update, delete operations from hibernate application onto the database, it needs a logical transaction. In order to begin a logical transaction in hibernate we need to call a method 
+<b>beginTransaction()</b> given by Session interface.<br>
+<div class="border">
+<b>Transaction tx=sec.beginTransaction();</b>
+</div><br>
+<b>sec</b> is the object of <b>Session</b> interface.<br>
+<b>7.</b> Following methods are given by Session interface to move the objects from application to catabase and from data base to application.<br>
+<div class="border">
+<b>session.save(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Inserting object 's' into database<br>
+session.update(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updating object 's' in the database<br>
+session.load(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;               Selecting object 's' from the database<br>
+session.delete(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Deleting object 's' from database</b><br>
+</div>
+<b>8.</b>Create configuration file <b>hibernate.cfg.xml</b>.<br>
+Following properties are required to configure a database <br>
+i.hibernate.dialect: contains the set of rules for database choosen. <br>
+ii.hibernate.connection.driver_class: It is the jdbc driver class. <br>
+iii.hibernate.connection.url:Provide URL to the database instance.<br>
+iv.hibernate.connection.username:Here username is specified that is linked with the specified database.<br>
+v.hibernate.connection.password:Here password of user is provided.<br>
+
+&nbsp;<br>
+<img border="0" class="border"  src="images/hibernate/basic/Capture2.PNG" width="798" height="264"><br><br>
+<b>9.</b>Create mapping file <b>hibernate.hbm.xml</b>.<br>This mapping file instructs Hibernate how to map the defined class to the database table.<br>
+Details of mapping file tags:
+<br>
+i. hibernate-mapping is the root element which contains all the other class elements.<br>
+ii.The class element is used to define specific mapping from a Java class to the database table. 
+  The Java class name is specified using the name attribute of the class element and the database table name is specified using the table attribute.<br>
+iii.The id element maps the unique ID attribute in class to the primary key of the database table.<br>
+iv.The <property> element is used to map a Java class property to a column in the database table.<br>
+
+&nbsp;
+<br><img border="0" class="border" src="images/hibernate/basic/Capture3.PNG" width="648" height="293">&nbsp;<br><br>
+<b>Output:</b><br>
+The data is stored in the table.
+&nbsp;<br><br>
+<img border="0" class="border" src="images/hibernate/basic/Capture5.PNG" width="663" height="237"><p>&nbsp;<br>
+<br><h1><b> Life Cycle</b></h1><br>
+Actually POJO class object has following three states like-<br>
+<b>*	Transient state</b><br>
+<b>*	Persistent state</b><br>
+<b>*	Detached state</b><br><br>
+<u>
+<b>Transient & Persistent states:</b></u><br>
+<b>*</b>	Whenever an object of a pojo class is created then it will be in the Transient state.<br>
+<b>*</b>	When the object is in a Transient state it doesn't represent any row of the database, i.e. it is not associated with any Session object.<br>
+<b>*</b>	If we modify the data of a pojo class object, when it is in transient state then it doesn't effect on the database table.<br>
+<b>*</b>	When the object is in persistent state, then it represents one row of the database, if the object is in persistent state then it is associated with the unique Session.<br>
+<b>*</b>	If we want to move an object from persistent to detached state, we need to do either closing that session or need to clear the cache of the session.<br>
+<b>*</b>	If we want to move an object from persistent state into transient state then we need to delete that object permanently from the database.<br>
+<div class="border">
+	<b>public class ClientProgram { <br>
+	 <br>
+	    public static void main(String[] args)<br>
+	    {<br><br>
+	 
+	        Configuration cfg = new Configuration();<br>
+	        cfg.configure("hibernate.cfg.xml"); <br>
+	 <br>
+	        SessionFactory factory = cfg.buildSessionFactory();<br>
+	        Session session = factory.openSession();<br>
+	 <br>
+	         // Transient state_____start<br>
+	        Product p=new Product();<br>
+	        p.setProductId(101);<br>
+	        p.setProName("iPhone");<br>
+	        p.setPrice(25000);<br>
+	         // Transient state_____end<br>
+	 <br>
+	         // Persistent state_____start<br>
+	        Transaction tx = session.beginTransaction();<br>
+	        session.save(p);<br>
+	        System.out.println("Object saved successfully.....!!");<br>
+	        tx.commit();<br>
+	         // Persistent state_____end<br>  
+	 <br>
+	        session.close();<br>
+	        factory.close();<br>
+	    }</b><br>
+	 
+
+
+</div>
+<br>
+
+<b>1.</b>	In the above client program, line numbers 16 to 19 we just loaded the object and called the corresponding setter methods, it is not related to the database row.<br>
+<b>2.</b>	if you see, line number 24 we called save method in the Session Interface, means the object is now having the relation with the database<br>
+<b>3.</b>	if we want to convert the object from Transient state to Persistentstate we can do in 2 ways<br>
+*	By saving that object like above<br>
+*	By loading object from database<br>
+If we do any modifications all the changes will first applied to the object in session cache only (e.g. If we do the modifications 5 times, then 5 times we need to save the changes into the database, which means number of round trips from our application to database will be increased. Actually, if we load an object from the database, first it will be saved in the cache-memory. So, if we do any number of changes all will be effected at cache level only and finally we can call save or update method with a single call such that the data will be saved into the database.<br>
+If we want to save an object into database then we need to call any one of the following three methods<br>
+*	save()<br>
+*	persist()<br>
+*	saveOrUpdate()<br>
+
+
+
+
+
+
+If we want to load an object from database, then we need to call either load() or get() method(s).<br><br>
+<u>
+<b>Transient:</b></u><br>
+One newly created object,with out having any relation with the database, means never persistent, not associated with any Session object<br><br>
+<u>
+<b>Persistent:</b></u><br>
+It has the relation with the database, associated with a unique Session object<br><br>
+<u>
+<b>Detached:</b></u><br>
+Previously having relation with the database [persistent ], now not associated with any Session.
+
+
+<br><br>
+<div class="container">
+
+  <div class="alert alert-success">
+    <strong>TAG(S) -> hibernate example, hibernate lifecycle</strong>
+  </div>
+</div>
+
+
+
+
+
+</div>
+	</div>
+
+
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Servlet Life Cycle & Method | JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+<a href="#top" class="top" title="Back to Top">&#8593;</a>
+	<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                           <li> <img src="images/mic.png" class="mic" height="24px"></li>
+							<li><a href="login.jsp ">Login</a></li> 
+                                                        <li><a href="signup.jsp">Sign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li ><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="servlet.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a>
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                        
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+	<br>
+	<div class="container">
+	<hr class="hr">
+<div class="row" >
+	  <div id="sidebar-wrapper" style="float:left">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                  
+                </li>
+                <li >
+                
+                                    <a href="Server_Enviorment.html">Server Environment</a> 
+                </li>
+				<li>
+				<a href="Server Enviorment.html">Introduction to servlet</a>
+				</li>
+					<li>
+				<a href="servlet_architecture.html">Servlet Architecture</a>
+				</li>
+					<li>
+				<a href="servlet_basic.html">Basic Example</a>
+				</li>
+					<li>
+				<a href="servlet_requestresponse.html">Request and Response Interface</a>
+				</li>
+				
+                <li class="active_page">
+                    <a href="Servlet_LifeCycle&Method.html">Servlet LifeCycle and Method</a>
+                </li>
+					<li>
+				<a href="servlet_contextconfig.html">Servlet Context and Config</a>
+				</li>
+					<li>
+				<a href="servlet_intercommunication.html">Inter Servlet Communication</a>
+				</li>
+              	<li>
+				<a href="servlet_requestdispacture.html">Servlet Request Dispatcher</a>
+				</li>
+					<li>
+				<a href="servlet_sendredirect.html">Send Redirect</a>
+				</li>
+                  <li>
+                    <a href="Session_Management.html">Session Management</a> 
+                </li>
+             	<li>
+				<a href="servlet_httpsession.html">Http Session</a>
+				</li>
+					<li>
+				<a href="servlet_cookies.html">Cookies</a>
+				</li>
+					<li>
+				<a href="servlet_htmlhidden.html">Html Hidden</a>
+				</li>
+					<li>
+				<a href="servlet_urlrewritten.html">Url Rewritten</a>
+				</li>
+				
+                <li>
+                    <a href="Handling_Error&Exception.html">Handling Error&Exception</a> 
+                </li>
+                	<li>
+				<a href="servlet_filter.html">Servlet filter</a>
+				</li>
+					<li>
+				<a href="servlet_filterlife.html">Servlet Filter LifeCycle</a>
+				</li>
+					<li>
+				<a href="servlet_allinone.html">All in one Servlet</a>
+				</li>
+                 </ul>
+
+                
+                
+                
+                
+                
+                
+        </div>
+	<div class="right">
+			
+			
+		
+								<h1><b>	The Servlet Life Cycle and Methods</b></h1>
+								<br><br><br>
+									<b>To run servlet,container call the servlet lifecycle.</b><br>
+									
+									
+									<div class="border">
+									<center><img src="images\servlet\flow.png" ></center>
+									</div><br><br>
+									<b>The servlet lifecycle has following methods:</b><br>
+									<div class="border">
+									<center><img src="images\servlet\servlet_lifecycle.png" ></center>
+									</div><br><br>
+										
+									
+									
+									The Servlet Life Cycle Methods
+								
+	
+									*The javax.servlet.Servlet interface defines the life cycle methods of the servlet such as init() 
+									, service() , and destroy().<br>
+
+									*The Web container invokes the init() , service(), and destroy() methods of  a servlet during its life cycle.<br>
+<br>
+									<b>The sequence in which the Web container calls the life cycle methods of a servlet is  as follows :<br><br><br>
+</b>
+									
+
+									1)The Web container loads the servlet class and creates instance  of the servlet class.<br>
+									2)The Web container invokes the init() method of the servlet instance during initialization of the Servlet.<br> 
+									The init() method is invoked only once in the servlet life cycle .<br>
+									3)The Web container invokes the service() method to allow a servlet to process a client request.<br>
+									4)The service() method processes the request and returns the response back to the Web container.<br>
+									5)The servlet then waits to receive and process subsequent requests as explained in  steps 3 and 4.<br>
+									6)The Web container calls the destroy() method before removing the servlet instance from the service.<br> 
+									The destroy() method is also invoked only once in the a servlet life cycle.<br><br><br>
+									
+									
+									
+									<b>
+									The init() method</b><br>
+									
+
+									1.The init() method is called during the initialization phase of the servlet life cycle.<br>
+
+									2.The Web container first maps the requested URL to the corresponding servlet available in the Web container and then
+									instantiates the servlet.<br>
+
+									3.The Web container then creates an object of the ServletConfig interface, which contains the startup configuration
+									information, such as initialization parameters of the servlet.<br>
+
+									4.The Web container then calls the init() method of the servlet and passes the ServletConfig object to it.<br>
+									5.The init() method throws a ServletException if the Web container cannot initialize the servlet resources .<br>
+
+									6.The servlet initialization completes before any client requests are accepted.<br>
+
+									7.The following code snippet shows the init() method:<br><br>
+
+									public void init (ServletConfig config) throws ServletException<br><br><br>
+									
+									<b>
+									
+									The service() Method</b><br>
+									
+
+									1.The service() method processes the client requests.<br>
+
+									2.Each time the Web container receives a client request, it invokes the service() method.<br>
+
+									3.The service() method is invoked only after the initialization of the servlet is complete.<br>
+
+									4.When the Web container calls the service() method, it passes an object  of the ServletRequest interface and 
+									an object of the ServletResponse interface.<br>
+
+									5.The ServletRequest object contains information about the service request made by the client.<br>
+
+									6.The ServletResponse object contains the information returned by the servlet to the client.<br><br><br>
+									
+									
+									<b>
+									The following code snippet shows the service() method:</b><br>
+									
+									<b>public void service(ServletRequest req , ServletResponse res)throws ServletException , IOException</b><br><br>
+
+									1.The service() method  dispatches a client request to one of the request handler methods of the 
+									HttpServlet interface ,such as the doGet() , doPost() , doHead() , or doPut().<br>
+
+									2.The request handler  methods accepts the objects of the HttpServletRequest and HttpServletResponse as 
+									parameters from the service() method.<br>
+
+									3.service() method is not overridden in the HttpServlet as the Web container automatically invokes the service() method.<br>
+
+									4.The servlet functionality of the HTTP Servlets is written in doGet() or doPost() methods.<br><br><br>
+									
+									<b>
+									
+									The destroy() method:</b><br>
+									
+
+
+									1.The destroy() method marks the end of the life cycle of a servlet.<br>
+
+									2.The Web container calls  the destroy() method before removing a servlet instance from the service.<br>
+
+									3.The Web container calls the destroy() method when :<br><br>
+
+									 &nbsp;&nbsp;<b>a.</b> The time period  specified for the servlet has elapsed. The time period of a servlet is the period for 
+									 which the servlet is kept  &nbsp;&nbsp; &nbsp;&nbsp; in the active state by the Web container to service the client request.<br>
+
+									 &nbsp;&nbsp;<b>b.</b> The Web container needs to release servlet instances to   conserve memory.<br>
+
+									 &nbsp;&nbsp;<b>c.</b> The Web container is about to shut down.<br><br>
+         
+									4. In the destroy() method you can write the code to release the  resources occupied by the servlet.<br>
+ 
+									5. The following code snippet shows the code of the destroy() method:<br><br>
+
+  
+  
+									
+									<b>
+									Summary</b><br>
+									
+  
+  
+									1.The classes and interfaces , which are used to develop a servlet, are packages in the javax.servlet
+									and javax.servlet.http packages of the Servlet API.<br>
+
+									2.The javax.servlet.Servlet interface defines methods that are used to manage the servlet life cycle.<br>
+
+									3.The javax.servlet.ServletConfig interface is implemented by a Web container to pass configuration information 
+									to the servlet.<br>
+
+									4.The HttpServletRequest object represents  a request sent by a client using HTTP.<br>
+	
+									5.The  HttpServletResponse object represents a response sent by a servlet to a client using HTTP.<br><br>
+
+
+
+
+
+</div>
+	</div>
+
+
+
+<div class="container">
+
+  <div class="alert alert-success">
+    <strong>TAG(S) -> servlet lifecycle, servlet methods</strong>
+  </div>
+</div>
+
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>

@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Oops Concepts| JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<a href="#top" class="top" title="Back to Top">&#8593;</a>
+<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                             <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp">Login</a></li>
+                                                        <li><a href="signup.jsp">Sign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li class="active"><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="advance.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a> 
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                      
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+<br>
+	<div class="container">
+	<hr class="hr">
+<div class="row" >
+	  <div id="sidebar-wrapper" style="float:left">
+             <ul class="sidebar-nav">
+                <li class="sidebar-brand main">
+                  <a href="core.html">Core</a>
+                </li>
+				<li class="main">
+				    <a href="core_fundamentals.html">  Java Fundamentals </a></li>
+					<li class="main"><a href="jdk.html"> JDK File Structure </a></li>
+                    <li> <a href="core_development.html">Development  </a></li>
+					<li>
+                     <a href="core_operators.html">  Operators and Assignments </a></li>
+					 <li>
+                     <a href="core_flowcontrol.html"> Flow Control </a></li>
+					 <li><a href="core_accessmodifiers.html">  Declarations and Access Modifiers</a></li>
+                     <li class="main"> <a href="core_garbage.html">Garbage Collector  </a></li>
+					 	<li class="active_page"><a href="core_oops.html"> Oops Concepts </a></li>
+						<li ><a href="core_oops class and object.html"> Class and Object </a></li>
+							<li ><a href="core_oops interface.html"> Interface </a></li>
+						<li ><a href="core_oops abstraction.html"> Abstraction </a></li>
+						<li ><a href="core_oops polymorphism.html"> polymorphisam</a></li>
+						<li ><a href="core_oops inheritance.html">Inheritance</a></li>
+						<li><a href="core_oops encapsulation.html"> Encapsulation</a></li>
+						<li class ="main"><a href="java_object.html"> Java Object Class </a> </li>
+				   <li><a href="core_innerclasses.html">Inner classes  </a></li>
+				   <li><a href="core_package.html">Java Package</a></li>
+				    <li class="main"> <a href="core_lang.html">Java.lang package  </a></li>
+                    <li class="main"> <a href="core_io.html">Java.io package     </a></li>
+					 <li class="main"> <a href="core_exception.html">Exception handling </a></li>
+					 <li class="main"> <a href="core_multithreading.html">Multithreading </a>
+				<li><a href="core_expression.html">  Regular Expressions   </a></li>
+					 <li><a href="core_enumeration.html">  Enumerations </a></li>  
+                    <li> <a href="core_internationalization.html">	Internationalization   </a></li>
+					 <li><a href="core_assertion.html">Assertions  </a></li>
+					 <li class="main"><a href="core_collection.html">Collection Framework     </a></li>
+					 <li><a href="core_generics.html">  Generics   </a></li>
+					<li class="main"><a href="core_jdbc.html"> JDBC </a></li>
+					<li class="main"><a href="features_5.html"> Features of Java 5 </a></li>
+			</ul>
+        </div>
+	<div class="right">
+	<h1><b>OOPS CONCEPT</b></h1><br>
+	<b>
+ <a  href="#data_hiding">Data Hiding</a><br>
+ <a  href="#abstraction">Abstraction</a><br>
+ <a  href="#encapsulation">Encapsulation</a><br>
+ <a  href="#encapsulated_class">Tightly Encapsulated Class</a><br>
+<a  href="#isarelationship"> IS-A Relationship</a><br>
+<a  href="#hasarelationship"> HAS-A Relationship</a><br>
+ <a  href="#signature">Method Signature</a><br>
+ <a  href="#overloading">Overloading</a><br>
+ <a  href="#method_hiding">Method Hiding</a><br>
+ <a  href="#constructors">Constructors</a><br>
+ <a  href="#casting">Type Casting</a><br>
+ <a  href="#coupling">Coupling</a><br><br><br>
+</b>
+<b id="data_hiding">
+DATA HIDING</b><br>
+Hiding of the data, so that outside person can't access our data directly.<br>
+By using private modifier we can implement Data Hiding.<br>
+<div class="border"> <b>Example:1</b><br>
+class account<br>
+{<br>
+private double balance =1000;<br>
+}<br>
+</div>
+The main advantage of data Hiding is we can achieve security .<br><br>
+<b id="abstraction">ABSTRACTION</b><br>
+Definition:<br>
+Hiding internal implementation details and just highlight the set of services what we are offering, is called  <b>"Abstraction".</b><br>
+	<b>Example:</b><br>
+By bank ATM machine, bank people will highlight the set of services what they are offering without highlighting internal implementation. This concept is nothing but Abstraction.<br>
+By using interfaces and abstract classes we can achieve abstraction.<br>
+ <b>Advantages :</b><br>
+1)We can achieve security as no one can change our internal implementation.<br>
+2)Without effecting outside person we can change internal implementation hence enhancement will become very easy.<br>
+ <b>Disadvantages:</b><br>
+It increases length of code and slow down execution.<br><br>
+
+<b id="encapsulation">ENCAPSULATION</b><br>
+<b>Defination:</b><br>
+Encapsulating data and corresponding methods(behaviour) into a single module is called <b> "Encapsulation"</b>.<br>
+If any java class follows data hiding and abstraction such type of class is called encapsulated class.<br>
+<b>Encapsulation =Data Hiding+Abstraction</b><br>
+ <div class="border"><b>Example:1</b><br>
+class account<br>
+{<br>
+private double balance;<br>
+public double getbalance()<br>
+{<br>
+return balance;<br>
+}<br>
+public void setbalance(double balance)<br>
+{<br>
+this.balance =balance;<br>
+}<br>
+}<br></div><br>
+Hiding data behind method is the control concept of encapsulation.<br>
+ <b>Advantage:</b><br>
+1)Enhancement will become very easy.<br>
+2)Improve modularity to the application<br><br>
+<div class="border"><b>Qu)Which of the following class is encapsulated class ?</b><br>
+1) class <br>
+{<br>
+int x&nbsp=10;<br>
+}<br>
+<b>Ans:</b>Not Encapsulated<br><br>
+2) class B extends A<br>
+{<br>
+private int y&nbsp;=20;<br>
+}<br>
+<b>Ans : </b>Encapsulated class<br><br>
+3) class C extends A<br>
+{<br>
+private int z&nbsp;=20;<br>
+}<br>
+<b>Ans :</b> Encapsulated class<br><br>
+ <b>Conclusion:</b><br>
+If parent class is not tightly encapsulated then no child class is tightly encapsulated.</div><br><br>
+<b id="encapsulated_class">TIGHTLY ENCAPSULATED CLASS</b><br>
+<b>Definition:</b><br>
+A class is said to be tightly encapsulated if every data member declared as the private.<br>
+Whether the class contain getter and setter methods are not and weather those methods declared as public or not, these are not required to check.<br>
+	<div class="border"><b>Example:</b><br>
+class A<br>
+{<br>
+private int balance;<br>
+public int getbalance()<br>
+{<br>
+Return balance();<br>
+}<br>
+}<br></div><br><br>
+<div class="border">
+<b>Qu.Which of the following classes are tightly Encapsulated?</b><br>
+1) class a<br>
+{<br>
+private int x&nbsp; =10;<br>
+}<br>
+<b>Ans:</b>Tightly Encapsulated class<br><br>
+2) class A extends b<br>
+{<br>
+int y&nbsp;=20;<br>
+}<br>
+<b>Ans:</b> Not Tightly Encapsulated class<br><br>
+3) class C extends a<br>
+{<br>
+private int z&nbsp;=20;<br>
+}<br>
+<b>Ans: </b>Tightly Encapsulated class</div><br><br>
+<b id="isarelationship">IS-A RELATIONSHIP</b><br>
+1) It also known as <b> "Inheritance"</b>.<br>
+2) By using extends keyword we can implement IS-A Relationship.<br>
+3) The main advantage if IS-A Relationship is reuse ability of the code.<br>
+	<div class="border"><b>Example:</b><br>
+class p<br>
+{<br>
+public void m1()<br>
+{<br>
+------------<br>
+ ------------<br>
+}<br>
+}<br>
+class c extends p<br>
+{<br>
+public void m2()<br>
+{<br>
+&nbsp;&nbsp; ------------<br>
+&nbsp;&nbsp; ------------<br>
+}<br>
+}<br>
+class test<br>
+{<br>
+public static void main(String args[])<br>
+{<br>
+<b>Case1:</b><br>
+P obj&nbsp;=new p();<br>
+p.m1(); //Valid<br>
+p.m2(); //C.E.:Can&nbsp;&nbsp; 't find symbol<br>
+symbol:method m2()<br>
+location:class p<br>
+<b>case2:</b><br>
+c obj2&nbsp;=new c();<br>
+obj2.m1(); //Valid<br>
+obj2.m2(); //Valid<br>
+<b>case3:</b><br>
+c ob3&nbsp; =new p(); C.E. incompitable types<br>
+required:p<br>
+found:c<br></div><br><br>
+ <b>Conclusion:</b><br>
+1) Whatever the parent class has by default available to the child class hence child class reference can call both parent class and child class.<br>
+2) Whatever the child has by default not available to the parent hence on the parent class reference we can call only parent class methods and we can't all child specific methods.<br>
+3)Parent class reference can be used to hold child class objects by using they reference we can callonly parent class methods but we 
+	can't call child specific methods.<br>
+4)We can't use call child specific methods.<br>
+5)We can't use child class reference to hold parent class objects.<br><br>
+	<b>Example:</b><br>
+1)The common functionality which is required for any java classes is defined in object class and by default that class as super class. Tts functionality by default available to every java classes.<br>
+  <div class="border"> <img src="images/core_img/core_o2.jpg"><br></div>
+ 2)The common functionality which is required for all Exceptions and error is defined in Throw able class as Throw able is parent for all Exceptions and Errors. Its functionality will be available automatically to every child not required to rewrite.<br>
+Java won't provide support for multiple inheritance but through interfaces it is possible.<br><br>
+	<div class="border"><b>Example:</b><br>
+1)<br>
+class a extends b,c<br>
+{<br>
+}<br>
+But<br>
+Interface a extends b,c<br>
+{<br>
+}<br></div>
+Every class in java is child class of object class.<br>
+If our class doesn't extends any other class then only it is the direct child class of object<br>
+<div class="border">	<b>Example:</b><br>
+class test<br>
+{ object<br>
+-----------<br>
+----------- test<br>
+}<br></div>
+  If our class extends any other class then our class is not directly chold class of object.<br>
+	<div class="border"><b>Example:</b><br>
+class test extends student<br>
+{<br>
+ object<br>
+-----------<br>
+----------- student<br>
+}<br><br>
+test<br>
+Cyclic inheritance is not allowed in java.<br>
+	<b>Example:</b><br>
+class A extends B<br>
+{ A<br>
+-----------<br>
+----------- B<br>
+}<br>
+Class B extends A<br>
+-----------<br>
+}<br></div>
+ <div class="border"><img src="images/core_img/core_o3.jpg"></div><br><br>
+<b id="hasarelationship">HAS-A RELATIONSHIP:</b><br>
+1) Has-A Relationship is also known as <b>"Composition or aggregation"</b>.<br>
+2) There is no specific keyword to implement HAS-A Relationship. The mostly we are using "new" keyword.<br>
+3) The main advantag0e of HAS-A Relationship is re-usability or code re-usability.<br>
+4)<b>Example:</b><br>
+class car class Engine<br>
+{ <br>
+{<br>
+Engine e=new Engine(); //Engine specific functionality
+ }<br>
+ }<br>
+class car has engine reference.<br><br>
+The main disadvantage of HAS-A Relationship it increases dependency between classes and creates maintainance problem.<br><br>
+<b>Composition vs Aggregation:</b><br>
+A)Composition:<br>
+1)In case of composition whenever container object is destroyed all contained object will be destroyed automatically.i.e. without existing container object there is no chance of existing contained object having 
+	'Strong Association'. This association is called 'Strong Association' which is nothing but <b>"Composition"</b>.<br><br>
+<b>Contained object:</b><br>
+ 1)University is composed of several departments.<br>
+Whenever you are closing university automatically all departments will be closed. The relationship between university object and department object is strong association which is nothing but composition.<br>
+<br><b>A) Aggregation:</b><br>
+Whenever container object destroyed, there is no guaranty of destruction of contained object i.e. without existing container object, there may be chance of contained object. This association is called 
+	'Weak Association' which is nothing but <b>"Aggregation"</b><br>
+Container object<br>
+Contained object<br>
+<b>Example:</b><br>
+1)Several professor will work in the department.<br>
+Whenever you are closing department still there may be chance of existing professors. The relationship between department and proffessors is called 
+	''Weak Association' which is nothing but <b> "Aggregation"</b>.<br><br>
+ <b id="signature"> METHOD SIGNATURE </b><br>
+<b>Defination:</b><br>
+Method signature consist of name of method and argument list.<br>
+<b>Example:</b> public void m1(int i, float p)<br>
+m1(int,float)<br>
+1) In java return type is not part of method signature.<br>
+2) Compiler will always use method signature while resolving method calls.<br>
+3) With in the same class two methods with same signature not allowed otherwise we will get compiletime error.<br>
+	 <div class="border"><b>Example:</b><br>
+public class methodsig<br>
+{<br>
+public void m1(int i)<br>
+{<br>
+System.out.println("I am in m1");<br>
+}<br>
+public void m1(int i)<br>
+{<br>
+System.out.println("I am in m1");<br>
+}<br>
+public static void main(String ar[])<br>
+{<br>
+methodsig obj1=new methodsig();<br>
+obj1.m1();<br>
+}}<br>
+  C.E.m1(int) has already defined in methodsig</div><br><br>
+<b id="overloading">OVERLOADING</b><br>
+<b>Defination:</b><br>
+Two methods are said to be overloaded iff method names are same but arguments are different.<br>
+  Lack of overloading in'C' increases complexity of program.<br>
+  In C,language if there is a change in method argument we should go for new method.<br>
+  Compulsory we should go for new method name.<br>
+	<b>Example:</b><br>
+1) abs() int<br>
+2) labs() long<br>
+3) fabs() float<br>
+  But in java two methods having same name with different argument is allowed and these methods are considered as overloaded methods.<br>
+<b>Example:</b><br>
+1) abs(int)<br>
+2) abs(long)<br>
+3) abs(float)<br>
+  Having overloading concept in java simplifies the programming.<br>
+	 <div class="border">&nbsp;&nbsp;&nbsp;<b>Example:</b><br>
+public class methodoverloading {<br>
+public void m1()<br>
+{<br>
+  System.out.println("no-arg");<br>
+}<br>
+public void m1(int i)<br>
+{<br>
+System.out.println("int-arg");<br>
+}<br>
+public void m1(float f)<br>
+{<br>
+System.out.println("float-arg");<br>
+}<br>
+public static void main(String ar[])<br>
+{<br>
+methodoverloading obj1 =new methodoverloading();<br>
+obj1.m1();<br>
+obj1.m1(10);<br>
+obj1.m1(10.5f);<br>
+}<br>
+<b>Output:</b><br>
+no-arg<br>
+int-arg<br>
+float-arg<p></div><br><br>
+   
+  In overloading method resolution always takes care by compiler based on reference type.Hence overloading is also considered as    <b>"compile time polymorphism"</b> or <b>"static polymorphism"</b> or <b>"early binding"</b>.<br>
+
+<br>
+  In overloading reference type will play important role and runtime object will dummy.<br><br>
+
+<b>Case1:Automatic promotion in overloading:</b><br>
+
+  In overloading method resolution, if matched method with specified argument type is not available then compiler won't raiseany error immediately. First it promotes that argument to the next level and checks match ed method.<br>
+
+  If the matched method is available then it will considered and if not available then compiler once again promotes this argument to next level.<br>
+
+  This process will be continued until all possible promotions. After completing all promotions still if matched method is not available then only we will get compile time error.<br>
+ <b> The following various possible promotions in overloading:</b><br>
+
+byte short<br>
+
+int long float double<br>
+
+char<br><br>
+ <b>OVERRIDING</b><br>
+<b>Definition:</b><br>
+Two methods are said to be overriding if method names are same and arguments are also same.<br>
+Hence overriding is also known as <b>"Runtime polymorphism (or) dynamic polymorphism"</b>.<br>
+Overriding method resolution is also known as <b>"Dynamic method dispatch"</b>.<br><br>
+<b>* Rules for Overriding:</b><br>
+  In overriding method names and arguments must be matched. i.e. method signature must be matched.<br>
+  In overriding return type must be matched, but this rule is applicable until 1.4Version,from onward 1.5Version onwards co-variant return types are allowed according to this, child method return type need not be same as parent method return type. Its child classes are allowed.<br>
+ <div class="border">	&nbsp;&nbsp;&nbsp;<b>Example:</b><br>
+public class overriding1 {<br>
+public Object m1()<br>
+{<br>
+return 0;<br>
+}<br>
+}<br>
+class c extends overriding1<br>
+{<br>
+@Override<br>
+public String m1()<br>
+{<br>
+return null;<br>
+}<br>
+  public static void main(String ar[])<br>
+{<br>
+c obj =new c();<br>
+obj.m1();<br>
+}<br>
+}<br></div><br>
+<b>Note:</b><br>It is valid in 1.5Version but invalid in 1.4 Version.<br>
+Co-variant return type concept is applicable only for object type but not for primitive types.<br>
+Object Number String double Parent method<br>
+return type<br>
+String Integer Object int Child method<br>
+return type<br>
+  We can't override parent class final method,but we can use as it is.<br>
+  Private methods are not visible in child classes hence overriding concept is not applicable foe private methods.<br>
+  Based on our requirement we can declare the same parent class private method in child class also it is valid but it is not overriding.<br>
+	 <div class="border"><b>Example:</b><br>
+public class privateEx1 {<br>
+private void m1()<br>
+{<br>
+System.out.println("I am in m1");<br>
+}<br>
+}<br>
+  class c extends JavaApplication3<br>
+{<br>
+private void m1()<br>
+{<br>
+System.out.println("I am in m2");<br>
+}<br>
+public static void main(String[] args)<br>
+{<br>
+c obj&nbsp;&nbsp; =new c();<br>
+obj.m1();<br>
+}<br>
+<b>Output:</b><br>
+I am in m2<br></div><br>
+  For parent class Abstract methods we should override in child class to provide implementation.<br>
+  We can override parent class non_abstract method as abstract in child class to stop parent class method implementation availability to the child classes.<br>
+ <br> <b>The following modifier won't play any restrictions in overriding</b><br>
+1)native<br>
+2)synchronized<br>
+3)strictfp<br>
+final non_final abstract synchronized native<br>
+non_final final non_abstract non_significant non_native<br>
+strictfp<br>
+  non_strictfp<br>
+  While overriding we can't decrease scope of modifier but we can increase the following are various acceptable overriding.<br>
+Private&ltdefault&ltprotected&ltpublic</public><br>
+public protected default private<br>
+public protected/public default/protected private method can&nbsp;&nbsp; 't<br>
+/public be override<br>
+&nbsp; <b>&nbsp;</b><br>
+<b>Qu)Which of the following is valid orInvalid?</b><br>
+1)parent:public void m1()throws IOException<br>
+Child:public void m1()<br>
+<b>Ans:</b>Valid<br>
+2) parent:public void m1()<br>
+Child:public void m1()throws IOException<br>
+<b>Ans:</b>Invalid<br>
+3) parent:public void m1()throws Exception<br>
+Child:public void m1()throws IOException<br>
+<b>Ans:</b>Valid<br>
+4) parent:public void m1()throws IOException<br>
+Child:public void m1()throws Exception<br>
+<b>Ans:</b>Invalid<br>
+5) parent:public void m1()throws IOException<br>
+Child:public void m1()throws FileNotFoundException,EOFException<br>
+<b>Ans:</b>Valid<br>
+6) parent:public void m1()<br>
+Child:public void m1()Arithmetic Exception,Null Pointer Exception-<br>
+<b>Ans:</b>Invalid<br><br>
+ <b>* Overriding w.r.t static method:</b><br>
+   
+  We can't override static method as non_static method.<br><br>
+	 <div class="border"><b>Example:</b><br>
+public class- staticovrriding {<br>
+public static void m1()<br>
+{<br>
+}<br>
+}<br>
+class second extends staticovrriding<br>
+{<br>
+public void m1() //C.E.:m1() is can't override m1()in p;<br>
+{ Override method is static.<br>
+}<br>
+}<br></div>
+  Similarly we can't override non-static method as static<br id="method_hiding">
+  If both parent and child class method are static then we won't want to get any c.e. it seems to be overriding is happen,but it is not overriding it is<b>"Method Hiding" </b>.<br>
+	 <br><div class="border"><b>Example:</b><br>
+public class staticovrriding {<br>
+public static void m1()<br>
+{<br>
+System.out.print("Method");<br>
+}<br>
+}<br>
+class second extends staticovrriding<br>
+{<br>
+public static void m1()<br>
+{<br>
+System.out.print("Hiding");<br>
+}<br>
+public static void main(String ar[])<br>
+{<br>
+second obj&nbsp;&nbsp; =new second();<br>
+  m1();<br>
+}<br>
+}<br>
+<b>Output:</b><br>
+Hiding<br></div>
+ <div class="border"><img src="images/core_img/core_o4.jpg"></div><br><br>
+<b> Overriding w.r.t Var-arg method:</b><br>
+  We can't override var-.arg method with general method.If we are trying to override it will become overloading but not overriding .<br>
+  A var-arg method should be overridden with var-arg method only.<br>
+	 <div class="border"><b>Example:</b><br>
+public class varargoverriding {<br>
+public void m1(int... i)<br>
+{<br>
+System.out.print("Parent");<br>
+}<br>
+}<br>
+class vararg extends varargoverriding<br>
+{<br>
+public void m1(int i)<br>
+{<br>
+System.out.print("child");<br>
+}<br>
+public static void main(String ar[])<br>
+  {<br>
+vararg obj  =new vararg(); //child<br>
+obj.m1(10);<br>
+varargoverriding obj2 =new varargoverriding(); //parent<br>
+obj2.m1(12);<br>
+varargoverriding obj3 =new vararg(); //parent<br>
+obj3.m1(14);<br>
+}<br>
+}<br>
+<b>Output:</b><br>
+childParentParent<br></div><br>
+  If both parent and child methods are var_arg then it will become overriding in thisit will become overriding .<br><br>
+ <div class="border"> <b>Example:</b><br>
+public class varargoverriding {<br>
+public void m1(int... i)<br>
+{<br>
+System.out.print("Parent");<br>
+}<br>
+}<br>
+class vararg extends varargoverriding<br>
+{<br>
+@Override<br>
+public void m1(int... i)<br>
+{<br>
+System.out.print("child");<br>
+}<br>
+public static void main(String ar[])<br>
+{<br>
+vararg obj =new vararg();<br>
+obj.m1(10);<br>
+}<br>
+}<br>
+  <b>Output:</b><br>
+Child<br></div><br>
+<b>POLYMORPHISM</b><br>
+<b>Defination:</b><br>
+poly many<br>
+morphs forms<br>
+polymorphism means many forms.<br>
+ WE can use same method name to represent multiple forms in polymorphism.<br><br>
+ <b>Example:</b>
+In overriding we can have method with one type of implementation
+In parent,but different type of implementation in child class.
+ There are two types of polymorphism.<br>
+ <div class="border"><img src="images/core_img/core_o5.jpg"><br></div></br>
+ <div class="border"><img src="images/core_img/core_o6.jpg"></div><br>
+<b id="constructors">CONSTRUCTOR</b><br>
+<b>Definition:</b><br>
+Object creation is not enough we should perform initialization. Then only that object is in position to provide response properly.<br>
+Whenever we are creating an object some piece of code will executed automatically to perform initialization. This piece of code is nothing but constructor. Hence the main objective of constructor is to perform initialization for the newly created object.<br>
+	 <div class="border"><b>Example:</b><br>
+public class constructor {<br>
+int rollno;<br>
+String name;<br>
+public constructor(int rollno1, String name1) {<br>
+this.rollno = rollno1;<br>
+this.name = name1;<br>
+}<br>
+public void disp()<br>
+{<br>
+System.out.print(rollno);<br>
+System.out.print(name);<br>
+}<br>
+  public static void main(String args[ ]){<br>
+constructor obj1&nbsp; =new constructor(101,"shree");<br>
+constructor obj2&nbsp;=new constructor(102,"jai");<br>
+obj1.disp();<br>
+obj2.disp();<br>
+}<br>
+}<br>
+<b>Output:</b><br>
+101shree102jai</div><br>
+ 
+<b>* Rules to define constructor:</b><br>
+1) The name of the class and name of the constructor must be matched.<br>
+2) Return type of concept is not possible for constructor even void also. By mistake if we declare return type for the constructor we 
+	can't get compile time error or runtime error, because compiler treats it as method.<br>
+ <b>&nbsp;Example:</b>.<br>
+class test<br>
+{<br>
+Void test() It is normal method but not constructor.<br>
+{<br>
+}<br>
+}<br>
+3)The only applicable modifiers for constructor are: public, private, protected<br>
+  <default>,if we are trying to use any other modifier we will get<br>
+compile_time error saying modifier static/final/strictfp is not allowed here.<br>
+	<b>Example:</b><br>
+class test{<br>
+{ final test() // C.E.final modifier is not allowed here<br>
+}<br>
+}<br><br>
+<b> * Default constructor:</b><br>
+1)If we are not writing any constructor then compiler will always generate default constructor.<br>
+2)If we are writing at least one constructor then compiler won't generate default constructor.<br>
+3)Hence a class can contain either programmer written constructor or compiler generated constructor but not both simultaneously.<br><br>
+<b>  Prototype of default constructor:</b><br>
+1)It is always no argument constructor.<br>
+2)The access modifier of default constructor is same as class modifier but this rule is applicable public and <default><br>
+3)It contains only one line, It is a no argument call to super alas constructor.<br><br>
+ <div class="border"><b>Example:</b><br>
+Test<br>
+{<br>
+super()<br>
+}<br><br>
+Programmers Code<br>
+1) public class Test<br>
+{<br>
+}<br><br>
+Compiler Generated Code<br>
+public class Test<br>
+{<br>
+public Test()<br>
+{<br>
+super();<br>
+}<br>
+}<br><br>
+  Programmers Code<br>
+2)class Test<br>
+{<br>
+void Test() //It is not a Constructor. It is an normal<br>
+{ method<br>
+}<br>
+}<br><br>
+Compiler Generated Code<br>
+class Test<br>
+{<br>
+Test()<br>
+{<br>
+super();<br>
+}<br>
+void Test()<br>
+{<br>
+}<br>
+}<br><br>
+Programmers Code<br>
+3)class Test<br>
+{<br>
+Test()<br>
+{<br>
+}<br>
+}<br><br>
+  Compiler Generated Code<br>
+class Test<br>
+{<br>
+Test()<br>
+{<br>
+super();<br>
+}<br>
+}<br><br>
+Programmers Code<br>
+4) class Test<br>
+{<br>
+Test()<br>
+{<br>
+this(10);<br>
+}<br>
+Test(int i)<br>
+{<br>
+}<br>
+}<br>
+Compiler Generated Code<br>
+class Test<br>
+{<br>
+Test()<br>
+{<br>
+this(10);<br>
+}<br>
+  Test(int i)<br>
+{<br>
+super();<br>
+}<br>
+}<br>
+5) class Test<br>
+{<br>
+Test()<br>
+{<br>
+this(10);<br>
+}<br>
+Test(int i)<br>
+{<br>
+}<br>
+}<br>
+Compiler Generated Code<br>
+class Test<br>
+{<br>
+Test()<br>
+{<br>
+this(10);<br>
+}<br>
+Test(int i)<br>
+{<br>
+super();<br>
+}<br>
+}<br>
+6) class Test<br>
+{<br>
+  Test(int i)<br>
+{<br>
+Super();<br>
+}<br>
+}<br>
+Compiler Generated Code<br>
+class Test<br>
+{<br>
+Test(int i)<br>
+{<br>
+Super();<br>
+}<br>
+}</div><br>
+<b>Super & This</b><br>
+  The first line inside a construction should be either super() or this().<br>
+  If we are not writing any thing compiler will always place super().<br>
+<b>Case 1:</b><br>
+We have to keep either super() or this() only as.the first line of the constructor.<br>
+class Test<br>
+{<br>
+Test()<br>
+{<br>
+System.out.println(   "Hiiiiii");<br>
+super();<br>
+}<br>
+  }<br>
+C.E: call to super must be first statement in constructor.<br><br>
+<b>Case 2:</b><br>
+With in the constructor we can use either super() or this() but not both simultaneously.<br>
+class Test<br>
+{<br>
+Test()<br>
+{<br>
+super();<br>
+this(); // call to this must be first statement in the constructor<br>
+}<br>
+}<br><br>
+<b>Case 3:</b><br>
+We can use super & this only inside Constructor if we are using any where else we will get compiler error.<br>
+Sol:<br>
+class Test<br>
+{<br>
+Public void m1()<br>
+{<br>
+super();<br>
+System.out.println(   "hiiiiiiiiiiiiiii");<br>
+}<br>
+}<br><br>
+<b>super():</b> Must be used in constructor.<br>
+<b>this():</b> As the first statement only<br>
+But not both simultaneously.<br>
+<b>this():</b> To call current class Constructor.<br>
+<b>super():</b> To call parent class Constructor.<br>
+Compiler provides default super() but not this().<br><br>
+ <div class="border"><img src="images/core_img/core_o7.jpg"><br></div><br>
+ <div class="border"><b>Example:</b><br>
+class test<br>
+{<br>
+Public static void m1()<br>
+{<br>
+System.out.println(super.hashcode());<br>
+}<br>
+}<br></div><br><br>
+ <b>Constructor Overloading</b><br>
+  A class can contain more than one constructor with same name but diiferent arguments and this constructors are consider as overloaded constructor.<br>
+	 <div class="border"><b>Example:</b><br>
+int id;<br>
+  String name;<br>
+int age;<br>
+ConstructorOverloading(int i,String n){<br>
+	id= i;<br>
+name = n;<br>
+}<br>
+ConstructorOverloading(int i,String n,int a){<br>
+	id = i;<br>
+name = n;<br>
+age =a;<br>
+}<br>
+void display(){System.out.println(id+" "+name+" "+age);}<br>
+public static void main(String args[]){<br>
+ConstructorOverloading s1 = new ConstructorOverloading(1,"cern");<br>
+ConstructorOverloading s2 = new ConstructorOverloading(2,"system",25);<br>
+s1.display();<br>
+s2.display();<br>
+}<br>
+}<br>
+<b>Output:</b><br>
+1 cern 0<br>
+2 system 25</div><br>
+  Inheritance and overriding concepts are not applicable for constructor.<br>
+Every class in java including abstract class also can contain constructor,but interfaces 
+	can't have the constructor.<br>
+<div class="border">class test<br>
+{<br>
+test()<br>
+{<br>
+}<br>
+} //Valid<br>
+abstract class test<br>
+{<br>
+test()<br>
+{<br>
+}<br>
+} //Valid<br>
+Interface test<br>
+{<br>
+test()<br>
+}<br>
+}<br>
+} //Invalid</div><br>
+ <b> Case 1:</b><br>
+Recursive method call is always runtime exception where as recursive constructor invocation is a compile time.<br>
+<div class="border"><b>Example:</b><br>
+1)class p<br>
+  {<br>
+}<br>
+class c extends p<br>
+{<br>
+}<br>
+2)class p<br>
+{<br>
+P()<br>
+{<br>
+}<br>
+}<br>
+class c extends p<br>
+{<br>
+}<br>
+3)class p<br>
+{<br>
+P(int i)<br>
+{<br>
+}<br>
+}<br>
+class c extends p<br>
+  {<br>
+}<br>
+	C.E.:can't find symbol<br>
+symbol:constructor p()<br>
+location:class p</div><br><br>
+<b>Note:</b><br>
+If the parent class contains some constructors then while writing child class we have to take the special case about constructors.<br>
+Whenever we are writing any argument constructor it is highly recommended to write no argument constructor also.<br><br>
+<div class="border"><b>Case(iii):</b><br>
+If parent class constructor throws some checked exception compulsory child class constructor should throw some checked exception or its parent otherwise the code won't compile.<br>
+class p<br>
+{<br>
+P()throws IOException<br>
+{<br>
+}<br>
+}<br>
+class c extends p<br>
+  {<br>
+}<br>
+//C.E. unsupportedException java.io. IOException in default constructor.</div><br><br>
+<b>Qu) Which of the following is true?</b><br>
+1)Every class contains constructor:<b>True</b><br>
+2)Only concrete class contains constructor but not abstract class:<b>False</b><br>
+3)The name of the constructor need not be same as class name :<b>false</b><br>
+4)The only applicable modifier for constructor are public and default :<b>True</b><br>
+5)return type is applicable for the constructor: <b>False</b><br>
+6)If we are trying to declare return type for the constructor we will get compile time error :<b>False</b><br>
+7)compiler will always generate default constructor:<b>False</b><br>
+8)The access modifier of the default constructor is always default :<b>False</b><br>
+9)The First line inside every constructor should be super:<b>False</b><br>
+10)The First line inside every constructor should be super() or this():<b>True</b><br>
+11)If we are not writing anything compiler will always place this(): <b>False</b><br>
+12)interface can contains constructor:<b>False</b><br>
+13)Both overloading and overriding concept are applicable for constructor :<b>False</b><br>
+14)Inheritance concept is applicable for constructor:<b>False</b><br><br>
+<b>Type Casting</b><br>
+  Parent class reference can be used to hold child class object<br><br>
+<b id="coupling">Coupling</b><br>
+ The degree of dependency between the components is called coupling.<br>
+ <div class="border"><b>Example.</b><br>
+1) class A<br>
+{<br>
+  Static int i&nbsp;&nbsp; =B;<br>
+}<br>
+2) Class B<br>
+{<br>
+Static int j&nbsp;&nbsp; =c.m1();<br>
+}<br>
+3)class C<br>
+{<br>
+Public static void main(m1())<br>
+{<br>
+Return D.k;<br>
+}<br>
+}<br>
+4) class D<br>
+{<br>
+Static int k =10;<br>
+}</div><br><br>
+ The above components are said to be tightly coupled with each other. Tightly coupling is not recommended because it has several serious disadvantages,<br>
+1) Without effecting remaining component we can't modify any component. Hence enhancement will beCome difficult.<br>
+2) It reduces maintainability.<br>
+3) It does not prompt re-usability<br>
+* Hence it is highly recommended to maintain loosely coupling and dependence between the componts should be as less as possible.<br><br>
+<b>Cohesion</b><br>
+* For every component a clear well define functionality we have to define, such type of component is said to be follow high cohesion.<br>
+ <div class="border"><img src="images/core_img/core_o10.jpg"><br></div>
+Wherever validation is require we can reuse the same validate servlet without rewrite.<br>
+<b>Note:</b><br>
+Loosely coupling and high cohesion are good programming practice.<br>
+<br>
+	</div><br>
+	</div><br>
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>

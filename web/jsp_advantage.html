@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Advantages of Jsp | JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                                 <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp">Login</a></li>
+                                                        <li><a href="signup.jsp">Sign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li class="active"><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="advance.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a> 
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                     
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+<br>
+<div class="container">
+	<hr class="hr">
+<div class="row" >
+	  <div id="sidebar-wrapper" style="float:left">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                  
+                </li>
+				<li>
+			<a href="jsp.html">Java Server Pages</a>  
+				</li>
+				<li>
+				
+                    <a href="jsp_architecture.html">Architecture</a>  
+                </li>
+                
+                <li>
+				
+                    <a href="jsp_intro.html">Why JSP?</a>
+                </li>
+                <li   class="active_page">
+                    <a href="jsp_advantage.html">Advantages of JSP over Servlet</a>
+                </li>
+                <li>
+                    <a href="jsp_lifecycle.html">Life Cycle of JSP<a>
+                </li>
+				
+              
+                <li >
+                    <a href="jsp_structure.html">JSP Directory Structure</a>
+                </li>
+                <li>
+                    <a href="jsp_tags.html">Tags used in JSP</a>
+                </li>
+                <li class="main">
+                    <a href="jsp_script.html">Scriptlet Tag</a>
+                </li>
+				    <li>
+                    <a href="jsp_expression.html">Expression Tag </a>
+                </li>
+				<li>
+				 <a href="jsp_declaration.html">Declaration Tag </a>
+                </li>
+                <li>
+                    <a href="jsp_objects.html">JSP Implicit Objects</a>
+                </li>
+                
+            </ul>
+        </div>
+	<div class="right" >
+<h1><b>Advantages of JSP over Servlet</b></h1><br>
+
+<b>JSPs offer a wide variety of advantages to the developer. Following points draw attention 
+to the positive points of JSP:</b><br><br>
+<b>*</b> HTML response can be generated from servlets also but the process is cumbersome and error prone, when it comes to writing a complex HTML response, writing in a servlet turns out to be a very difficult task. JSP helps in this situation and provides us flexibility to write normal HTML page and include our java code only where it's required.<br><br>
+<b>*</b> JSP provides additional features such as tag libraries, expression language, custom tags that helps in faster development.<br><br>
+<b>*</b> JSP pages are easy to deploy, only the modified page in the server is needed to be replaced and container takes care of the deployment. If JSP page is modified, we don't need to recompile and redeploy the project. The servlet code needs to be updated and recompiled if we have to change the look and feel of the application.<br><br>
+<b>*</b> Actually Servlet and JSPs compliment each other. Servlet is used as server side controller and to communicate with model classes whereas JSPs should be used for presentation layer.<br><br>
+
+
+<b>*</b> Basically, JSP technology is the extension to servlet technology. All the features of servlet can be used in JSP. In addition to that, implicit objects, predefined tags, expression language and Custom tags can also be used in JSP, that makes JSP development easy.<br><br>
+
+
+
+<b>*</b> JSP can be easily managed/maintained because it is easy to separate the business logic with presentation logic. In servlet technology, business logic is mixed with the presentation logic.<br><br>
+
+
+<b>*</b> As compared to Active Server Pages (ASP), the advantages of JSP are twofold. First, the dynamic part is written in Java, not Visual Basic or other MS specific language, so it is more powerful and easier to use. Second, it is portable to other operating systems and non-Microsoft Web servers.<br><br>
+
+<b>*</b> Compared to pure Servlets, JSP is more convenient to write regular HTML than to have plenty of println statements that generate the HTML.<br><br>
+
+
+<b>*</b> In JSP there is less code than Servlet. So, a lot of tags can be used such as action tags, jstl, custom tags etc. that reduces the code. Moreover, we can use EL, implicit objects etc.<br><br>
+
+
+
+<b>*</b> JavaScript can generate HTML dynamically on the client but can hardly interact with the web server to perform complex tasks like database access and image processing etc.Whereas, JSP can do these tasks efficiently.
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>

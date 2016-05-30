@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Declarations and Access Modifiers| JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<a href="#top" class="top" title="Back to Top">&#8593;</a>
+<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                             <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp">Login</a></li>
+                                                        <li><a href="signup.jsp">Sign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li class="active"><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="advance.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a> 
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                        
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+<br>
+	<div class="container">
+	<hr class="hr">
+<div class="row" >
+	   <div id="sidebar-wrapper" style="float:left">
+             <ul class="sidebar-nav">
+                <li class="sidebar-brand main">
+                  <a href="core.html">Core</a>
+                </li>
+				<li class="main">
+				    <a href="core_fundamentals.html">  Java Fundamentals </a></li>
+					<li class="main"><a href="jdk.html"> JDK File Structure </a></li>
+                    <li> <a href="core_development.html">Development  </a></li>
+					<li>
+                     <a href="core_operators.html">  Operators and Assignments </a></li>
+					 <li >
+                     <a href="core_flowcontrol.html"> Flow Control </a></li>
+					 <li class="active_page"><a href="core_accessmodifiers.html">  Declarations and Access Modifiers</a></li>
+                     <li class="main"> <a href="core_garbage.html">Garbage Collector  </a></li>
+					 	<li class="main"><a href="core_oops.html"> Oops Concepts </a></li>
+							<li class="active_page"><a href="core_oops class and object.html"> Class and Object </a></li>
+							<li class="active_page"><a href="core_oops interface.html"> Interface </a></li>
+						<li class="active_page"><a href="core_oops abstraction.html"> Abstraction </a></li>
+						<li class="active_page"><a href="core_oops polymorphism.html"> polymorphisam</a></li>
+						<li class="active_page"><a href="core_oops inheritance.html">Inheritance</a></li>
+						<li class="active_page"><a href="core_oops encapsulation.html"> Encapsulation</a></li>
+						<li class ="main"><a href="java_object.html"> Java Object Class </a> </li>
+				   <li><a href="core_innerclasses.html">Inner classes  </a></li>
+				   <li><a href="core_package.html">Java Package</a></li>
+				    <li class="main"> <a href="core_lang.html">Java.lang package  </a></li>
+                    <li class="main"> <a href="core_io.html">Java.io package     </a></li>
+					 <li class="main"> <a href="core_exception.html">Exception handling </a></li>
+					 <li class="main"> <a href="core_multithreading.html">Multithreading </a>
+				<li><a href="core_expression.html">  Regular Expressions   </a></li>
+					 <li><a href="core_enumeration.html">  Enumerations </a></li>  
+                    <li> <a href="core_internationalization.html">	Internationalization   </a></li>
+					 <li><a href="core_assertion.html">Assertions  </a></li>
+					 <li class="main"><a href="core_collection.html">Collection Framework     </a></li>
+					 <li><a href="core_generics.html">  Generics   </a></li>
+					<li class="main"><a href="core_jdbc.html"> JDBC </a></li>
+					<li class="main"><a href="features_5.html"> Features of Java 5 </a></li>
+			</ul>
+        </div>
+	<div class="right">
+	<h1><b>Declarations and Access Modifiers</b></h1><br>
+	  
+ 
+  <b>Java source file structure</b><br>     
+<b> Class modifiers </b><br>
+    <b>    Member modifiers</b><br>
+             <b> Interfaces </b> <br>     <br> <br>           
+    
+                          <b>Java Source File Structure</b>A java program can contain any no of classes but at most one class can be declared as the public if there is a public class the name of the program and name of public class must be matched otherwise we will get compile time error. If there is no public class then we can use any name as java source file name,There are no restrictions. <br>
+	<br>
+                 <div class="border"><b>Example </b>: <br>
+class Test<br>
+ {<br>
+  public static void main(String[] args)<br>
+  {<br>
+  ArrayList l=new ArrayList();<br>  
+  }<br>
+  }<br>
+  <b>Output:</b><br> 
+  Compile time error-Can not find Symbol.<br> 
+  Symbol:<br>
+  class ArrayList<br>   
+  Location:class Test</div><br> 
+  -We can resolve this problem by using fully qualified name.
+             <b> Java.util</b><br> 
+-The problem with usage of fully Qualified name every time increases length of the code and reduces readability.<br> 
+-We can resolve the problem by using import statement.<br> 
+<br>  <div class="border"><b>Example:</b><br> 
+        1)       package pack1;<br> 
+                class A<br> 
+                {<br>
+                 public void m1()<br> 
+                 {<br> 
+                  System.out.println( "Hi ");<br> 
+                 }<br>
+                 }<br>
+2)       package pack2;<br>
+         import pack.A;<br> 
+                class B<br> 
+                {<br>
+  
+                 public static void main(String args[])<br> 
+                 {<br>
+                  A a=new A();<br> 
+                  a.m1();<br> 
+                 }<br>
+                 }&nbsp;&nbsp; //Invalid  </div> <br>
+<b>2)default members :</b><br> 
+                 If  a declare a member  as default  then we can access that member  only with in the current package & we 
+	 can't access from outside of the package.<br>
+                  Hence ,default access is also package.level access. <br><br>
+                <b>  3)private members :</b><br> 
+                If  a declare a member  as private then we can access that member  only wihin current class.<br> 
+                 Abstract method should be visible in child classes to provide implementation.Where as private method are not visible in child classes.Hence private abstract combination is illegal for methods.<br><br> 
+<b>4)protected  members (The most misunderstood modifier in java):</b><br> 
+                  If  a declare a member  as protected  then we can access that member within.The current package anywhere but outside package only in child classes.<br> 
+             <b> protected= default+kids </b>of an another package(only child reference)<br> 
+  
+                 Within the current package we can access protected member either by parent reference or by child reference.<br> 
+                 But from outside package we can access protected member only by using child reference.if we are trying to use parent reference we will get C.E.<br>  
+  
+<br>  <div class="border"><b>Example </b>:<br> 
+                package pack1;<br> 
+               import pack1.A;<br> 
+                public class C extends A<br> 
+                {<br>
+                public static void main(String args[])<br> 
+                 {<br>
+                 A a=new A()<br> 
+                 a.m1();                              // Invalid <br>
+                 C c=new C()<br> 
+                  c.m1();                             //Valid<br> 
+                  A a1=new C()<br> 
+                  a1 .m1();                                //Invalid<br> 
+                  }<br> 
+                  }</div> <br>
+  
+  
+    
+<b>final Variables:</b><br> 
+              In general for instance & static variables it is not required to perform initialization explicitly Jvm will always provide default values.<br> 
+             But for the local variable jvm&nbsp; wan't to provide any default values compulsory we should provide initialization before using that variable.<br> 
+<b>final instance Variables:</b><br> 
+              For the normal instance variable it is not require perform initialization explicitly Jvm will always provide default values.<br> 
+             If the instance variable declared as the final then compulsory  we should perform  initialization whether we are using or not otherwise.<br> 
+            We will get compile time error<br> 
+ <div class="border"><b>Example </b>: <br>
+                 class Test<br> 
+                  {<br> 
+                     public static  void main(String args[]) <br>
+                      {<br> 
+                      m1(10,20);       //actual parameter<br> 
+                     }<br> 
+                     public static  void m1(final int x,int y)   //formal parameter <br>
+                     {<br> 
+                     x=1000;<br> 
+                     y=2000; <br>
+                    System.out.println(x+ &quot;........"+y);<br> 
+                        }<br>
+  
+                        }</div> <br> 
+		<b>Static modifier:</b>Static is the modifier applicable for variable & methods but not for classes (but inner class can be declared as static). <br>
+            If the value of a variable is varied from object to object. Then we should go for instance variable.In the case of instance value for every object a separate copy will be created. <br>
+           If the value of a variable is same for all objects.Then we should go for static variables.In the case of static variable only one copy will be created at class level & share.That copy for every object of that class.<br>   <br>
+<b>Native modifier :-</b>   native is  the modifies applicable only for methods but not for variable    and classes The native methods are implemented in some other languages like C & C++ hence native methods also known as  "foreigen methods ". The main objectives of native keyword are  1)To improve performance of the system. 2)To use already existing lagecy non-java code.    Psudo Code. To use native keyword: <br>
+ <div class="border"><b>Example:</b><br> 
+public class NativeMethod {<br> <br>
+   static <br>
+  
+    {<br>
+    System.loadLibrary("natiive library");<br> 
+    }<br> 
+    public  native void m1();  <br>
+    }<br> 
+class child<br>  
+{<br> 
+    public static void main(String[] args) <br>{<br>
+     NativeMethod n=new NativeMethod(); <br>
+      n.m1();// TODO code application logic here<br> 
+  }<br> 
+}</div><br>
+	<b>Disadvantage:</b> <br>
+	The main disadvantage of native keyword is it breaks platform independent 
+	nature of java because we are depending on result of platform dependemt 
+	languages. <br><br>
+	<b>synchronized modifier:</b> Synchronized is the modifier applicable for 
+	methods and blocks. We  can't declare class and variable with this keyword.&nbsp; If method or block declared as synchronized then at a time only one thread 
+	is allowed to pperate on the given object.&nbsp; Main advantage of synchronized 
+	keyword is it can resolve data inconsistency.But the main disadvantage of 
+	synchronized keyword is it <br>
+
+	increase waiting time of thread and effects performance of the system.Hence 
+	if there is no specific requirement it is never recommended to use 
+	synchronized keyword. <br><br>
+	<b>transient modifier:</b> <br>
+	&nbsp;Transient is the modifier applicable only for variables and we can't 
+	apply for method and classes.&nbsp; At the time of serialization,if we&nbsp; 
+	don't want to 
+	save the value of a particular variable to meet security constraint,then we 
+	should go for transient keyword.&nbsp; At the time of serializationJVM ignores 
+	the original value of transient variable and default value will be 
+	serialization. <br><br>
+	<b>volatile modifier:</b> Transient is the modifier applicable only for 
+	variables but not for methods and classes. If the value of a variable keep 
+	on changing such type of variables we have to declare with volatile 
+	modifier. If variable declared as volatile then for every thread a 
+	separate local copy will be created. Every intermediate modification 
+	performed by that thread will takes place in local copy instead of master 
+	copy.&nbsp; Once the value got finalized just before terminating the thrad the 
+	master copy value will be updated with local state value.&nbsp;<br>
+	 The main advantage of volatile keyword is we can resolve data inconsistency problems.&nbsp; But the main disadvantage of volatile keyword is that creating and 
+	maintaining a separate copy for every thread increases complexity of the programing and effects performance of the system.Hence ,if there is no 
+	specific requirement it is never recommended to use volatile keyword and it 
+	is almost outdated keyword. <br>
+	  <br>
+	Volatile variable means its value keep on changes where as final variable 
+	means value never changes.Hence final-volatile combination is illegal for 
+	variables. <br><br>
+	<b>Conclusion:</b><br> 1)The only applicable modifier for local variable is final. The 
+	modifier which are applicable only for local variable is variable ,but not 
+	for classes and methods are volatile and transient.<br>
+	 2)The modifier which are 
+	applicable only for methods but not for classes and variables native and 
+	transient.<br>
+	 3)The modifier which are applicable only for method but not for 
+	classes and variables native and synchronized.<br>
+	 4)The modifier ehich are 
+	applicable for top level classes,methods and variables are public default 
+	and final. <br>
+	  <br>
+	<b>Interface:</b> <br>
+	&nbsp;Any service requirement specification(srs) is considered as interface. From the client point of view an interface defines set of services what is 
+	expecting.&nbsp; From the programmer point of view interface define the set of 
+	services what is offering.&nbsp; Hence an interface considered as contract 
+	between client and service provider.<br><br>
+	 <b >Example:<br> </b>By using Bank Atm Gui Screen 
+	,Bank people will highlight the set of services what they are offering same 
+	time.The same time screen describe the set of services what end user 
+	expected.Hence this gui screen acts as contract between client and service 
+	provider.&nbsp; With in the interface we  can't write any implementation,because 
+	it has to highlight just the set of services what we are offering or what 
+	you are expecting.Hence every method present inside interface should be 
+	abstract.Due to this interface is considered as 100% pure abstract class.
+	<br>
+	  <br>
+<b>	Declaratoin and Implementation of interface:</b>&nbsp; WE can declare an interface 
+	by using Interface keyword,We can implement an interface by using implements 
+	keyword.&nbsp;<br> <br>
+	 <div class="border"><b>Example:</b> Interface inter <br>{ <br>void m1();<br> void m2();<br> } <br>Abstract class 
+	ServiceProvider implements Intrer<br> {<br> Public void m1();<br> { <br>}<br> }<br></div> If class 
+	implements an interface compulsory we should provide implementation for 
+	every mthods of that interface.Otherwise we have to declare clss as 
+	object.Violatin leads to compile_time Error. <br>
+	&nbsp;extends Vs implements: <br>1)A class can extend only one class at a time. <br>2)A 
+	class can implement no. of interfaces ata time.<br> 3)A class can extend a class 
+	and implement interface simulteneously. <br>4)An interface can extend any no. of 
+	interfaces at atime.<br>
+	<b>concrete class Vs. abstract class Vs. interface:</b> <br>
+	&nbsp;<b>interface:</b>We don't know anything about implementation just we have 
+	requirement specification,then we should go for interface. Ex. Servlet&nbsp;<br> 
+	<b>Abstract class:</b>We are talking about implementation but not completely (just 
+	partially implementation) then we should go for abstract class. Ex.Generic 
+	servlet,HTTP servlet.&nbsp; <br>
+	<b>Concrete class:</b>We are talking about implementation 
+	completely and ready to provide service,then we should go for concrete 
+	class. Ex.our own class <br>
+	  <br>
+	

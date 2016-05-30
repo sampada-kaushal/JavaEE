@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Servlet Request Dispacture | JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+<a href="#top" class="top" title="Back to Top">&#8593;</a>
+		<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                           <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp ">Login</a></li>
+                                                        <li><a href="signup.jsp">Sign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li ><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="servlet.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a>
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                     
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>            </div>
+        </div>
+    </header>
+	<br>
+	<div class="container">
+	<hr class="hr">
+<div class="row" >
+	 <div id="sidebar-wrapper" style="float:left">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                  
+                </li>
+                <li >
+                
+                 <a href="Server_Enviorment.html">Server Environment</a> 
+                </li>
+				<li>
+				<a href="Server Enviorment.html">Introduction to servlet</a>
+				</li>
+					<li>
+				<a href="servlet_architecture.html">Servlet Architecture</a>
+				</li>
+					<li>
+				<a href="servlet_basic.html">Basic Example</a>
+				</li>
+					<li>
+				<a href="servlet_requestresponse.html">Request and Response Interface</a>
+				</li>
+				
+                <li >
+                    <a href="Servlet_LifeCycle&Method.html">Servlet LifeCycle and Method</a>
+                </li>
+					<li>
+				<a href="servlet_contextconfig.html">Servlet Context and Config</a>
+				</li>
+					
+              	<li class="active_page">
+				<a href="servlet_requestdispacture.html">Servlet Request Dispatcher</a>
+				</li>
+					<li>
+				<a href="servlet_sendredirect.html">Send Redirect</a>
+				</li>
+                  <li>
+                    <a href="Session_Management.html">Session Management</a> 
+                </li>
+             	<li>
+				<a href="servlet_httpsession.html">Http Session</a>
+				</li>
+					<li>
+				<a href="servlet_cookies.html">Cookies</a>
+				</li>
+					<li>
+				<a href="servlet_htmlhidden.html">HTML Hidden</a>
+				</li>
+					<li>
+				<a href="servlet_urlrewritten.html">URL Rewritten</a>
+				</li>
+				
+                <li>
+                    <a href="Handling_Error&Exception.html">Handling Error&Exception</a> 
+                </li>
+                	<li>
+				<a href="servlet_filter.html">Servlet filter</a>
+				</li>
+					<li>
+				<a href="servlet_filterlife.html">Servlet Filter LifeCycle</a>
+				</li>
+					<li>
+				<a href="servlet_allinone.html">All in one Servlet</a>
+				</li>
+                 </ul>
+                 </ul>
+        </div>
+	<div class="right">
+			
+					
+			<h1><b>	Servlet RequestDispatcher
+						</h1></b><br>
+						
+						<font face="Arial"></font></font><font size="5">
+						<span style="line-height:115%;font-family:&quot;Arial&quot;; font-weight:700">
+						 RequestDispatcher
+						</span></p></font>
+						It defines an object that receives requests from the client and sends them to any resource (such as a servlet, HTML file, or JSP file)
+						on the server.<br>
+						The servlet container creates the RequestDispatcher object, which is used as a wrapper, around a server resource
+						located at a particular path or given by a particular name.<br>
+						This interface is intended to wrap servlets, but a servlet container can create RequestDispatcher objects to wrap any type of
+						resource.<br><br>
+						<b>
+						Methods of RequestDispatcher interface</b><br>
+						
+						
+							<b>1. public void forward(ServletRequest request,ServletResponse response)throws<br>
+							 &nbsp;&nbsp;ServletException,java.io.IOException :</b> Forwards 
+							a request from a servlet to another resource (servlet, JSP file, or HTML file) on the server.<br><br>
+							<b>2. public void include(ServletRequest request,ServletResponse response)throws<br> 
+							 &nbsp;&nbsp;ServletException,java.io.IOException :</b> Includes 
+							the content of a resource (servlet, JSP page, or HTML file) in the response.<br><br>
+						
+						
+						
+						<h3><b>
+									Example:
+								</b>
+				</h3>
+						
+						Creating Simple Program in Servlet with RequestDispatcher
+					
+						Follow the below steps for using RequestDispatcher in servlet.<br><br>
+						<b>
+						Step-1
+						
+						
+						 Create index.jsp with two fields and form action .
+						<div class="border">
+						<center><img src="images\servlet\servlet exampl\interservletcommunication\index.png"></center>
+						</div>
+						<br><br>
+						<br>
+						
+						
+						
+						Step-2
+						</span></p></font>
+						Create a package “com.javat.demo” under Java resources-> src folder and then create the servlet class
+						“InterServ.java”.</b> Once you ready then write below code.<br>
+						In this class,we recieve data from index page and store it in variables,using Control Statement.<br>
+						
+						<div class="border">
+						<center><img src="images\servlet\servlet exampl\interservletcommunication\servlet2.png"></center>
+						</div>
+						<br><br>
+						<br><b>
+												Step-3
+						</span></p></font>
+						Create a new file “web.xml” under WebContent/WEB-INF folder and write code as given below.</b>
+						
+						<div class="border">
+						<center><img src="images\servlet\servlet exampl\interservletcommunication\xml.png"></center>
+						</div>
+						<br><br>
+						<br>
+						
+						
+						<b>
+						Step-4
+						</span></p></font>
+						Create a new file “welcome.jsp” under Webpages and write the code given below.<br>
+						
+						<div class="border">
+						<center><img src="images\servlet\servlet exampl\interservletcommunication\welcome.png"></center>
+						</div>
+						<br><br>
+						<br>
+						<b>
+						Output
+						<br>
+						
+						Index.jsp</b> Asking to Enter Username & Password.<br>
+						<div class="border">
+						<center><img src="images\servlet\servlet exampl\interservletcommunication\output1.png"></center>
+						</div>
+						<br><br>
+						<br>
+						
+						<b>welcome.jsp will open </b>
+						<div class="border">
+						<center><img src="images\servlet\servlet exampl\interservletcommunication\output2.png"></center>
+						</div>
+						<br><br>
+						<br>
+						<b><a href ="rarservlet\Servlet\requestdispactuer.rar"> 
+						<font size="3">Download example and run it on Netbeans IDE</font></a></b>
+						<br><br><br>
+         Similary we can use RequestDispatcher to direct the page from one servlet to another.You just need to put "Servlet_name.class" as argument .<br> 
+         
+      <br><br><br>
+
+
+
+         
+	</div>
+	</div>
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>

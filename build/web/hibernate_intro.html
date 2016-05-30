@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Hibernate Intro| JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<a href="#top" class="top" title="Back to Top">&#8593;</a>
+
+	<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                             <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp">Login</a></li> 
+                                                        <li><a href="signup.jsp">Sign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li class="active"><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="advance.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a> 
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                      
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+<br>
+	<div class="container">
+	<hr class="hr">
+<div class="row" >
+	  <div id="sidebar-wrapper" style="float:left">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                  
+                </li>
+				<li class="main">
+			<a href="hibernate.html">Hibernate</a>
+				</li>
+                <li class="active_page">
+				
+                    <a href="hibernate_intro.html">Introduction</a>
+                </li>
+                <li >
+                    <a href="hibernate_architecture.html">Architecture</a>
+                </li>
+                <li>
+                    <a href="hibernate_filesystem.html">File System<a>
+                </li>
+	
+                <li >
+                    <a href="hibernate_annotation.html">Hibernate with  Annotation</a>
+                </li>
+                <li>
+                    <a href="hibernate_webapplication.html">Web Application</a>
+                </li>
+                <li class="main">
+                    <a href="hibernate_mapping.html">Hibernate Mapping</a>
+                </li>
+				    <li >
+                    <a href="hibernate_tableperhierarchy.html">Table Per Hierarchy </a>
+                </li>
+				<li>
+				 <a href="hibernate_concreate.html">Table Per Concrete </a>
+                </li>
+                <li >
+                    <a href="hibernate_subclass.html">Table Per Subclass</a>
+                </li>
+                <li class="main">
+                    <a href="hibernate_collection.html">Hibernate Collection</a>
+                </li>
+				<li class="main">
+                    <a href="hibernate_list.html">Collection list Example </a>
+                </li>
+				
+				
+				<li class="main">
+				<a href="hibernate_bagmap.htm">BagMap Example</a>
+				</li>
+				
+							
+				<li class="main">
+                    <a href="hibernate_onetomany.html">One to Many Mapping</a>
+                </li>
+                <li>
+                <li class="main">
+                    <a href="hibernate_namingqueries.html">Hibernate Naming Queries</a>
+                </li>
+                <li>
+                    <a href="hibernate_caching.html">Hibernate Caching</a>
+                </li>
+                <li >
+                    <a href="hibernate_second.html">Hibernate Second Level Caching</a>
+                </li>
+            </ul>
+        </div>
+	<div class="right" >
+
+<h1><b>Introduction to Hibernate:</b></h1><br>
+Hibernate was started in 2001 by <b>Gavin King </b> with colleagues from Cirrus Technologies.<br>Its main goal was to provide better persistence capabilities from EJB2 by simplifying the complexities. 
+Following data contains a few details or FAQs about the hibernate concepts which are further to be used.<br><br>
+<b>* What is Hibernate?</b><br>
+Hibernate is a pure Java object-relational mapping (ORM) and persistence framework that allows you to map plain old Java objects to relational database tables using (XML) configuration files. Its purpose is to relieve the developer from a significant amount of relational data persistence-related programming tasks.
+Hibernate simplifies:<br>
+<b>1.</b>	Saving and retrieving your domain objects<br>
+<b>2.</b>	Making database column and table name changes<br>
+<b>3.</b>	Centralizing pre save and post retrieve logic<br>
+<b>4.</b>	Complex joins for retrieving related items<br>
+<b>5.</b>	Schema creation from object model.<br>
+
+	
+So, Hibernate is simple ORM (Object Relational Mapping) tools that provides a framework for mapping an object-oriented domain model to a relational database. 
+ <br><br><b>* What is ORM?</b> <br>Actually ORM is complete MVC (Model View and Control)
+ based application.<br>
+<b> <u><span style="font-weight: 400">MVC is divided into three parts</span></u></b>
+<br><b>1.<span style="font-weight: 400"> View:</span></b> It is Presentation module<br>
+<b>2.<span style="font-weight: 400"> Control:</span></b> It contains Servlet, which acts as controller <br>
+<b>3.<span style="font-weight: 400"> Model:</span></b>
+ 
+Hibernate contribute in model part. Model part is also divided into three part:<br>
+<br> <b>I.</b> Business Logic <br><b>II.</b> DAO <br><b>III.</b> Services. <br>
+Hibernate works on DAO (Data access Objects).<br><br><b>* Why hibernate comes under the DAO?</b><br>
+Because DAO has ability to interact with the database i.e.<b> JDBC (Java Database Connectivity)</b> it provides specific data operations without exposing details of the database.<br>
+<br> 
+<b>* What are the benefits of Hibernate over JDBC?</b><br>
+<b>1.</b>	Hibernate is database independent while in case of JDBC, developer has to write database specific queries.<br>
+<b>2.</b>	In case of Hibernate developer doesn't need to be an expert of writing complex queries as HQL simplifies query writing process while in case of JDBC, its job of developer to write and tune queries.
+<br><b>3.</b>	In Hibernate, Criteria Query takes care of Query Tuning. In case of JDBC you need to tune your queries.
+<br><b>4.</b>	No need to create any connection pool in case of Hibernate. You can use c3p0. In case of JDBC you need to write your own connection pool.
+<br><b>5.</b>	Automatic primary key generation.
+<br><b>6.</b>	Performance benefits like Lazy initialization, Outer join fetching, Batch fetching.<br>
+<br>In short following are its advantages.<br>
+
+
+<u><span style="font-weight: 400"><b>Advantages of Hibernate:</b></span></u><br>
+<b>I. <span style="font-weight: 400; font-style: italic">Auto DDL (Data Definition Language) Command:</span></b> DDL query means Create Table, Alter Table, Rename Table. Hibernate 
+automatically create table.<br>
+<b>II. <span style="font-weight: 400; font-style: italic">Support database independent query:</span></b> Hibernate support database independent query language i.e.<b> HQL (Hibernate Query Language). </b><br>
+<b>III. <span style="font-weight: 400; font-style: italic">Cache Support:</span>
+</b>cache actually stores the data already loaded from the database.<br>
+<b>IV. <span style="font-weight: 400; font-style: italic">Generator Support:</span></b> Provide the facility to create primary key, foreign key, sequence generator.<br>
+<b>V. <span style="font-weight: 400; font-style: italic">Data Validation Support:</span></b> Hibernate validation is recommended validation. 
+Hibernate filter the data if data is valid then it send to database.<br>
+<b>VI. <span style="font-weight: 400; font-style: italic">Hibernate code is Exception free.</span></b><br>
+<b>VII. <span style="font-weight: 400; font-style: italic">ORM Relationalship support:</span></b> Is like IS-A, HAS-A Relation .<br><br>
+<b>* Different saving methods in Hibernate</b><br>
+<i><b>saveOrUpdate</b></i>: Based on some checks it&nbsp; calls either save or update. E.g. if no identifier exists, save is called. Otherwise update is called.<br>
+<i><b>save</b></i>: It will Persist an entity and will assign an identifier if 
+one doesn't exist. If one does, it's essentially doing an update and returns the generated ID of the entity.
+<br><i><b>update</b></i>: It will persist the entity using an existing 
+identifier. If no identifier exists, then an exception is thrown.<br>
+<i><b>merge</b></i>: Hibernate has following three Object states-<br><bR>
+  <b>Transient, Detached and Persistent</b>.
+Object states, with save & update, then one is dealing with persistent objects. They are linked to a Session so Hibernate knows what has changed. But when you have a transient object, there is no session involved. In these cases merge is to be used for updates and persist for saving.
+For persist, as mentioned above, this is used on transient objects. It does not return the generated ID.
+<br><br>
+<b>* What are the Core interfaces of Hibernate framework??</b><br>
+The five core interfaces are used in just about every Hibernate application. Using these interfaces, one an store and retrieve persistent objects and control transactions.<br>
+<b>1.</b>	Session interface<br>
+<b>2.</b>	SessionFactory interface<br>
+<b>3.</b>	Transaction interface<br>
+<b>4.</b>	Query and Criteria interfaces
+<br><br>
+
+<b>* What are the three Types Hibernate Object States?</b><br>
+<i><u>Transient</u></i>- Newly created object so not associated with any Session and database.<br>
+<i><u>Persistent</u></i> - Associated with a unique Session<br>
+<i><u>Detached</u></i> - Previously persistent, not associated with any Session.
+<br><br>
+<b>* What is lazy loading in Hibernate??</b><br>Lazy-loading can help improve the performance significantly since often you won't need the children and so they will not be loaded.
+If you have a parent and that parent has a collection of children. Hibernate now can 
+&quot;lazy-load&quot; the children, which means that it does not actually load all the children when loading the parent. Instead, it loads them when requested to do so. You can either request this explicitly or, and this is far more common, hibernate will load them automatically when you try to access a child.
+<br><br>
+<b>* Define HibernateTemplate</b><br>
+HibernateTemplate is a helper class which provides different methods for querying/retrieving data from the database. It also converts checked Hibernate Exceptions into unchecked DataAccessExceptions.
+It automatically opens and closes sessions and commit or rollback transactions after your code executed.
+<br><br>
+<b>* What are the Collection types in Hibernate?</b><br>
+Following are collection types used in Hibernate.<br>
+<b>1.</b>	Array<br>
+<b>2.</b>	Map<br>
+<b>3.</b>	Bag<br>
+<b>4.</b>	Set<br>
+<b>5.</b>	List
+<br><br>
+<b>* What is Session?</b><br>
+Session is a light weight and a non-thread safe and main function of the Session is to offer create, read and delete operations for instances of mapped entity classes.
+You can use like this<br>
+SessionFactory sessionFactory = new Configuration ().configure ().buildSessionFactory ();<br>
+Session session = sessionFactory.openSession ();
+<br><br>
+<b>* What is a SessionFactory?</b><br>
+         SessionFactory Interface is used to create session instances in hibernate. Usually an application has a single SessionFactory instance. SessionFactory is thread safe.
+<br><br>
+<b>* What is transient Object in Hibernate?</b><br>
+If persistent class is just instantiated using the new operator which is not associated with a Session. No persistent representation in the database and no identifier value have been assigned to an object. And it will be destroyed by the garbage collector if the application does not hold a reference anymore. This kind of object is called transient Object.
+<u>Example:</u><br>
+Student studentObj = new Student ();<br>
+studentObj.setName(&quot;Kumar&quot;);<br>
+studentObj- transient object.
+<br><br>
+<b>* What is HQL?</b><br>
+HibernateQuery Language is a powerful query language its syntax is quite similar to database SQL language,compared with SQL, however, HQL is fully object-oriented and understands notions like inheritance, polymorphism and association.<br>
+<b>HQL Select Query Example:</b><br>
+Query query = session.createQuery(&quot;from Student where studentName = 'suresh &quot;);
+
+<br><br>
+<b>* What is POJO?</b><br>
+POJO(Plain Old Java Object) is a javabean that have defined setter and getter methods for all properties. Decoupling the application code from the infrastructure frameworks is one of the many benefits of using POJOs. They also simplify development because rather than being forced to think about everything- business logic, persistence, transactions, etc.
+<br><br>
+<b>* What the four ORM levels are in hibernate?</b><br>
+Following are the four ORM levels in hibernate:<br>
+<b>1.</b> Pure Relational<br>
+<b>2.</b> Light Object Mapping<br>
+<b>3.</b> Medium Object Mapping<br>
+<b>4.</b> Full Object Mapping<br><br>
+<b>* How to re-attach detached objects in hibernate?</b><br>
+                 Detached objects can be reattached by calling "session.merge()" method of session class.<br><br>
+<b>* What is the difference between load() and get() method in hibernate?</b><br>
+                       If you are sure that the object exists then use load() else use get() methods. load() method will throw an exception if the unique id is not found in the database but get() method will return null if the unique id is not found in the database.
+
+<br><br>
+
+
+<b>* What is the difference between detached state and transient state Objects?</b><br>
+Transient objects do not have association with the databases and session objects but detached objects have corresponding entries in the database. These are persistent and not connected to the Session object. These objects have the synchronized data with the database when the session was closed.
+Version property is used in hibernate to know whether an object is in transient state or in detached state.<br><br>
+<b>* What is the difference between the session.update() method and the session.lock() method?</b>
+The session.lock() method simply reattaches the object to the session without checking or updating the database on the assumption that the database in sync with the detached object.  Use session.lock() only if you are absolutely sure that the detached object is in sync with your detached object otherwise use session.update().
+<br><br><b>* What are the different fetching strategy in Hibernate?</b><br>
+	<u><i>Join fetching</i>:</u>  Using an OUTER JOIN hibernate retrieves the associated instance or collection in the same SELECT.<br>
+	<u><i>Select fetching</i>:</u> a second SELECT is used to retrieve the associated entity or collection. Unless you explicitly disable lazy fetching by specifying lazy=&quot;false&quot;, this second select will only be executed when you access the association.
+	<br><u><i>Subselect fetching</i>:</u> a second SELECT is used to retrieve the associated collections for all entities retrieved in a previous query or fetch. Unless you explicitly disable lazy fetching by specifyinglazy=&quot;false&quot;, this second select will only be executed when you access the association.
+	<br><u><i>Batch fetching</i>:</u> It is an optimization strategy for select  fetching.Using primary or foreign keys hibernate retrieves a batch of entity instances or collections in a single SELECT. Find the more info about Fetching strategies here.
+
+
+
+
+
+
+
+	</div>
+	</div>
+<div class="container">
+
+  <div class="alert alert-success">
+    <strong>TAG(S) -> hibernate</strong>
+  </div>
+</div>
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>

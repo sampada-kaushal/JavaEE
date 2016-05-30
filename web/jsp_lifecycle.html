@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Lifecycle of Jsp | JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+<a href="#top" class="top" title="Back to Top">&#8593;</a>
+
+	<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                                 <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp">Login</a></li> 
+                                                        <li><a href="signup.jsp">Sign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li class="active"><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="advance.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a> 
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                        
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+<br>
+<div class="container">
+	<hr class="hr">
+<div class="row" >
+	  <div id="sidebar-wrapper" style="float:left">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                  
+                </li>
+				<li>
+			<a href="jsp.html">Java Server Pages</a>  
+				</li>
+				<li>
+				
+                    <a href="jsp_architecture.html">Architecture</a>    
+                </li>
+                
+                <li>
+				
+                    <a href="jsp_intro.html">Why JSP?</a>
+                </li>
+                <li>
+                    <a href="jsp_advantage.html">Advantages of JSP over Servlet</a>
+                </li>
+                <li  class="active_page">
+                    <a href="jsp_lifecycle.html">Life Cycle of JSP<a>
+                </li>
+				
+              
+                <li >
+                    <a href="jsp_structure.html">JSP Directory Structure</a>
+                </li>
+                <li>
+                    <a href="jsp_tags.html">Tags used in JSP</a>
+                </li>
+                <li class="main">
+                    <a href="jsp_script.html">Scriptlet Tag</a>
+                </li>
+				    <li>
+                    <a href="jsp_expression.html">Expression Tag </a>
+                </li>
+				<li>
+				 <a href="jsp_declaration.html">Declaration Tag </a>
+                </li>
+                <li>
+                    <a href="jsp_objects.html">JSP Implicit Objects</a>
+                </li>
+                
+            </ul>
+        </div>
+	<div class="right" >
+
+
+<h1><b>Lifecycle of JSP</b></h1><br>
+JSP life cycle is also managed by container. Usually every web container that contains servlet container also contains JSP container for managing JSP pages.The key to understanding the low-level functionality of JSP is to understand the simple life cycle they follow.
+
+A JSP life cycle can be defined as the entire process from its creation till the destruction which is similar to a servlet life cycle with an additional step which is required to compile a JSP into servlet.
+
+<br><br><b>* <u>JSP pages life cycle phases are</u>:</b><br>
+
+<b>Translation</b> - JSP pages do not look like normal java classes, actually JSP container parse the JSP pages and translate them to generate corresponding servlet source code. If JSP file name is javat.jsp, usually it is named as javat_jsp.java.<br>
+<b>Compilation</b> - If the translation is successful, then container compiles the generated servlet source file to generate class file.<br>
+<b>Class Loading</b> - Once JSP is compiled as servlet class, its lifecycle is similar to servlet and it gets loaded into the memory.<br>
+<b>Instance Creation/Instantiation</b> - After JSP class is loaded into memory, its object is instantiated by the container.<br>
+<b>Initialization</b> - The JSP class is then initialized and it transforms from a normal class to servlet. After initialization, ServletConfig and ServletContext objects become accessible to JSP class.<br>
+<b>Request Processing</b> - For every client request, ServletRequest and ServletResponse to process and generate the HTML response, is invoked by the container.<br>
+<b>Destroy</b> - Last phase of JSP life cycle where it is unloaded from the memory.<br><br>
+<div class="border">
+<center><img src="images/jsp/basic_flow.png" ></center>
+</div><br><br>
+<b>* <u>JSP lifecycle methods are</u>:</b><br>
+
+<b>jspInit()</b> declared in JspPage interface. This method is called only once in JSP lifecycle to initialize config params.<br>
+<b>_jspService(HttpServletRequest request, HttpServletResponse response)</b> declared in HttpJspPage interface and response for handling client requests.<br>
+<b>jspDestroy()</b> declared in JspPage interface to unload the JSP from memory.<br><br>
+<div class="border">
+<img src="jsp3.png"></div><br><br>
+So, JSP page is translated into servlet by the help of JSP translator. The JSP translator is a part of web server which is responsible for this translation into servlet. After that, Servlet page is compiled by the compiler and gets converted into the .class file. Moreover, all the processes that happen in servlet are performed on JSP later like initialization, committing response to the browser and destroy.<br><br>
+
+<b>JSP Compilation and Translation</b><br>
+When a browser asks for a JSP, the JSP engine first checks to see whether it needs to compile the page. If the page has never been compiled, or if the JSP has been modified since it was last compiled, the JSP engine compiles the page.
+
+During the translation phase each type of data in a JSP page is treated differently. Static data is transformed into code that will emit the data into the response stream.
+<br><br><b>JSP Initialization</b><br>
+Typically initialization is performed only once and as with the servlet init method, you generally initialize database connections, open files, and create lookup tables in the jspInit method.
+<br><br><b>JSP Execution</b><br>
+
+Whenever a browser requests a JSP and the page has been loaded and initialized, the JSP engine invokes the _jspService() method in the JSP.
+
+<br><br><b>JSP Destroy</b><br>
+The jspDestroy() method is the JSP equivalent of the destroy method for servlets. We can override jspDestroy when space clean up is to be done, such as releasing database connections or closing open files.
+<br><br><br>
+
+</div>
+</div>
+<div class="container">
+
+  <div class="alert alert-success">
+    <strong>TAG(S) -> jsp lifecycle, lifecycle methods</strong>
+  </div>
+</div>
+
+
+
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>

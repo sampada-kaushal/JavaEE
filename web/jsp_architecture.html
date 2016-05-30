@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Jsp Architecture | JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+<a href="#top" class="top" title="Back to Top">&#8593;</a>
+
+	<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                                 <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp">Login</a></li> 
+                                                        <li><a href="signup.jsp">Sign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li class="active"><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="advance.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a>
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                        
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+<br>
+<div class="container">
+	<hr class="hr">
+<div class="row" >
+	  <div id="sidebar-wrapper" style="float:left">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                  
+                </li>
+				<li>
+			<a href="jsp.html">Java Server Pages</a>  
+				</li>
+				<li class="active_page" >
+				
+                    <a href="jsp_architecture.html">Architecture</a>  
+                </li>
+                
+                <li >
+				
+                    <a href="jsp_intro.html">Why JSP?</a>
+                </li>
+                <li >
+                    <a href="jsp_advantage.html">Advantages of JSP over Servlet</a>
+                </li>
+                <li>
+                    <a href="jsp_lifecycle.html">Life Cycle of JSP<a>
+                </li>
+				
+              
+                <li >
+                    <a href="jsp_structure.html">JSP Directory Structure</a> 
+                </li>
+                <li>
+                    <a href="jsp_tags.html">Tags used in JSP</a>
+                </li>
+                <li class="main">
+                    <a href="jsp_script.html">Scriptlet Tag</a>
+                </li>
+				    <li>
+                    <a href="jsp_expression.html">Expression Tag </a>
+                </li>
+				<li>
+				 <a href="jsp_declaration.html">Declaration Tag </a>
+                </li>
+                <li>
+                    <a href="jsp_objects.html">JSP Implicit Objects</a>
+                </li>
+                
+            </ul>
+        </div>
+	<div class="right" >
+
+<h1><b>JSP Architecture</b></h1><br>
+
+As far as architecture of JSP is concerned, it may be seen as a high-level abstraction of Java-Servlets. At runtime, JSPs are translated into servlets.
+Web server needs a container to process JSP pages commonly known as JSP engine. It is 
+responsible for intercepting requests for JSP pages. <br><br>A JSP container works with the Web Server to provide the runtime environment and other services a JSP needs. 
+JSP can be used independently or as the view component of a server-side model-view-controller design, normally with Java Beans as the model and Java Servlets as the controller. JSP allows Java code and certain pre-defined 
+actions to be interleaved with static markup content as HTML, with the resulting page being complied and executed on the server to deliver a document. The compiled pages, as well as any dependent Java libraries, contain Java byte code. Like any other Java program, they are executed within a JVM that interacts with the server's host OS. The web container creates JSP implicit objects like pageContext, servletContext, session, request and response.<br>
+<br><div class="border"><center><img border="0" src="jsp1.png" width="431" height="479"></center></div><br><br><b>Following steps explain how web pages are created using JSP:</b><br>
+<b>1.</b> Just like a normal page, browser sends HTTP request to the web browser.<br>
+<b>2.</b> The web server recognizes that the HTTP request is for a JSP page and forwards it to a JSP engine. This happens with the help of URL or JSP which ends with .jsp.<br>
+<b>3.</b> JSP engine loads the JSP page from disk and converts it into a servlet content. <br>
+<b>4.</b> Now the JSP engine complies the servlet into an executable class and forwards the original request to a servlet engine.<br>
+<b>5.</b> Servlet engine which is the part of web server loads the servlet class and executes it. During execution, the servlet produces an output in HTML format, which is passed to the web server inside the HTTP response.<br>
+<b>6.</b> The web server forwards the HTTP response to the browser in terms of static HTML content.<br>
+<b>7.</b> Finally web browser handles the dynamically generated HTML page inside the HTTP response exactly as if it were a static page.<br>
+<br><br>
+
+
+<div class="border">
+<b>Given diagram explains all of the above steps:</b><br>
+
+<img border="0" src="jsp2.png" width="880" height="441"></div>
+
+<br><br><br><br>
+
+
+
+</div>
+
+
+</div>
+<div class="container">
+
+  <div class="alert alert-success">
+    <strong>TAG(S) -> jsp architecture, jsp flow</strong>
+  </div>
+</div>
+
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Inner Classes| JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<a href="#top" class="top" title="Back to Top">&#8593;</a>
+<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                             <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp">Login</a></li>
+                                                        <li><a href="signup.jsp">Sign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li class="active"><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="advance.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a> 
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                        
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+<br>
+	<div class="container">
+	<hr class="hr">
+<div class="row" >
+	  <div id="sidebar-wrapper" style="float:left">
+             <ul class="sidebar-nav">
+                <li class="sidebar-brand main">
+                  <a href="core.html">Core</a>
+                </li>
+				<li class="main">
+				    <a href="core_fundamentals.html">  Java Fundamentals </a></li>
+					<li class="main"><a href="jdk.html"> JDK File Structure </a></li>
+                    <li> <a href="core_development.html">Development  </a></li>
+					<li>
+                     <a href="core_operators.html">  Operators and Assignments </a></li>
+					 <li>
+                     <a href="core_flowcontrol.html"> Flow Control </a></li>
+					 <li><a href="core_accessmodifiers.html">  Declarations and Access Modifiers</a></li>
+                     <li class="main"> <a href="core_garbage.html">Garbage Collector  </a></li>
+					 	<li class="main"><a href="core_oops.html"> Oops Concepts </a></li>
+							<li class="active_page"><a href="core_oops class and object.html"> Class and Object </a></li>
+							<li class="active_page"><a href="core_oops interface.html"> Interface </a></li>
+						<li class="active_page"><a href="core_oops abstraction.html"> Abstraction </a></li>
+						<li class="active_page"><a href="core_oops polymorphism.html"> polymorphisam</a></li>
+						<li class="active_page"><a href="core_oops inheritance.html">Inheritance</a></li>
+						<li class="active_page"><a href="core_oops encapsulation.html"> Encapsulation</a></li>
+						<li class ="main"><a href="java_object.html"> Java Object Class </a> </li>
+				   <li class="active_page"><a href="core_innerclasses.html">Inner classes  </a></li>
+				   <li><a href="core_package.html">Java Package</a></li>
+				    <li class="main"> <a href="core_lang.html">Java.lang package  </a></li>
+                    <li class="main"> <a href="core_io.html">Java.io package     </a></li>
+					 <li class="main"> <a href="core_exception.html">Exception handling </a></li>
+					 <li class="main"> <a href="core_multithreading.html">Multithreading </a>
+				<li><a href="core_expression.html">  Regular Expressions   </a></li>
+					 <li><a href="core_enumeration.html">  Enumerations </a></li>  
+                    <li> <a href="core_internationalization.html">	Internationalization   </a></li>
+					 <li><a href="core_assertion.html">Assertions  </a></li>
+					 <li class="main"><a href="core_collection.html">Collection Framework     </a></li>
+					 <li><a href="core_generics.html">  Generics   </a></li>
+					<li class="main"><a href="core_jdbc.html"> JDBC </a></li>
+					<li class="main"><a href="features_5.html"> Features of Java 5 </a></li>
+			</ul>
+        </div>
+	<div class="right">
+	
+	
+<h1><b>Inner Classes</b></h1><br>
+
+Sometimes we can declare a class inside another class, such type of classes are called <b>Inner Classes</b>.<br>
+Inner Classes concept was introduced in<b> java 1.1 version</b> to fix GUI bugs as the part of Event handling.<br>
+->But because of powerful features and benefits of inner classes slowly programmers started using even in regular coding also.<br>
+->without existing one type of object if there is no chance of existing another type object, then we should go for Inner class concept.<br>
+<b> <b><div class="border">Example</b></b><br> Without existing car object if there is no chance of existing wheel object then we should go for Inner Classes.<br>
+We have to declare wheel class with in the car class<br>
+class car<br>
+{<br>
+class wheel<br>
+{<br>
+}<br>
+}</div><br>
+(2) Without existing Bank object there is no chance of existing account object, Hence we have to define account class inside Bank class<br>
+<div class="border">class Bank<br>
+{<br>
+class Account<br>
+{<br>
+}<br>
+}<br></div>
+(3) A map is a collection of key value pass and each key-value pass is called Entry. Without existing map object there is no chance of existing entry object. Hence interface entry is defined inside map interface.<br>
+<div class="border">interface Map<br>
+{<br>
+interface Entry<br>
+{<br>
+}<br>
+}</div><br>
+<b>Note:-</b><br>
+->The relationship between outer and inner classes is not parent to child relationship. It is has-A relationship.<br>
+->Based on the purpose and position of declaration all inner classes are divided into 4 types.<br>
+1)Normal or regular Inner Classes<br>
+2)Methods local Inner Classes<br>
+3)Annoymous Inner Classes(without class name)<br>
+4)static nested classes<br><br>
+
+<b>Note:-</b><br>
+From static nested class we can access only static members of outer class directly. But in normal Inner classes we can access both static and non-static members of outer class directly.<br>
+Normal or regular Inner class:-<br>
+->If we declare any named class directly inside a class without static modifier, such type of class is called 
+<b>"Normal or regular Inner class"</b>  
+.<br>
+<div class="border"><b>Example</b><br>class outer javac outer.java<br>
+{<br>
+Class Inner<br>
+{ <br>
+outer class outer/Inner class<br>
+Java outer<br>
+}<br>
+ R.E:-NosuchmethodError=main<br>
+}<br>
+ java outer/Inner<br>
+R.E.Nosuchmethod error=main<br>
+class outer<br>
+{<br>
+class Inner<br>
+{<br>
+}<br>
+public static void main (String[] args)<br>
+{<br>
+
+S.o.pln("outer class main method" );<br>
+}<br>
+}<br>
+o/p javac outer.java<br>
+java outer<br>
+o/p: outer class main method<br>
+java Outer/Inner<br>
+o/p:-NoSuchMethodError=main<br>
+</div><br>
+->Inside Inner classes we can't declare static members hence it is not possible to declare main method and hence we can't invoke inner class directly from command prompt.<br>
+<br><div class="border"><b>Example</b><br>
+class outer<br>
+{<br>
+class Inner<br>
+{<br>
+p.v.m1()<br>
+{<br>
+S.o.pln("Inner class method" );<br>
+}<br>
+}<br>
+p.v.m2()<br>
+{<br>
+Inner i=new Inner();<br>
+i.m1();<br>
+}<br>
+p.s.v.m(String[] args)<br>
+{<br>
+Outer o=new outer();<br>
+o.m2();<br>
+}<br>
+}</div><br>
+
+<b>Accessing Inner class code from outside of outer class:-</b><br>
+<div class="border"><b>Example.</b><br>
+class outer<br>
+{<br>
+class Inner<br>
+{<br>
+p.v.m1()<br>
+{<br>
+S.o.pln("Inner class method" );<br>
+}<br>
+}<br>
+}<br>
+Ex2.<br>
+class Test<br>
+{<br>
+p.s.v.main(Sring [] args)<br>
+{<br>
+Outer o=new outer();<br>
+Outer.inner i=o.new Inner();<br>
+i.m1();<br>
+}<br>
+}</div><br>
+
+<b>According Inner class code</b><br>
+From static area of outer class from Instance area of outer class<br>
+From outside of outer class Inner i=new Inner();<br>
+Outer o=new outer(); i.m1();<br>
+Outer.Inner i=o.new Inner(); outer o=new outer();<br>
+i.m1();<br><br>
+->from The inner class we can access all member of outer class (both static and non-static) directly<br>
+<div class="border"><b>Example</b><br>
+class outer<br>
+{<br>
+Static int x=10;<br>
+int y=20;<br>
+class Inner<br>
+{<br>
+
+public void m1()<br>
+{<br>
+s.o.pln(r);<br>
+s.o.pln(y);<br>
+}<br>
+}<br>
+p.s.vmain(String args[])<br>
+{<br>
+New outer().new Inner().m1();<br>
+}<br>
+}<br>
+<b>o/p:-</b><br>
+10<br>
+20<br></div>
+->With in the Inner class this always pointing to convert to current Inner class object.<br>
+-&gt;To refer current outer class object we have to use <b>"Outerclassname"</b>
+.<br>
+"outer classname.this"<br>
+<div class="border"><b>Example </b><br>class outer<br>
+{<br>
+
+int x=10;<br>
+class Inner<br>
+{<br>
+int x=100;<br>
+Public void m1()<br>
+{<br>
+int x=1000;<br>
+S.o.pln(x); //1000<br>
+So.pln(this.x); //100<br>
+S.o.pln(outer.this.x); //10<br>
+}<br>
+}<br>
+p.s.v.main(String args[])<br>
+{<br>
+New outer().new Inner().m1();<br>
+}<br>
+}</div><br>
+->For the outer classes (Top Level classes) the applicable modifiers are public,<default>,final,abstract,strictfp.<br>
+But for the Inner classes in addition to above the following modifiers are also applicable.<br>
+
+Public private<br>
+Default + protected=Inner classes<br>
+Final static<br>
+Abstract<br>
+Strictfp<br>
+<b>2)Method Local Inner Classes:</b><br>
+-&gt;Some times we can declare classes inside a method such type of class are 
+called&nbsp; method local Inner classes"
+.<br>
+->The main purpose of method local Inner classes is to define method specific functionality.<br>
+->The scope of the methods local Inner class is the method in which we declared it that is from outside of the methods we can't access methods local inner classes<br>
+->As the scope is very less, this type of Inner classes are most rarely used inner classes<br>
+<div class="border"><b>Example<br></b> Class Test<br>
+{<br>
+Public void m1()<br>
+{<br>
+class Inner<br>
+{<br>
+public void sum(int x,int y)<br>
+{<br>
+                                                                                                                                                       
+S.o.pln("sum is:" +(x+y));<br>
+}<br>
+}<br>
+Inner i=new Inner();<br>
+i.sum(10,20);<br>
+i.sum(100,200);<br>
+i.sum(1000,2000);<br>
+i.sum(10000,20000);<br>
+}<br>
+p.s.v.main(String args[])<br>
+{<br>
+New Test().m1();<br>
+}<br>
+}<br>
+<b>o/p:-</b><br>
+sum is 30<br>
+sum is 300<br>
+sum is 3000<br>
+sum is 30000<br></div>
+                                                                                                                                                      
+->We can declare Inner class either in instance method or in static method.<br>
+->If we declare Inner class inside instance method then we can access both static and non-static variable of outerclass directly from that Inner class.<br>
+->If we declare Innerclass inside the static method then we canaccess only static members of outerclass directly from that innerclass<br>
+<b>Q)consider the following code</b><br>
+<div class="border">Class Test<br>
+{<br>
+int x=10;<br>
+Static int y=20;<br>
+Public void m1()<br>
+{<br>
+int i=80;<br>
+Final int i=40;<br>
+class Inner<br>
+{<br>
+public void m2()<br>
+{<br>
+Line(1)<br>
+}<br>
+}<br>
+}<<br>
+}<br></div>
+                                                                                                                                                       
+<b>->At line(1) which variable we can access</b> <br>
+(1) x //write<br>
+(2) y //write<br>
+(3) I //wrong<br>
+(4) j //write<br><br>
+<b>Note:-</b>If declare m1() as static then at line(1) which variables<br>
+We can access y,j;<br>
+(3)If we declare m2() as static ,then which variable we can access line(1) we will get C.E. because Inside Inner classes we can't have static declarations.<br>
+->The only applicable modifiers for methods local Inner classes are final,abstract,strictfp.<br><br>
+<b>(3) Anonymous Inner class:-</b><br>
+->Sometimes we can declare a class without name also such type of normal Inner classes are called Anonymous Inner classes<br>
+->This type of Inner classes are most commonly used type of Inner classes<br>
+-&gt;There are 3 types of Anonymous Inner classes...<br>
+1. Anonymous Inner class that extends a class<br>
+2. Anonymous Inner class that implements an interface<br>
+3. Anonymous Inner class that defined inside methods arguments<br><br>
+<b>(a) Anonymous Inner class that extends a class:-</b><br>
+<div class="border">Class popcorn<br>
+{<br>
+Public void tester()<br>
+{<br>
+S.o.pln("salty");<br>
+}<br>
+//100 more methods<br>
+}<br>
+class Test<br>
+                                                                                                                                                       
+{<br>
+p.s.v.main(String[] args)<br>
+{<br>
+Popcorn p=new popcorn<br>
+{<br>
+public void tester()<br>
+{<br>
+s.o.pln("swalty"  );<br>
+}<br>
+};<br>
+p.tester(); //swalty<br>
+popcorn p1=new popcorn();<br>
+p1.tester; //salty</div><br>
+<b>Note:-<br></b>
+(1)The internal class name generated for anonymous Inner class is<b> "Test t1.class"</b>  
+.<br>
+(2)Parent class reference can be used to hold child class object but by using reference.<br>
+ we can call only methods available in the parent class and we can't call child specified methods.<br>
+  In the anonymous inner classes also we can define new methods but we can't call these method form outside of the class because,
+   we are depending on parent reference. This methods for internal purpose only.<br>
+<div class="border"><b>Analysis:-</b><br>
+Popcorn p=new popcorn();<br>
+->Just we are creating an object of popcorn class<br>
+Popcorn p=new popcorn()<br>
+{<br>
+}</div><br>
+->We are creating child class for the popcorn and for that child class we are creating an object with parent reference.<br>
+<div class="border">
+                                                                                                                                                   
+class Test<br>
+{<br>
+p.s.v.main(String args[])<br>
+{<br>
+Thread t=new Thread()<br>
+{<br>
+p.v.run()<br>
+{<br>
+For(int i=0;i<10;i++)<br>
+{<br>
+s.o.pln("child Thread"  );<br>
+}<br>
+}<br>
+};<br>
+t.start();<br>
+for(int i=0;i<10;i++)<br>
+{<br>
+s.o.pln("main thread"  );<br>
+}<br>
+}<br>
+}<br></div>
+                                                                                                                                                       
+->In the above example both main and child threads will be executed simultaneously and hence we can't exact output<br>
+<br>
+<div class="border"><b>(b)Annonymous Inner Class That implements an Interface:-</b><br>
+
+class Test<br>
+{<br>
+p.s.v.m(String args[])<br>
+{<br>
+Runnable r=new Runnable();<br>
+{<br>
+public void run()<br>
+{<br>
+For(int i=0;i<10;i++)<br>
+{<br>
+S.o.pln("child thread"  );<br>
+}<br>
+}<br>
+};<br>
+Thread t=new Thread(r); //It is an object and runnable<br>
+t.start();<br>
+for(int i=0;i<10;i++)<br>
+{<br>
+                                                                                                                                                       
+s.o.pln("main Thread"  );<br>
+}<br>
+}<br>
+}</div><br>
+<div class="border"><b>(b) Annonymous Inner class that define Inside the method arguments:-</b><br>
+class test<br>
+{<br>
+p.s.v.main(String[] args)<br>
+{<br>
+New Thread(new Runnable()<br>
+{<br>
+public void run()<br>
+{<br>
+For(int i=0;i<10;i++)<br>
+{<br>
+S.o.pln("child Thread-1"  );<br>
+}<br>
+}<br>
+} ).start();<br>
+For(int i=0;i<10;i++)<br>
+{<br>
+s.o.pln("main thread"  );<br>
+}<br>
+}</div><br>
+<b>Genaral class Vs.Anonymous Inner class:</b><br>
+1) A general class can extend only one class.<br>
+                                                                                                                                                       
+2) Ageneral class can implement no of interface where as anonymous inner class can implements only one interface at a time.<br>
+3) A general class can extends another clas and can implement an interface simulteneosly,Where as anonymous inner class can extend another or implemets interface but not both simultaneously.<br>
+Static nested classes<br>
+&nbsp;.Sometimes we can declare inner class with static modifier such type of inner class called <b>"static nested classes"</b> .<br>
+&nbsp;.In the normal inner class,inner class object always associated with outer class object.<br>
+&nbsp;.That is without existing outer class object there no chance of existing inner class object.But static nested class object is not associated with outer class object there may be a chance of existing static nested class object<br>
+<div class="border"><b>Example:</b><br>
+class Outer<br>
+{<br>
+static class Nested<br>
+{<br>
+public void m1()<br>
+{<br>
+System.out.println("static nested class method"  );<br>
+}<br>
+public static void main(String args[])<br>
+{<br>
+Outer.Nested n=new Outer.Nested();<br>
+n.m1();<br>
+} <br>
+}</div><br>
+                                                                                                                                                       
+Within the static nested class we can declare static member including main() also. Hence it is possible to invoke nested class directly from command prompt.<br>
+<div class="border"><b>Example:</b><br>
+class outer<br>
+{<br>
+int x=10;<br>
+static int y=20;<br>
+static class nested<br>
+{<br>
+public void m1()<br>
+{<br>
+                                                                                                                                                       
+System.out.println(x); ///C.E. non-static variable x can't be<br>
+referenced from static content.<br>
+System.out.println(y);<br>
+}<br>
+}<br>
+}<br></div><br>
+<b>Difference between Normal inner class and static Nested class:</b><br><br>
+<b>Normal inner class</b><br>
+Static Nested class<br>
+<b>1)</b>Inner class object is always associated with outer class object.That is without existing outer class object there is no chance of existing inner class object<br>
+1) static nested class object is not associated with outer class object.That is without existing outer class object there may be chance of existing static nested class object<br>
+<b>2)</b>Inside Normal inner class we can't declare static members.<br>
+2)Inside static nested class we candeclare static members.<br>
+<b>3)</b>Inside Normal inner class we can't declare main() and hence it is not possible to invoke inner class directly from command prompt.<br>
+3)Inside static nested class we can declare main() and hence we can invoke static nested class directly from command prompt.<br>
+	
+	</div>
+	</div>
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>

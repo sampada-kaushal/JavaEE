@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Regular Expression| JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+
+	<a href="#top" class="top" title="Back to Top">&#8593;</a>
+<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                             <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp">Login</a></li> 
+                                                        <li><a href="signup.jsp">Sign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li class="active"><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="advance.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a> 
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                        
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+<br>
+	
+	<div class="container">
+	<hr class="hr">
+<div class="row" >
+	  <div id="sidebar-wrapper" style="float:left">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand main">
+                  <a href="core.html">Core</a>
+                </li>
+				<li class="main">
+				    <a href="core_fundamentals.html">  Java Fundamentals </a></li>
+					<li class="main"><a href="jdk.html"> JDK File Structure </a></li>
+                    <li> <a href="core_development.html">Development  </a></li>
+					<li>
+                     <a href="core_operators.html">  Operators and Assignments </a></li>
+					 <li>
+                     <a href="core_flowcontrol.html"> Flow Control </a></li>
+					 <li><a href="core_accessmodifiers.html">  Declarations and Access Modifiers</a></li>
+                     <li class="main"> <a href="core_garbage.html">Garbage Collector  </a></li>
+					 	<li class="main"><a href="core_oops.html"> Oops Concepts </a></li>
+							<li class="active_page"><a href="core_oops class and object.html"> Class and Object </a></li>
+							<li class="active_page"><a href="core_oops interface.html"> Interface </a></li>
+						<li class="active_page"><a href="core_oops abstraction.html"> Abstraction </a></li>
+						<li class="active_page"><a href="core_oops polymorphism.html"> polymorphisam</a></li>
+						<li class="active_page"><a href="core_oops inheritance.html">Inheritance</a></li>
+						<li class="active_page"><a href="core_oops encapsulation.html"> Encapsulation</a></li>
+						<li class ="main"><a href="java_object.html"> Java Object Class </a> </li>
+				   <li><a href="core_innerclasses.html">Inner classes  </a></li>
+				   <li><a href="core_package.html">Java Package</a></li>
+				    <li class="main"> <a href="core_lang.html">Java.lang package  </a></li>
+                    <li class="main"> <a href="core_io.html">Java.io package     </a></li>
+					 <li class="main"> <a href="core_exception.html">Exception handling </a></li>
+					 <li class="main"> <a href="core_multithreading.html">Multithreading </a>
+				<li class="active_page"><a href="core_expression.html">  Regular Expressions   </a></li>
+					 <li><a href="core_enumeration.html">  Enumerations </a></li>  
+                    <li> <a href="core_internationalization.html">	Internationalization   </a></li>
+					 <li><a href="core_assertion.html">Assertions  </a></li>
+					 <li class="main"><a href="core_collection.html">Collection Framework     </a></li>
+					 <li><a href="core_generics.html">  Generics   </a></li>
+					<li class="main"><a href="core_jdbc.html"> JDBC </a></li>
+					<li class="main"><a href="features_5.html"> Features of Java 5 </a></li>
+			</ul>
+        </div>
+	<div class="right">
+	
+<h1>
+<b>Regular Expression</b></h1><br><br>
+
+->Any group of string according to a particular pattern is called regular expression.<br>
+ <b>Example:</b><br>(1)  We can write a regular expression to represent all valid mail-ids and by using that regular expression we can validate whether the given mail-id is valid or not.<br>
+(2) We can write a regular expression to represent all valid java identifiers.<br><br>
+-> <b>The main application arises of regular expression are..</b><br>
+1. We can implements validation mechanism.<br>
+2.We can develop pattern matching applications.<br>
+3.We can develop translators like compilers interpreters etc.<br>
+4.we can use for designing digital circuits.<br>
+5.we can use to develop communication protocols like TCP by Ip,UDPetc.<br>
+<div class="border">
+<b> <b>Example:</b></b> Import java.util.reger.*;<br>
+Class RegDemo<br>
+{<br>
+p.s.v.main(String args[])<br>
+{<br>
+Pattern p=pattern.compile("ab");<br>
+Master m=p.master("abbbabbcbdab");<br>
+While(m.find())<br>
+{<br>
+s.o.pln(m.start()+"......."+m.end() +"........."+m.group());<br>
+}<br>
+}<br>
+}<br>
+
+
+o/p-<br>
+0....2....ab<br>
+4....6....ab<br>
+10.....12....ab<br><br>
+</div>
+
+<b>Pattern class:-</b><br>
+ A pattern objects represents compiled version of regular expression, we can create a pattern object by using compile() of pattern class.<br>
+ Pattern p=pattern.compile(String RegularExpression);<br>
+<b>Matches class:-</b><br>
+->A matches object can be used to match character sequence against a regular expression. We can create a matches object by using matches() of pattern class.<br>
+Matches m=p.matches(String target);<br>
+<b>Important methods of matches class:-</b><br>
+(1)Boolean find():-<br>
+->It attempts to find the next match and if it is available returns true otherwise returns false.<br>
+(II)int start():-<br>
+->Returns start index of the match.<br>
+(III)int end():-<br>
+->returns end index of the match.<br>
+(Iv) String group:-<br>
+->returns the match pattern.<br>
+
+
+
+<b>Character classes:-</b><br>
+(1)[a-z]:--Any lower case alphabets symbol.<br>
+(2)[A-Z]:--any upper case alphabet symbol.<br>
+(3)[a-z A-Z]:--Any alphabets symbols.<br>
+(4)[0-9]:--any digit from 0 to 9.<br>
+(5)[abc]:--either a or b or c.<br>
+(6)[^abc]:--except a or b or c<br>
+(7)[0-9 a-z A-Z]:--any alpha numeric character<br>
+<div class="border">
+<b> <b>Example:</b></b><br>
+Pattern p=pattern.compile("x");<br>
+Matches in=p.matches("a3b@c4z#");<br>
+While(m.find())<br>
+{<br>
+s.o.pln(m.start()+".........."+m.group());<br>
+}<br>
+X=[ab] x=[a-z] x=[0-9] x=[0-9a-z]<br>
+0....a 0...a 1....3 0.....a<br>
+2....b 2....b 5....4 1.....3<br>
+4...c 2....4<br>
+6....z 4.....c<br>
+</div>
+<b>Predefined character class:-</b><br>
+Space character -------a\s<br>
+
+
+[0-9]------------------------a\d<br>
+[0-9 a-z A-Z]-------------a\w<br>
+Any character-----------a .<br>
+<div class="border">
+ <b>Example:</b> Pattern p=pattern.compile("x")<br>
+Matches m=p.matches("a3z4 @ k7#") 0123456789<br>
+While(m.find())<br>
+{
+s.o.pln(m.start() +"-------"+m.groups());<br>
+}<br>
+X=\\d x=\\w x=\\s x=<br>
+1...3 0...a 5... 0...a<br>
+3....4 1....3 1....3<br>
+7.....7 2.....z 2....z<br>
+3.....4 3....4<br>
+6....k 4---@<br>
+7...7 5---<br>
+6---k<br>
+7---1<br>
+8---#<br>
+</div>
+
+<br>
+<b>Quantifiers:-</b><br>
+->We can use quantifiers to specify no of charactera to match<br>
+<b> <b>Example:</b></b><br>
+1)a->exactly one a<br>
+2) a+->atleast one a<br>
+3) a* ->Any no of air<br>
+4) a?->atmost one a<br>
+<div class="border">
+<b> <b>Example:</b></b> pattern p=pattern.compile("x");<br>
+Matcher m=p.matcher("abaabaaab");<br>
+While(m.find())<br>
+{<br>
+s.o.pln(m.start() +"......."+m.group());<br>
+}<br>
+X=a x=a+ a=a* x=a?<br>
+0....a 0...a 0....a 0.....a<br>
+2....a 2...aa 1..... 1......<br>
+3.....a 5....aaa 2...aa 2....a<br>
+5.....a 4..... 3.....a<br>
+6.....a 5....aaa 4.......<br>
+7......a 8....... 5.....a<br>
+9...... 6......a<br>
+7......a<br>
+8........<br>
+9........<br>
+
+</div>
+<br>
+<b>Split Method():-</b><br>
+Pattern class contains split method to split given string according to a given expression.<br>
+<div class="border">
+<b> <b>Example:</b> </b>Pattern p=pattern.compile("\s");<br>
+String[] s=p.split("employee");<br>
+For(string s1==s)<br>
+{<br>
+s.o.pln(s1);<br>
+}<br>
+</div>
+<div class="border">
+<b>Example:(2)</b><br>
+Pattern p=pattern.compile("\\."); [.]<br>
+String[] s=p.split("example one");<br>
+for(string s1=s)<br>
+{<br>
+s.o.pln(s1)<br>
+}<br>
+o/p<br>
+</div>
+<div class="border">
+<b>Example:</b><br>
+one<br>
+String class split() method:-<br>
+->String class also contains to split the given string against a regular expression.<br>
+
+</div>
+<div class="border">
+<b> <b>Example:</b></b><br>
+String s="abc.xy";<br>
+String[] s1=s.split("\\.");<br>
+For (string s2=s1)<br>
+{<br>
+S.o.pln(s2);<br>
+}<br>
+o/p:<br>
+abc<br>
+xy<br>
+</div>
+<b>Note:-</b><br>
+Pattern class split() can take target string as arguments where as string class split() can take regular expression as arguments.<br>
+StringTokenizer:-<br>
+->We can use StringTokenizer to divide the target string into system of tokens according to the stringTokenizer class presenting in java.util package.<br>
+<b> <b>Example:</b></b><br>
+<div class="border">
+StringTokenizerst=new StringTokenizer("Javat software solutions");<br>
+While(st.hasMoreTokens())<br>
+{<br>
+s.o.pln(st.nextToken());<br>
+}<br>
+
+
+
+o/p<br>
+durga<br>
+software<br>
+solutions<br>
+</div>
+<b>Note:-</b> The defaukt regular expression is space.<br>
+(2)StringTokenizerst=new StringTokenizer("1,00,000",",");<br>
+While(st.hasMoreToken());<br>
+}<br>
+o/p:<br>
+1<br>
+00<br>
+000<br>
+ <b>Example:</b><br>
+Write a regular expression to represent the set of all valid identifiers in java language.<br>
+<b>Rules:</b><br>
+(1)The length of each identifiers is atleast 2<br>
+(2)The allowed characters are....<br>
+a to z<br>
+A to Z<br>
+0 to 9<br>
+(3) The first characters should not digit<br>
+<b>Rule</b><br>
+[a-z A-Z...][a-zA-Z 0-9][a-zA-Z 0-9....]*<br>
+
+
+
+[a-z A-Z...][a-zA-Z 0-9][a-zA-Z 0-9....]+<br>
+<div class="border">
+importjava.util.regx.*;<br>
+class RegExDemo2<br>
+{<br>
+p.s.v.main(String[] args)<br>
+{<br>
+Pattern p=pattern.compile["[a-z A-Z...][a-z A-Z 0-9][a-z A-Z 0-9....]+"];<br>
+Matches m=p.mathces(args[0]);<br>
+if(m.find()&&m.group().equals(args[0]))<br>
+{<br>
+s.o.pln("valid Identifier");<br>
+}<br>
+else<br>
+{<br>
+S.o.pln(""Invalid identifiers);<br>
+}<br>
+}<br>
+}<br>
+</div>
+(2) W.A.P to represent all valid mobile numbers....<br>
+<b>Rule:-</b><br>
+(1) Mobile no contains 10 digits<br>
+(2) The first digits should be 7 to 9<br>
+[7-9] [0-9] [0-9] [0-9] [0-9] [0-9] [0-8] [0-9][0-9][0-9][0-9]<br>
+
+
+(3) W.a. regular expression to represent all valid mail-ids.<br>
+<b>Rule:-</b><br>
+(1)The set of allowed characters in mail-id are 0 t0 9,a-z,A-Z<br>
+(2) Should starts with alphabets symbols.<br>
+(3)Should contains atleast one symbols.<br>
+<b>RegExp:-</b><br>
+[a-z A-Z][a-z A-Z 0-9--]* (a)[a-z A-Z 0-9]+ ([.][a-z A-Z+]+<br>
+<b>RegExp:-</b><br>
+--||-- (a)gmail[.]com<br>
+--||-- (a)(gmail|yahoo\hotmail)[.]com<br><br>
+<b> <b>Example:</b></b><br><br>
+<div class="border">
+import java.io.*;<br>
+importjava.util.reg <b>Example:</b>*;<br>
+classmobileExtractor<br>
+{<br>
+p.s.v.main(String [] args) throws IOException<br>
+{<br>
+Printwriter pw=new printwriter("mobile.txt");<br>
+BufferedReaderbr=new BufferedReader(new FileReader(" "));<br>
+String line=br.readline();<br>
+Pattern p=pattern.compile("[7-9][0-9]{9}");<br>
+While(line !=null)<br>
+{<br>
+Matcher m=p.matchers(line);<br>
+While(m.find());<br>
+{<br>
+Pw.println(m.group());<br>
+}<br>
+Line=br.readline();<br>
+}<br>
+Pw.flush();<br>
+}<br>
+}<br>
+</div>
+p) W.a.p to extract mail-ids from the given file where mail-ids are mixed with some row data?<br>
+
+
+
+->In the above example replace regularExpression with the fallowing mail-id regular Expression.<br>
+[a-z A-Z][a-zA-Z 0-9]* (a)[a-z A-Z 0-9]+([.][a-z A-Z]+)+<br>
+p)W.a.p to display all text files present in the given directory and<br>
+import java.io.*;<br>
+importjava.util.reg<br> <b>Example:</b><br>
+<div class="border">
+classFileNameExtraction<br>
+{<br>
+Public static void main(String[] args) throws IOException<br>
+{<br>
+Int count=0;<br>
+Pattern p=pattern.compile("[a-z A-Z 0-9--]+[.]txt");<br>
+File f=new file("D:\\Javat");<br>
+String[] s=f.list();<br>
+For(string s1=s)<br>
+{<br>
+Matcher m=p.matcher(s1);<br>
+If(m.find() &&m.group().equals(s1))<br>
+{<br>
+Count ++;<br>
+S.o.pln(s1);<br>
+}<br>
+}<br>
+s.o.pln(count);<br>
+}<br>
+}<br>
+</div>
+p)w.a.p to delete all .bak files present in D:\\dugra-class<br>
+<div class="border">
+import java.io.*;<br>
+importjava.util.regx.*;<br>
+classFileNamesDeleter<br>
+{<br>
+int count=0;<br>
+Pattern p=pattern.compile("[a-z A-Z 0-9--]+[.]bak");<br>
+File f=new file("D:\\Javat");<br>
+
+
+
+String[] s=f.list();<br>
+For(String s1=s)<br>
+{<br>
+Matcher m=p.matcher(s1);<br>
+If(m.find() &&m.group().equals(s1))<br>
+{<br>
+Count ++;<br>
+s.o.pln(s1);<br>
+file f1=new file(f1,s1);<br>
+f1.delete();<br>
+}<br>
+}<br>
+s.o.pln(count);<br>
+}<br>
+}<br>
+</div><br>
+	</div>
+	</div>
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>

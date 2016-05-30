@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Java.io| JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<a href="#top" class="top" title="Back to Top">&#8593;</a>
+<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                             <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp">Login</a></li> 
+                                                        <li><a href="signup.jsp">Sign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li class="active"><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="advance.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a> 
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                        
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+<br>
+	<div class="container">
+	<hr class="hr">
+<div class="row" >
+	  <div id="sidebar-wrapper" style="float:left">
+             <ul class="sidebar-nav">
+                <li class="sidebar-brand main">
+                  <a href="core.html">Core</a>
+                </li>
+				<li class="main">
+				    <a href="core_fundamentals.html">  Java Fundamentals </a></li>
+					<li class="main"><a href="jdk.html"> JDK File Structure </a></li>
+                    <li> <a href="core_development.html">Development  </a></li>
+					<li>
+                     <a href="core_operators.html">  Operators and Assignments </a></li>
+					 <li>
+                     <a href="core_flowcontrol.html"> Flow Control </a></li>
+					 <li><a href="core_accessmodifiers.html">  Declarations and Access Modifiers</a></li>
+                     <li class="main"> <a href="core_garbage.html">Garbage Collector  </a></li>
+					 	<li class="main"><a href="core_oops.html"> Oops Concepts </a></li>
+							<li class="active_page"><a href="core_oops class and object.html"> Class and Object </a></li>
+							<li class="active_page"><a href="core_oops interface.html"> Interface </a></li>
+						<li class="active_page"><a href="core_oops abstraction.html"> Abstraction </a></li>
+						<li class="active_page"><a href="core_oops polymorphism.html"> polymorphisam</a></li>
+						<li class="active_page"><a href="core_oops inheritance.html">Inheritance</a></li>
+						<li class="active_page"><a href="core_oops encapsulation.html"> Encapsulation</a></li>
+						<li class ="main"><a href="java_object.html"> Java Object Class </a> </li>
+				   <li><a href="core_innerclasses.html">Inner classes  </a></li>
+				   <li><a href="core_package.html">Java Package</a></li>
+				    <li class="main"> <a href="core_lang.html">Java.lang package  </a></li>
+                    <li class="active_page"> <a href="core_io.html">Java.io package     </a></li>
+					 <li class="main"> <a href="core_exception.html">Exception handling </a></li>
+					 <li class="main"> <a href="core_multithreading.html">Multithreading </a>
+				<li><a href="core_expression.html">  Regular Expressions   </a></li>
+					 <li><a href="core_enumeration.html">  Enumerations </a></li>  
+                    <li> <a href="core_internationalization.html">	Internationalization   </a></li>
+					 <li><a href="core_assertion.html">Assertions  </a></li>
+					 <li class="main"><a href="core_collection.html">Collection Framework     </a></li>
+					 <li><a href="core_generics.html">  Generics   </a></li>
+					<li class="main"><a href="core_jdbc.html"> JDBC </a></li>
+					<li class="main"><a href="features_5.html"> Features of Java 5 </a></li>
+			</ul>
+        </div>
+	<div class="right">
+	<h1>
+	 
+<b>Java.io.package</b></h1><br><br>
+<b>File I/o :-</b><br>
+1.File<br>
+2.FileWriter<br>
+3.FileReader<br>
+4.BufferReader<br>
+5.BufferWriter<br>
+6.PrintWrite<br><br>
+(1) <b>File:-</b><br>
+File p=new file("abc.txt");<br>
+->This line won't create any physical file, first it will check is there any file named abc.txt is available or not.<br>
+->If it is available then it simply point to that file<br>
+->If it is available then it represents just name of the file without creating any physical file.<br>
+<div class="border">File f=new file("abc.txt");<br>
+s.o.pln(f.exists()); //false<br>
+f.createNewFile();<br>
+s.o.pln(f.exists()); //true<br></div>
+-> A java file object can represent a directory also<br><br>
+ 
+<div class="border"><b>Example:</b><br>
+File f=new file("javat123");<br>
+s.o.pln(f.exists()); //false<br>
+f.mydir();<br>
+s.o.pln(f.exists()) //true<br><br></div>
+<div class="border"><b>Constructors:-</b><br>
+(1) File f=new File(string name)<br>
+->Create a java file object to represent name of a file as directory<br>
+(2) File f=new file(string subdir,string name);<br>
+->To create a file for directory present in some other sub-directory.<br>
+(3) file f=new file(file subdir,string name)<br></div>
+<div class="border"><b>Example:</b><br>
+Write code to create a directory named with javat123 in current working directory. In that directory create a file named with abc.txt<br>
+File f=new file("javat123");<br>
+f.mkdir();<br>
+file f1=new file("javat123","abc.txt");<br>
+f1.createNewFile();<br>
+ 
+file f1=new file(f,"abc.txt");<br>
+f1.createNewFile()<br></div>
+<b>Important methods of file class:-</b><br>
+(1) Boolean exists();<br>
+->return true if the physical file or directory present<br>
+(2) Boolean createNewfile():-<br>
+->First this Method will check whether the specified file is already available or not. If it is already available then this method returns false without creating new File. If it is not already available then this method returns true after creating new File.<br>
+(3)Boolean mkdir();<br>
+(4)Boolean isFile();<br>
+(5) Boolean isDirectory();<br>
+(6) String[] list();<br>
+->It returns the name of all files and sub-directories present in the specified directory.<br>
+(7) boolen delete();<br>
+-> To delete a file or directory<br>
+(8)long length();<br>
+->returns the no. of characters present in the specified file<br>
+ <div class="border">
+<b>W.a.p to point the names of all files and sub-directories present in "D:\javat-classes".</b><br>
+Import java.io.*;<br>
+class Test<br>
+{<br>
+p.s.v.main(String args[]) throws Exception<br>
+{<br>
+File f=new file("D:\\javat-classes");<br>
+String[]s=f.list();<br>
+For(string s1==s)<br>
+{<br>
+s.o.pln(s1);<br>
+}<br>
+}<br>
+}<br><br></div>
+<b>(1)FileWriter:-</b><br>
+->We can use filewriter object to write character data to the file.<br>
+<b>Constructor:-</b><br>
+(1)filewriter fe=new filewriter(String name);<br>
+(2)filewriter fw=new filewriter(file f);<br>
+->The above two constructor meant for overloading. If we want to perform append instead of overriding then we have to use the following constructors.<br>
+(3)Filewriter fw=new filewriter(String name,Boolean append);<br>
+(4)filewriter fw=new filewriter(file f,Boolean append);<br>
+->If the specified file is not already available then the above constructors will create that file.<br>
+ <br>
+<b>Method of filewriter:-</b><br>
+(1)write(int ch);<br>
+To write a single character to the file<br>
+(2)write(char[] ch);<br>
+To write an array of characters to the file<br>
+(3)write(String s);<br>
+To write a string a file.<br>
+(4)flush();<br>
+To give the generate that last character of the data also return to the file.<br>
+(5)close();<br>
+<br><div class="border"><b>Example:</b><br>
+<b>Demo program for the file writer.</b><br>
+import java.io.*;<br>
+class filewriterDemo<br>
+{<br>
+p.s.v.main(Sring args[])<br>
+{<br>
+Filewriter fw=new filewriter("we.txt",true);<br>
+Fw.write(100); //adding a single character<br>
+Fw.write("javat\n softwaresolutions");<br>
+Char[] ch={'a','b','c','d'};<br>
+Fw.write('\n');<br>
+Fw.write(ch);<br>
+Fw.write('\n');<br>
+Fw.flush();<br>
+Fw.close();<br>
+}<br>
+}</div>
+ 
+<b>(3)Filewriter:-</b><br>
+->we can use fileReader to read character data from the file<br>
+<b>Constructor:-</b><br>
+1.FileReader fr=new FileReader(String name);<br>
+2.FileReader fr=new FileReader(file f);<br>
+<b>Methods Of fileReader:-</b><br>
+<b>(I) int Read():-</b><br>
+*It attempts to read next character from the file and return its Unicode value.<br>
+*If the next character is not available then this methods returns '-1'.<br>
+<b>(II) int Read(char[] ch):-</b><br>
+*It attempts to read enough characters from the file into the char array and returns the no. of characters which are coppied from file to the chr[].<br>
+<b>(III)Close():-</b><br>
+<div class="border"><b>Example: On fileReader</b><br>
+Import java.io.*;<br>
+class FileReaderDemo<br>
+{<br>
+p.s.v.main(String args[]) throws IOException<br>
+{<br>
+File f=new file("wc.txt");<br>
+fileReader fr=new FileReader(f);<br>
+s.o.pln(fr.read); //Unicode of first characters<br>
+char[] ch2=new char[(int)(f.length())];<br>
+fr.read(ch2); //file data copied to array<br>
+for(char c:ch2)<br>
+{<br>
+System.out.println(c);<br>
+}<br>
+s.o.pln("*****.................");<br>
+FileReader fr1=new fileReader(f);<br>
+int i=fr1.read();<br>
+ <br>
+While(i!==-1)<br>
+{<br>
+s.o.pln((char) i);<br>
+i=fr1.read;<br>
+}<br>
+}<br>
+}<br></div>
+<b>*Usages of filewriter and filereader is not recommended because:</b><br>
+1) While writing data by filewriter we have to insert line seperators manually which is a bigger header to the programmer.<br>
+2)By using fileReader we can read data character by character which is not convenient to the programmer.<br>
+3)To resolve there problem SUN people introduced BufferReader and BufferReader classes.<br><br>
+<b>(I)BufferWriter:-</b><br>
+->We can use BufferWriter to write character data to the file.<br>
+Constructor:-<br>
+1)BufferWriter bw=new BufferWriter(writer w);<br>
+2)BufferedWriter bw=new BufferWriter(writer w,int buffer);<br><br>
+<b>Note:-</b><br>
+->BufferWriter never communicates directly with the file compulsory it should communicate via some write object only.<br><br>
+<b>Q) Which of the following are valid?</b><br>
+(1)BufferWriter bw=new BufferWriter("abc.txt");<br>
+(2) BufferWriter bw=new BufferWriter(new file("abc.txt"));<br>
+(3) BufferWriter bw=new BufferWriter(new FileWriter("abc.txt"));<br>
+(4) BufferWriter bw=new BufferWriter(new FileWriter(new file("abc.txt")));<br><br>
+ 
+<b>Important methods of BufferReader:-</b><br>
+(1) Writer(int ch)<br>
+(2)write(char[] ch)<br>
+(3)write(String s)<br>
+(4)Flush()<br>
+(5)close()<br>
+(6)newline():- To insert a newline characters<br><br>
+<b>Q) When compared with file writer which of the following capability is available as a separate methods in Buffer writer</b><br>
+(1)writing data o the file<br>
+(2)flushing the stream<br>
+(3)closing the stream<br>
+(4)inserting a line seperators<br><br>
+<div class="border"><b>Example:</b><br>
+import java.io.*;<br>
+class BufferWriterDemo<br>
+{<br>
+p.s.v.main(Stringargs[]) throws IOException<br>
+{<br>
+File f=new file ("wc.txt");<br>
+Filewriter fw=new filewriter(i);<br>
+Bufferwriter bw=new BufferWriter(fw);<br>
+Bw.write(100);<br>
+Bw=printline();<br>
+Char ch1={'a','b','c','d'};<br>
+Bw.write(ch1);<br>
+Bw=newline();<br>
+Bw.write("javat");<br>
+Bw=newline();<br>
+Bw.write("software solutions");<br>
+Bw.flush();<br>
+Bw.close();<br>
+ 
+}}<br>
+<b>o/p -</b> d<br>
+abcd<br>
+javat<br>
+softwaresolutions<br></div>
+<b>Note:</b><br>
+When ever we are closing BufferWriter automatically under laying writer will be closed<br>
+Bw.close(); fw.close(); fw.close();<br>
+bw.close();<br>
+Right Wrong Wrong<br><br>
+<b>(IV)BufferedReader():-</b><br>
+->The main advantages of bufferedReader over fileReader is we can read the data line by line instead of reading character by character. This approach improves performance of the system by reading the no. of read operations.<br>
+Constructor:-<br>
+(i)BufferedReader br=new BufferedReader(Reader r);<br>
+(ii) BufferedReader br=new BufferedReader(Reader r,int buffer size);<br><br>
+<b>Note:-</b><br>
+BufferedReader can't communicates directly with the file compulsory it should communicate some reader object.<br>
+Importants methods:-<br>
+(i)int read();<br>
+(ii)int read(char[] ch);<br>
+(iii)close();<br>
+(iv) String readline()--It attempts to find the nextline and if the nextline is override then it returns it, otherwise it returns null.<br>
+ <div class="border">
+import java.io.*;<br>
+class Buffered<br>
+{<br><br>
+p.s.v.main(String args[])<br>
+{<br>
+fileReader fr=new FileReader("wc.txt");<br>
+BufferedReader br=new BufferedReader(fr);<br>
+String line=br.readline();<br>
+}<br>
+Br.close();<br>
+}<br>
+}<br>
+<b>o/p:</b><br>
+javat<br>
+software<b><br></b></div>
+<b>(v)PrintWriter:-</b><br>
+->This is the most enhanced writer to write a character data to file. By using filewriter we can write only character data but by using printwriter we can write only primitives datatypes to the file.<br>
+<br><b>Constructor:-</b><br>
+(1)Printwriter pw=new Printwriter(String name);<br>
+(2)printwriter pw=new printwriter(file f);<br>
+(3)printwriter pw=new printwriter(writer w);<br><br>
+<b>Methods:-</b><br>
+(1)write(int ch) print(char ch) println(char ch)<br>
+(2)write(char[] ch) print(int i) println(int i)<br>
+(3)write(Sring s) print(long l) println(long l)<br>
+Print(double d) println(double d)<br>
+ 
+(4)flush() print(string s) println(string s)<br>
+(5)close() print(char[] ch) println(char[] ch)<br>
+<div class="border"><b>Example:</b><br>
+Import java.io.in.*;<br>
+Class PrintWriterDemo1<br>
+{<br>
+p.s.v.main(String[] args) throws IOException<br>
+{<br>
+Filewriter fw=new filewriter("wc.txt");<br>
+Printwriter pw=new printwriter(fw);<br>
+Pw.write(100);<br>
+Pw.println(100); //100<br>
+Pw.println(true); //true<br>
+Pw.println('c'); //c<br>
+Pw.println("javat"); //javat<br>
+Pw.flush();<br>
+Pw.close();<br>
+}<br>
+}<br>
+<b>o/p:-</b>100<br>
+&nbsp; &nbsp; &nbsp; &nbsp;      true<br>
+&nbsp; &nbsp; &nbsp; &nbsp;       c<br>
+&nbsp; &nbsp; &nbsp; &nbsp;       javat<br>
+      </div>
+
+ 
+<b>Q)What is the diff between the following</b><br>
+(a)pw.write(100);<br>
+(b)pw.print(100);<br>
+&nbsp;<p><div class="border"><img border="0" src="images/core_img/core_j3.jpg"></div></p>
+<p><br>
+<b>Note:-</b><br>
+->reader and writer ment for handling character data (any primitive data type).<br>
+->To handle binary data(like image,movie files,java file...) we should go for Streams.<br>
+->We can Use InputStream to read binary data and OutputStream to write a Binary data.<br>
+->We can use InputStream to read binary data and outputstream to write a binary data.<br>
+->we can use object InputStream tand ObjectOutputStream to read and write objects to a filerespectively (Serialization).<br>
+->The most enhanced writer to write character data is printwriter()<br>
+ 
+Where as the most enhanced Reader to read character is BufferedReader.<br>
+@)w.p to merge data from two files into a 3rd files<br>
+file3.txt=file1.txt +file2.txt;<br>
+<div class="border">
+import java.io.*;<br>
+class FileManager<br>
+{<br>
+p.s.v.main(String args[]) throws Exception<br>
+{<br>
+Printwriter pw=new PrintWriter("output.txt");<br>
+BufferedReader br=new BufferedReader(new FileReader("file.txtx"));<br>
+String line=br.readline();<br>
+While(line!=null)<br>
+{<br>
+Pw.println(line);<br>
+Line=br.readline();<br>
+}<br>
+Br=new BufferedReader(new fileReader("file2.txt"));<br>
+Line=br.readline();<br>
+While(line!=null)<br>
+{<br>
+Pw.println(line);<br>
+Line=br.readline();<br>
+}<br>
+ 
+Pw.close();<br>
+Br.close();<br>
+Pw.close();<br>
+}<br></div>
+<div class="border">
+<b>Example:</b><br>
+w.a.p to merge data from 2 files into a 3rd file both merging should be done line by line alternatively<br>
+import java.io.*;<br>
+class filemerge2<br>
+{<br>
+p.s.v.main(Sring args[]) throws IOException<br>
+{
+Printwriter pw=new printwriter("output.txt");<br>
+BufferedReader br1=new BufferedReader(new fileReader(file1.txt));<br>
+BufferedReader br2=new BufferedReader(new fileReader(file2.txt));<br>
+String line1=br1.readline();<br>
+String line2=br2.readline();<br>
+While((line1)!=null |(line2)!=null)<br>
+{<br>
+if(line1!=null)<br>
+{<br>
+ 
+Pw.println(line1);<br>
+Line!=br1.readline();<br>
+}<br>
+if(line2!==null)<br>
+{<br>
+Pw.println(line2);<br>
+Line2=br.readline(line1);<br>
+}<br>
+}<br>
+Pw.close();<br>
+Pw.flush();<br>
+Br1.close();<br>
+Br2.close();<br>
+}<br>
+}<br></div>
+<div class="border">
+<b>Example:</b><br>
+w.a.p to merge data from 2 files into a 3rd file but merging should be done paragraph by paragraph. Assume that there is a Blankline between every 2 para?<br>
+import java.io.*;<br>
+class DuplicateElimination<br>
+{<br>
+ <br>
+p.s.v.main(Sring args[]) throws Exception<br>
+{<br>
+Printwriter pw=new printwriter("output.txt");<br>
+BufferedReader br1=new BufferedReader(new fileReader("input.txt"));<br>
+String line=br1.readline();<br>
+While(line!=null)<br>
+{<br>
+if(line.equals(target))<br>
+{<br>
+Available=true;<br>
+Break;<br>
+}<br>
+Target=br2.readline();<br>
+}<br>
+if(available==false)<br>
+{<br>
+Pw.println(line);<br>
+Pw.flush();<br>
+}<br>
+Line=br.readline();<br>
+}<br>
+Pw.close();<br>
+Pw.flush();<br>
+ 
+Br1.close();<br>
+Br2.close();<br>
+}<br>
+}<br></div>
+(5)w.a.p to perform file extraction(result.txt=total.txt-delete.txt)<br>
+<div class="border">import java.io.*;<br>
+class fileExtraction<br>
+{<br>
+p.s.v.main(String[] args) Throws Exceptions<br>
+{<br>
+BufferedReader br1=new BufferedReader(new FileReader("mobile.txt"));<br>
+Printwriter pw=new printwriter("output.txt");<br>
+String line=br1.readline();<br>
+While(line!=null)<br>
+{<br>
+Boolean available=false;<br>
+Bufferedreader br2=new BufferedReader(new FR("delete.txt"));<br>
+String target=br2.readline();<br>
+While(target!=null)<br>
+{<br>
+If(line.equals(target))<br>
+{<br>
+Available=true;<br>
+Break;<br>
+}<br>
+Target=br2.readline();<br>
+}<br> 
+if(available==false)<br>
+{<br>
+Pw.println(line);<br>
+}<br>
+Line =br1.readline();<br>
+}<br>
+Pw.flush();<br>
+Pw.close();<br>
+Br1.close();<br>
+Br2.close();<br>
+}<br>
+}<br><br></div>
+<b>Serialization:-</b><br>
+(1)Introduction<br>
+(2)Object Graphs in Serialization<br>
+(3)Customized serialization<br>
+(4)Serialization w.r.t Inheriatance<br>
+<br><b>Serialization:-</b><br>
+->The process of writing state of an object to a file is called serialization.<br>
+->But strictly it is a process of converting an object from java supported from to either file supported from or networks support form.<br>
+->By using classes we can achieve serialization.<br>
+<b><br>Deserialisation :-</b><br>
+->The process of reading static of an object from a file is called deserialization.<br>
+->But strictly speaking. It is the process of connecting an object from either networks supported form or filesuppored form to java supported form.<br>
+->By using and classes we can achieve De-serialization.</p>
+<p><div class="border"><img border="0" src="images/core_img/core_j4.jpg"></div><br>
+<br>
+<div class="border">
+<b>Example:</b><br>
+import java.io.*;<br>
+class Dog implements serializable<br><br>
+{<br>
+int i=10;<br>
+int j=20;<br>
+}<br>
+class SerializationDemo<br>
+{<br>
+p.s.v.main(String[] args) throws Exception<br>
+{<br>
+Dog d1=new Dog();<br>
+FileOutputStream fos=new FileOutputStream("abc.txt");<br>
+ObjectOutputStream oos=new ObjectOutputStream(fos);<br>
+Oos.writeobject(d1);<br>
+FileInputStream fis=new FileInputStream("abc.txt");<br>
+OIS ois=new OIS(fis);<br>
+Dog d2=(Dog) ois.readobject();<br>
+s.o.pln(d1.i +&quot;..........."+d2.i);<br>
+dog d<br>
+d<br>
+ 
+}<br>
+}<br></div>
+->We can perform serialization only for serializable objects<br>
+->An objects is said to be serializable iff the corresponding class implements serializable interface.<br>
+->Serializable interface present in java.io package and dosen't contains any mothers, it is a makers interface.<br>
+->If we are rying to serialize a non-serializable objects we will get run time exception saying NotSerizableException<br><br>
+<b>transient keyword:-</b><br>
+-> At the time of serialization if we don't want to serialize the value of a particular variable to meet the security constraints we have to disclose those variable with "transient" keyword->The time of serialization Jvm ignores original value of transient variable and saves default value.<br>
+<br><b>Transient vs static:-</b><br>
+->static variable are not part of object hence they won't participate in serialization process due to this disclosing a static variable as transient this is no impact.<br>
+<br><b>Transiant vs final:-</b><br>
+->Final variable will be participated into serialization directly by their values hence declare a final variable wit transient there is no impact.<br>
+<br><b>Summary:-</b><br>
+<div class="border"><img border="0" src="images/core_img/core_j5.jpg"></p>
+<p><img border="0" src="images/core_img/core_j6.jpg"></p></div>
+<p><br>
+<b>Object Graph in Serialization:-</b><br>
+When we are trying to serialize an object .The set of all objects which are reachable from that object will be serialized automatically this group of object is called "Object Graph".<br>
+In object graph every object should be Serializable otherwise we will get "not-Serializable exception".<br>
+<div class="border"><b>Example:</b><br>
+Import java.io.*;<br>
+class dog implements Serializable<br>
+{<br>
+cat s=new cat();<br>
+}<br>
+class cat implements Serializable<br>
+{<br>
+rat r=new rat();<br>
+}<br>
+class cat implements Serializable<br>
+{<br>
+int j=20;<br>
+}<br><br>
+class serializableDemo2<br>
+ 
+{<br><br>
+public static void main(String ar[])<br>
+dog d=new dog();<br>
+FileOutputStream fos=new FileOutputStream("abc.ser");<br>
+ObjectOutputStream oos=new ObjectOutputStream(fos);<br>
+Oos.writeObject(d);<br>
+FileIutputStream fis=new FileOutputStream("abc.ser");<br>
+ObjectIutputStream ois=new ObjectIntputStream(fis);<br>
+dog d1=(dog)ois.readObject();<br>
+System.out,println(d1.c.r.j)<br>
+}<br></div>
+&nbsp;</p>
+<p><div class="border"><img border="0" src="images/core_img/core_j7.jpg"></div></p>
+<p><br>
+In the above program whenever we are serializing a dog object automatically cat and rat object will be serialized because these are the part of object graph of dog.<br>
+Among dog, cat and rat if at least one class is not serializable then we will get NotSerializableException.<br>
+c<br>
+r<br>
+J=200<br>
+d1<br>
+c<br>
+r<br>
+J=200<br>
+d1<br>
+c<br>
+r<br>
+J=200<br>
+d1<br>
+ 
+Customized Serialization<br><br>
+In the default Serialization there may be chance of loss of information because of transient keyword.<br>
+<div class="border"><b>Example:</b><br>
+class Account implements Serializable<br>
+{<br>
+String username="CST";<br>
+transient String password="System";<br>
+}<br>
+class SerializeDemo3<br>
+{<br>
+Public static void main(String ar[])<br>
+{<br>
+Account a1=new Account();<br>
+System.out.println(a1.username+"---"a.password);<br>
+FileOutputStream fos=new FileOutputStream("abc.ser");<br>
+ObjectOutputStream oos=new ObjectOutputStream(fos);<br>
+oos.writeObject(a1);<br>
+FileInputStream fis=new FileInputStream("abc.ser");<br>
+ObjectInputStream ois=new ObjectInputStream(fis);<br>
+Account a2=(Account)readObject();<br>
+System.out.println(a2.username+"---"a2.password);<br>
+&nbsp;</p></div>
+<p><div class="border"><img border="0" src="images/core_img/core_j8.jpg"></p>
+<p>&nbsp;</p>
+<p><img border="0" src="images/core_img/core_j9.jpg"></p></div>
+<p><br>
+In the above Example Serialization account object can provide proper username and password but after deserialization account object can't provide the original password,hence during default Serialization there may be chance of loss of information due to transient keyword. We can recover this information by using customized serialization.<br>
+<br><b>We can implement CustomizedSerialization by using rhe following two methods:</b><br>
+1)provide void writeObject(oos oos)throws Exception<br>
+This method will be executed automatically at the time of serialization it is call back method.<br>
+2)private void readObject(ois ois)throws Exception:<br>
+This method will be executed automatically at the time of deserialization it is callback method.<br>
+The above 2 methods we have to define in the corresponding class of serialized Objet<br>
+<div class="border"><b>Example:</b><br>
+import java.io.*;<br>
+Class Account implements serializable<br>
+{<br>
+String username="javat";<br>
+transient string pwd="anushka";<br>
+private void writeobject(objectOutputStream as) throws Exception<br>
+{<br>
+os.defaultwriteobject();<br>
+Username=CST<br>
+Password:null<br> <br>
+String pwd=(String)is.readobject();<br>
+pwd=epwd.substring(3);<br>
+}<br>
+}<br>
+class CustSerializeDemo1<br>
+{<br>
+p.s.v.main(String[] args) throws Exception<br>
+{<br>
+Account a1=new Account();<br>
+s.o.pln(a1.username+".........."+a1.pwd);<br>
+fileOutputStream fos=new FileOutputStream("abc.txt");<br>
+ObjectoutputStream oos=new FileOutputStream(fos);<br>
+Oos.writeobject(a1);<br>
+FileInputStream fis=new FileInputStream("abc.txt");<br>
+ObjectInputStream ois=new ObjectInputStream(fis);<br>
+Account a2=new(Account)ois.readobject();<br>
+s.o.pln(a1.username+&quot;........"+a2.pwd);<br>
+}<br>
+}<br></div>
+Below is the diagram for above example:<br>
+<div class="border"><img border="0" src="images/core_img/core_j10.jpg"></p>
+<p><br></div>
+ 
+<br><b>Serialization w.r.t Inheritance:-</b><br>
+<b>Case1:-</b><br>
+->If the parent class implements serializable the every child class is by default serializable i.e serializable nature is inheriting from the parent to child (p->c).<br>
+<div class="border"><b>Example:</b>class Animal implements Serializable<br>
+{<br>
+int x=10;<br>
+}<br>
+Class Dog extends Animal<br>
+{<br>
+int y=20;<br>
+}<br></div>
+->We can serializable dog object eventhough dog class doesn't implements Serializable interface explicitly because its parent class animal is Serializable.<br>
+<br><b>Case 2:-</b><br>
+-> Even though parent class doesn't implements Serializable and if the child is serializable then we can serialize child class object. At the time of serialization jvm ignores the original value of instance variable which are coming from non-serializable parent and store default values.<br>
+->At the time of deserialization jvm classes is any parent class is non-Serializable or not,jvm create a separate object for every non-serializable parent and share its instance variable to the current object.<br>
+->For this jvm always calls no arguments constructor of the non-Serializable parent. If the non-Serializable parent doesn't have no arguments constructor then we will get runtimeException.<br>
+ 
+<div class="border"><b>Example:</b><br>
+Import java.io.*;<br>
+Class Animal<br>
+{<br>
+Int i=10;<br>
+Animal()<br>
+{<br>
+s.o.pln("Animals constructor called.");<br>
+class Dog ectends Animal implements serializable<br>
+{<br>
+Int j=10;<br>
+Dog()<br>
+{<br>
+s.o.pln("Dog constructor called");<br>
+}<br>
+}<br>
+p.s.v.main(Sring[] args) throws Exception<br>
+{<br>
+Dog d=new Dog();<br>
+d.i=888;<br>
+d.j=999;<br>
+FileOutputStream fos=new FileOutputStream("abc.txt");<br>
+Object OutputStream oos=new ObjectOutputStream(fos);<br>
+Oos.writeObject(d);<br>
+s.o.pln("Deserilization started");<br>
+FileInputStream fis=new FileInputStream("abc.txt");<br>
+Object InputStream ois=new Object InputStream(fis);<br>
+Dog d1=(Dog)ois.readobject();<br>
+s.o.pln(d1.i+"........"+obj);<br>
+}<br>
+}<br></div>
+	
+	</div>
+	</div>
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>

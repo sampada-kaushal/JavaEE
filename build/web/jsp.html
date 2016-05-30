@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Jsp| JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                                 <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp">Login</a></li> 
+                                                        <li><a href="signup.jsp">Sign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li class="active"><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="advance.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a>
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                      
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>            </div>
+        </div>
+    </header>
+<br>
+<div class="container">
+	<hr class="hr">
+<div class="row" >
+	  <div id="sidebar-wrapper" style="float:left">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                  
+                </li>
+				<li class="active_page">
+			<a href="jsp.html">Java Server Pages</a>  
+				</li>
+				<li >
+				
+                    <a href="jsp_architecture.html">Architecture</a>
+                </li>
+                
+                <li >
+				
+                    <a href="jsp_intro.html">Why JSP?</a>
+                </li>
+                <li >
+                    <a href="jsp_advantage.html">Advantages of JSP over Servlet</a>
+                </li>
+                <li>
+                    <a href="jsp_lifecycle.html">Life Cycle of JSP<a>
+                </li>
+				
+              
+                <li >
+                    <a href="jsp_structure.html">JSP Directory Structure</a>
+                </li>
+                <li>
+                    <a href="jsp_tags.html">Tags used in JSP</a>
+                </li>
+                <li class="main">
+                    <a href="jsp_script.html">Scriptlet Tag</a>
+                </li>
+				    <li>
+                    <a href="jsp_expression.html">Expression Tag </a>
+                </li>
+				<li>
+				 <a href="jsp_declaration.html">Declaration Tag </a>
+                </li>
+                <li>
+                    <a href="jsp_objects.html">JSP Implicit Objects</a>
+                </li>
+                
+            </ul>
+        </div>
+	<div class="right" >
+
+
+
+
+<h1><b>Java Server pages (JSP)</b></h1><br>
+<b>JSP is a simple sort of text document that contins two types of text:</b><br>
+1. <b>static text</b>; that can be expressed in any text-based format such as HTML, XML etc.<br>
+2. <b>dynamic text</b>; which contains dynamic data.<br><br>
+So, it is basically a technology that helps to create dynamically generated web pages based on HTML, XML, or other document types. It was released in <b>1999 by Sun Microsystems</b>, JSP is a bit similar to PHP, but it uses the Java programming language.
+To deploy and run JSP, a compatible web server with a servlet container, such as Apache Tomcat or Jetty, is required. The recommended file extension for the source file of a JSP page is <b>.jsp</b>.
+JSP allows to mix static HTML with dynamically generated HTML- in the way that the 
+<i>business logic</i> and the <i>presentation</i> are well separated.<br><br> &nbsp;JSP technology creates web application just like Servlet technology. It can be thought of as an extension to servlet because it provides more fuctionality than servlet such as expression language, jstl etc.
+A JSP page consists of HTML tags and JSP tags. The JSP elements in a JSP page can be expressed in two syntaxes, 
+<b>standard</b> and <b>XML</b>, though any given file can use only one syntax. A JSP page in XML syntax is an XML document and can be manipulated by tools and APIs for XML documents.
+ <br><br>
+ JSP can be used to generate web forms which give outputs based on users input. To bridge the gap between JSP and HTML in JSP, additional features such as JSP Tags, Expression Language, Custom tags etc are used.
+ It is often quoted that can be done using servlet can accomplished using JSP. But one 
+should note that these two technologies are complementary to each other and <b>NOT</b> replacement of each other.<br><br>
+ In a typical Model-View-Cintrol (MVC) application, <i>servlets</i> are often used for the 
+<i>Contoller (C)</i>, which involves complex programming logic. <i>JSPs</i> are often used for the 
+<i>View (V)</i>, which mainly deals with the presentation. The <i>Model (M)</i> is usually implemented using
+<i>JavaBean</i> or <i>EJB</i>.<br>
+ <br><b>Thus</b>, Java Server Pages can be used for a variety of purposes, such as retrieving information from a database or registering user 
+preferences, accessing Java Beans components, passing control between the pages  and sharing information between requests, pages etc. 
+	</div>
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>
+
+

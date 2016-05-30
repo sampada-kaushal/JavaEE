@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Core Generic| JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+
+	<a href="#top" class="top" title="Back to Top">&#8593;</a>
+<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                             <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp">Login</a></li> 
+                                                        <li><a href="signup.jsp">Sign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li class="active"><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="advance.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a> 
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                        
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+<br>
+	
+	<div class="container">
+	<hr class="hr">
+<div class="row" >
+	  <div id="sidebar-wrapper" style="float:left">
+             <ul class="sidebar-nav">
+                <li class="sidebar-brand main">
+                  <a href="core.html">Core</a>
+                </li>
+				<li class="main">
+				    <a href="core_fundamentals.html">  Java Fundamentals </a></li>
+					<li class="main"><a href="jdk.html"> JDK File Structure </a></li>
+                    <li> <a href="core_development.html">Development  </a></li>
+					<li>
+                     <a href="core_operators.html">  Operators and Assignments </a></li>
+					 <li>
+                     <a href="core_flowcontrol.html"> Flow Control </a></li>
+					 <li><a href="core_accessmodifiers.html">  Declarations and Access Modifiers</a></li>
+                     <li class="main"> <a href="core_garbage.html">Garbage Collector  </a></li>
+					 	<li class="main"><a href="core_oops.html"> Oops Concepts </a></li>
+							<li class="active_page"><a href="core_oops class and object.html"> Class and Object </a></li>
+							<li class="active_page"><a href="core_oops interface.html"> Interface </a></li>
+						<li class="active_page"><a href="core_oops abstraction.html"> Abstraction </a></li>
+						<li class="active_page"><a href="core_oops polymorphism.html"> polymorphisam</a></li>
+						<li class="active_page"><a href="core_oops inheritance.html">Inheritance</a></li>
+						<li class="active_page"><a href="core_oops encapsulation.html"> Encapsulation</a></li>
+						<li class ="main"><a href="java_object.html"> Java Object Class </a> </li>
+				   <li><a href="core_innerclasses.html">Inner classes  </a></li>
+				   <li><a href="core_package.html">Java Package</a></li>
+				    <li class="main"> <a href="core_lang.html">Java.lang package  </a></li>
+                    <li class="main"> <a href="core_io.html">Java.io package     </a></li>
+					 <li class="main"> <a href="core_exception.html">Exception handling </a></li>
+					 <li class="main"> <a href="core_multithreading.html">Multithreading </a>
+				<li><a href="core_expression.html">  Regular Expressions   </a></li>
+					 <li><a href="core_enumeration.html">  Enumerations </a></li>  
+                    <li> <a href="core_internationalization.html">	Internationalization   </a></li>
+					 <li><a href="core_assertion.html">Assertions  </a></li>
+					 <li class="main"><a href="core_collection.html">Collection Framework     </a></li>
+					 <li class="active_page"><a href="core_generics.html">  Generics   </a></li>
+					<li class="main"><a href="core_jdbc.html"> JDBC </a></li>
+					<li class="main"><a href="features_5.html"> Features of Java 5 </a></li>
+			</ul>
+        </div>
+	<div class="right">
+	  
+<h1>Generics</h1><br>
+<b> Introduction</b><br>
+<b>Generic classes</b><br>
+<b>Bounded Types</b><br>
+<b>Generic methods</b><br>
+<b>Valid card Character</b><br> 
+<b>Communication with non-Generic code</b><br>
+<b>Conclusion</b><br>
+  
+<b>Introduction</b><br>
+&nbsp;&nbsp;&nbsp; Arrays are always safe with respect to type.<br>
+<b>Example:</b><br>
+If our programmer requirement is to add only String objects then we can go for String[] array for this array we can add only String type of objects, by mistake if we are trying to add any other type we will get Compile time error.<br>
+<div class="border">
+<b>Example:</b><br>
+String[] s=new String[600];<br>
+s[0]=&quot;company&quot;;<br>
+s[1]=&quot;cernsystem&quot;;<br>
+s[2]=new Student(); // incompatable types<br>
+found:Student<br>
+Requriment:String<br>
+</div>
+&nbsp;&nbsp;&nbsp; Hence in the code of Arrays we can always give the guarantee about The type of elements. String[] array contains only String objects (i.e.String)due to this arrays are always safe to use with respect to type.<br><br>
+&nbsp;&nbsp;&nbsp; But collections are not safe to use w.r.t type.<br>
+<b>Example:</b> 
+<p>If our program requirement is to hold only String object & if we are using ArrayList,By mistake and are trying to add any others type to the List we 
+won't get any Compile time error But program may fail at Runtime.<br>
+<div class="border">
+<b>Example:</b><br>
+ArrayList l=new ArrayList();<br>
+l.add(&quot;Anil&quot;);<br>
+l.add(&quot;Puneet&quot;);<br>
+l.add(new Student());<br>
+|<br>
+  <br>
+|<br>
+String name1=(String)l.get(0);<br>
+String name2=(String)l.get(1);<br>
+String name3=(String)l.get(2);//R.E. ClassCastException<br>
+</div>
+&nbsp;&nbsp;&nbsp; There is no guarantee that collection can hold a particular type. Hence w.r.t Type collection are not safe to use.<br>
+Case 2: In the case of Arrays at the time of retrieval it is not required to perform any type casting.<br>
+<div class="border">
+<b>Example:</b><br>
+String[] s=new String[100];<br>
+s[]=&quot;Anil&quot;<br>
+|<br>
+|<br>
+String name1=s[0];//Typecasting is not required.<br>
+</div>
+&nbsp;&nbsp;&nbsp; But in the case of Collection at the time of retrieval compulsory we should perform Typecasting is not mandatory which is a bigger headache to the programmer.<br>
+&nbsp;&nbsp;&nbsp; To over come the above problems of collection (Type safe & TypeCasting) sun people introduced Generics concept in 1.5 version. Hence the main objective of Generic<br> concept is.
+1) To provide Type Safety to the Collections. So that they can hold only a particular type of object.<br>
+2) To resolve type casting problem.<br>
+<b>Example:</b><br>
+To hold only String type of objects<br>
+a generic version of ArrayList we can declear as follows<br>
+<div class="border">
+ArrayList <String>l=new ArrayList<String>();<br>
+ArrayList //returntype<br>
+<string> //parameter type<br>
+  <br>
+&nbsp;&nbsp;&nbsp; For this Arraylist we can add only String type of objects, by mistake if we are trying to add any other type we will get compile time error.<br>
+i.e. we are getting Type-safety.<br>
+l.add(&quot;Anil&quot;);<br>
+l.add(&quot;Iqbal&quot;);<br>
+l.add(&quot;10&quot;);<br>
+l.add(10); //C.E. cannot find symbol<br>
+symbol:method add(int)<br>
+location:class ArrayList<String><br>
+</div>
+&nbsp;&nbsp;&nbsp; At the time of retrieval it is not required to perform any Typecasting.<br>
+String name= l.get(0);//Type casting is not Required.<br><br>
+  <b> Conclusion 1:</b><br>
+&nbsp;&nbsp;&nbsp; Usage of parent class reference to hold child class object is considered as polymorphism.<br>
+&nbsp;&nbsp;&nbsp; Polymorphism concept is applicable only for base type. but not for parameter type.<br>
+<div class="border">
+<b>Example:</b><br>
+ArrayList<Integer> l= new ArrayList<Integer>();<br>
+List<Integer> l=new ArrayList<Integer>();<br>
+Collection<Integer> l=new ArrayList<Integer>();<br>
+List<Objective>l=new ArrayList<Integer>();//C.E.incompatible Types<br>
+required:AL<Integer><br>
+found:List<br><br>
+</div>
+<b>Conclusion 2:</b><br>
+*For the parameter type we can use any class or interface name & we can't use primitive type validation that leads to Compile Time Error.<br>
+<b>Example:</b><br>
+<div class="border">
+ArrayList<int> l= New ArrayList<int>();//C.E. Unexpected type<br>
+found:int<br>
+required:reference<br>
+</div>
+  <br>
+Generic Classes<br>
+*Untill 1.4 version non-Generic version of ArrayList class is declared as follows<br>
+<div class="border">
+class ArrayList<br>
+{<br>
+Add(Object o );<br>
+Object get(int index)<br>
+}<br></div>
+*The argument to the add() method is object. Hence we can add any type of object due to this we are not getting Type Safety.<br>
+*The return type of get() method is object. Hence Erythematic Exception occur at the time of retrieval so it is compulsory to perform Typecasting.<br>
+*But in 1.5 version a generic class of ArrayList class is declared as follows.<br>
+<div class="border">
+Class ArrayList<T><br>
+{<br>
+Add<T t><br>
+T get (int index)<br>
+}<br></div>
+*Based on our runtime requirement Type Parameter will be replaced with corresponding provided Type.<br>
+<b>Example:</b> 
+<p>To hold only String Type of objects we have to create Generic version of ArrayList Object as follows<br>
+ArrayList<String>l=new ArrayList<String>();<br>
+*For this requirement the corresponding loaded version of ArrayList Class is<br>
+<div class="border">
+class ArrayList<String><br>
+{<br>
+add(String s)<br>
+  <br>
+String get(int index)<br>
+}<br>
+</div>
+*Add() method can take String as the argument hence we can add only String type of object. By mistake if we are trying to add any other type we will get compile time Error.i.e.we are getting Type-safety.<br>
+*The return type of get() method is String, Hence at the time of retrieval we can assign directly to the String type variable it is not required to perform any Type Casting.<br>
+Note:<br>
+1) As the type parameter we can use any valid java identifier but it is Convention to use 'T'.<br>
+<div class="border">
+<b>Example:</b><br>
+1) class AL<x><br>
+{<br>
+} //valid<br>
+2) class AL<Anil><br>
+{<br>
+} //valid<br>
+</div>
+2) We can pass any no. of parameter & need not be one.<br>
+<b>Example:</b><br>
+<div class="border">
+class HashMap<K,V><br>
+{<br>
+}<br>
+HashMap<String,Integer>m=new HashMap<String,Integer>();<br>
+String //Key type<br>
+Integer//Value type<br>
+</div>
+*Through generic we are associating a type parameter to the classes.such type of parameterized classes are called generic classes.<br>
+*We can define our own generic classes also.<br>
+*<b>Example:</b>m1(ArreyList<String> l)<br>
+<div class="border">
+{<br>
+l.add("A"); //valid<br>
+l.add(null); //valid<br>
+l.add(10); //Invalid<br>
+}<br>
+</div>
+2)m1(ArrayList <? extends x> l) //valid<br>
+*We can call this method by passing Arraylist of any type,but within the method we can't add any type except null to the List. Because we don't know the type exactly.<br>
+*<b>Example:</b>m1(ArreyList<?> l)<br>
+<div class="border">
+{ l.add(null); //valid<br>
+l.add("A"); //Invalid<br>
+l.add(10); //Invalid<br>
+}<br>
+</div>
+3)m1(ArrayList <? extends x> l) //valid<br>
+*If x is a class then we can call this method by passing ArrayList of either x type or its child classes.<br>
+  <br>
+*If x is an interface then we can call this method by passing ArrayList of either x type or its implementation class.<br>
+*In this case also we can't add any type of elements to the list except null.<br>
+4)m1(ArrayList <? supers x> l) //valid<br>
+*If x is a class then this method is applicable for ArrayList of either x type or its super classes.<br>
+*If x is an interface then this method is applicable for ArrayList of either x type or super classes of implementation class of x.<br>
+*With in the method we can add only x type object and null to the list.<br>
+Qu)Which of the following declaration are valid?<br>
+1)AL<String> l=new AL<String>(); //Valid<br>
+2)AL<?> l=new AL<String>(); //Valid<br>
+3)AL<? extends String> l=new AL<String>(); //Valid<br>
+4)AL<? super String> l=new AL<String>(); //Valid<br>
+5)AL<? extends Object> l=new AL<String>(); //Valid<br>
+6)AL<? extends Number> l=new AL<Integer>(); //Valid<br>
+7)AL<? extends Number> l=new AL<String>();<br>
+//C.E.Incompatible types<br>
+required:AL<? extends Number><br>
+found:AL<String><br>
+8)AL<?> l=new AL<? extends Number>(); //Invalid<br>
+9)AL<?> l=new AL<?>(); //C.E.unexpected type:<br>
+required:class or interface without bounds<br>
+found:?<br>
+*We can define the type parameter either at class level or at method level.<br>
+  <br>
+   Declaring type parameter at class level:<br>
+   <div class="border">
+class Test<T><br>
+{<br>
+T ob;<br>
+public T get()<br>
+{<br>
+return ob;<br>
+}<br>
+}<br>
+</div>
+   Declaring type parameter at method- level:<br>
+We have to declare the type paremeter just before return type .<br>
+1) class level:<br>
+<div class="border">
+class Test<T><br>
+{<br>
+T ob;<br>
+public T get()<br>
+{<br>
+return ob;<br>
+}<br>
+}<br>
+</div>
+  <br>
+2)method level:<br>
+<div class="border">
+class Test<br>
+{<br>
+public <T > void m1(T)<br>
+{<br>
+T ob;<br>
+}<br>
+}<br>
+</div>
+1)<T extends Number> //Valid<br>
+2)<T extends Runnable> //Valid<br>
+3)<T extends Number and Runnable> //Valid<br>
+4)<T extends Number and compareble> //Valid<br>
+5)<T extends Number and Thread> //Invalid<br>
+6)<T extend Runnable and Thread> //Invalid<br>
+Communication with non-Generic code:<br>
+*To provide compatibility with old version SUN people compromised<br>
+The concept of generics in very few areas.<br>
+*The following is one such area.<br>
+<div class="border">
+<b>Example:</b><br>
+Class test<br>
+{<br>
+public static void main(String ar())<br>
+  <br>
+{<br>
+ArrayList<String> l=new ArrayList<String>();<br>
+l.add("A");<br>
+l.add(10);<br>
+m1(l);<br>
+System.out.println(l); [A,10,10.5,true]<br>
+//l.add(10); // C.E.<br>
+}<br>
+Public static void m1(Arraylist l)<br>
+{<br>
+l.add(10);<br>
+l.add(10.5);<br>
+l.add(true);<br>
+}<br>
+}<br>
+</div>
+<b>Conclusion</b><br>
+Generic concept is applicable only at compile time to provide the safety and to resolve type casting problems. At runtime there is no such type of concept.<br>
+Hence the following declarations are equal:<br>
+<div class="border">
+<b>Example:</b><br>
+1)ArrayList al=new ArrayList();<br>
+2)ArrayList al=new ArrayList<String>();<br>
+3)ArrayList al=new ArrayLis<Integer>();<br>
+</div>
+<div class="border">
+<b>Example:</b><br>
+  <br>
+ArrayList l=new ArrayList<String>();<br>
+l.add("A");<br>
+l.add(10);<br>
+l.addtrue);<br>
+System.out.println(l);<br>
+</div>
+The following two declarations are equal and there is no difference<br>
+1) ArrayList<String> l=new ArrayList<String>();<br>
+2) 1) ArrayList<String>l=new ArrayList();<br>
+Both are equal.<br>
+	</div>
+	</div>
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>

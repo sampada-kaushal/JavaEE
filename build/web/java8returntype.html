@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Lambda | JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+<a href="#top" class="top" title="Back to Top">&#8593;</a>
+	<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                           <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp ">Login</a></li> 
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li ><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="servlet.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a>
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="android.html">Android</a></li>
+                                             
+                        <li><a href="contact.html ">Contact</a></li>
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+                            <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+	<br>
+	
+	<div class="container">
+	<hr class="hr">
+<div class="row" >
+	  <div id="sidebar-wrapper" style="float:left">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                  
+                </li>
+                <li >
+                 <a href="java8.html">Introduction</a> 
+                </li>
+				<li >
+				<a href="java8setup.html">Setup </a>
+				</li>
+				<li >
+				<a href="java8basic.html">Basics of Lambda </a>
+				</li>
+				<li >
+				<a href="java8lifecycle.html">Life Cycle</a>
+				</li>
+					<li class="active_page">
+				<a href="java8returntype.html">Return Type</a>
+				</li>
+					<li>
+				<a href="java8capture.html">Capturing Satic Variable</a>
+				</li>
+					<li>
+				<a href="java8method.html">Method Refrence</a>
+				</li>
+				
+                <li>
+                    <a href="java8parameter.html">Parameter Methods</a>
+                </li>
+				<li>
+				<a href="java8date.html">Date & Time API</a>
+				</li>
+					<li>
+				<a href="java8encoder.html">Encoder & Decoder</a>
+				</li>
+				<li>
+				<a href="java8functional.html">Fuctional Interface</a>
+				</li>
+					
+              						                             																				      
+                 </ul>
+        </div>
+	
+	<div class="right">
+		
+					<h1><b>Java8 Lambda Return Type</b></h1><br><br>
+					While the implementation of test( ) does move the computation of a test inside the java8 Interface where it belongs,
+						it is way to do it. With lambda Expression its easy to send data & get return value. Lambda reduce the code. you can
+						see this in Example. How lambda make it easy.<bR><br>
+						
+						<b>There are two important things to understand about returning values:</b><bR>
+						1.The type of data returned by a method must be compatible with the return type
+						specified by the method. For example, if the return type of some method is boolean,
+						you could not return an integer.<bR>
+						2.The variable receiving the value returned by a method must also be compatible with the
+						return type specified for the method. 
+						<br><Br><Br>
+					<b>
+						Creating Program in Java8(Lambda) for Return Type</b>
+						<br><br>
+						Follow the below steps to write program with java8(Lambda).<br>
+						<font face="Arial"></font></font><font size="5">
+						<span style="line-height:115%;font-family:&quot;Arial&quot;; font-weight:700">
+						Step-1
+						</span></p></font>
+						Create a package “com.javat.java8” under sources package-> then create the Interface
+						“java8return.java”. Once you ready then write below code.<br>
+						
+						<div class="border">
+						<center><img src="images\java8\java8basic\java8\returntype\inter.PNG"></center>
+						</div>
+						<br><br>
+						<br>
+						
+						<font face="Arial"></font></font><font size="5">
+						<span style="line-height:115%;font-family:&quot;Arial&quot;; font-weight:700">
+						Step-2
+						</span></p></font>
+						create the Java class
+						“java8returnvalue.java”. Once you ready then write below code.<br>
+						
+						<div class="border">
+						<center><img src="images\java8\java8basic\java8\returntype\class.PNG"></center>
+						</div>
+						<br><br>
+						<br>
+						
+						<font face="Arial"></font></font><font size="5">
+						<span style="line-height:115%;font-family:&quot;Arial&quot;; font-weight:700">
+						Step-3
+						</span></p></font>
+						create the Java class
+						“LamdaReturnType.java”. Once you ready then write below code.<br>
+						
+						<div class="border">
+						<center><img src="images\java8\java8basic\java8\returntype\main.PNG" width="875"></center>
+						</div>
+						<br><br>
+						<br>
+						<font face="Arial"></font></font><font size="5">
+						<span style="line-height:115%;font-family:&quot;Arial&quot;; font-weight:700">
+						Output
+						</span></p></font>
+						LamdaReturnType.java
+						<div class="border">
+						<center><img src="images\java8\java8basic\java8\returntype\output.PNG"></center>
+						</div>
+						<br><br>
+						<br>
+						<b><a href ="Example rar\java8\java8.rar" > 
+						<font size="3">Download example and run it on Netbeans IDE</font></a></b>
+						<br><br><br><br><br>
+						
+      
+
+
+
+         
+	</div>
+	</div>
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>

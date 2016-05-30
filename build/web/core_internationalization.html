@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Internationalization| JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	<style>
+<!--
+ p.MsoNormal
+	{mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	}
+p.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	}
+p.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	}
+p.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	}
+p.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	}
+table.MsoTableGrid
+	{border:1.0pt solid black;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	}
+-->
+</style>
+	</head><!--/head-->
+
+<body>
+
+	<a href="#top" class="top" title="Back to Top">&#8593;</a>
+<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                             <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp">Login</a></li> 
+                                                        <li><a href="signup.jsp">Sign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li class="active"><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="advance.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a> 
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                        
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+<br>
+	
+	<div class="container">
+	<hr class="hr">
+<div class="row" >
+	  <div id="sidebar-wrapper" style="float:left">
+             <ul class="sidebar-nav">
+                <li class="sidebar-brand main">
+                  <a href="core.html">Core</a>
+                </li>
+				<li class="main">
+				    <a href="core_fundamentals.html">  Java Fundamentals </a></li>
+					<li class="main"><a href="jdk.html"> JDK File Structure </a></li>
+                    <li> <a href="core_development.html">Development  </a></li>
+					<li>
+                     <a href="core_operators.html">  Operators and Assignments </a></li>
+					 <li>
+                     <a href="core_flowcontrol.html"> Flow Control </a></li>
+					 <li><a href="core_accessmodifiers.html">  Declarations and Access Modifiers</a></li>
+                     <li class="main"> <a href="core_garbage.html">Garbage Collector  </a></li>
+					 	<li class="main"><a href="core_oops.html"> Oops Concepts </a></li>
+							<li class="active_page"><a href="core_oops class and object.html"> Class and Object </a></li>
+							<li class="active_page"><a href="core_oops interface.html"> Interface </a></li>
+						<li class="active_page"><a href="core_oops abstraction.html"> Abstraction </a></li>
+						<li class="active_page"><a href="core_oops polymorphism.html"> polymorphisam</a></li>
+						<li class="active_page"><a href="core_oops inheritance.html">Inheritance</a></li>
+						<li class="active_page"><a href="core_oops encapsulation.html"> Encapsulation</a></li>
+						<li class ="main"><a href="java_object.html"> Java Object Class </a> </li>
+				   <li><a href="core_innerclasses.html">Inner classes  </a></li>
+				   <li><a href="core_package.html">Java Package</a></li>
+				    <li class="main"> <a href="core_lang.html">Java.lang package  </a></li>
+                    <li class="main"> <a href="core_io.html">Java.io package     </a></li>
+					 <li class="main"> <a href="core_exception.html">Exception handling </a></li>
+					 <li class="main"> <a href="core_multithreading.html">Multithreading </a>
+				<li><a href="core_expression.html">  Regular Expressions   </a></li>
+					 <li><a href="core_enumeration.html">  Enumerations </a></li>  
+                    <li class="active_page"> <a href="core_internationalization.html">	Internationalization   </a></li>
+					 <li><a href="core_assertion.html">Assertions  </a></li>
+					 <li class="main"><a href="core_collection.html">Collection Framework     </a></li>
+					 <li><a href="core_generics.html">  Generics   </a></li>
+					<li class="main"><a href="core_jdbc.html"> JDBC </a></li>
+					<li class="main"><a href="features_5.html"> Features of Java 5 </a></li>
+			</ul>
+        </div>
+	<div class="right">
+<h1>
+	Internationalization (I18N)</h1>
+<br>
+	I18N<br>
+	<br>*
+Various countries 
+	follow various convention to represent dates &amp; no's etc.
+<br>*
+Our application 
+	should generate locate specific response like for India people the response 
+	should be in term of Rs(rupees) &amp; for the U.S. people the response should be 
+	in term of dollars($) the process of design such type of web application is 
+	called Internationalization(I18N).<br>*We can implement I18N 
+	by using the Following classes.=
+<br>1)Local<br>
+2)NumberFormat<br>
+3)DateFormat<br>
+<b>
+	1)Local:</b>
+<br> A local 
+	object represents a Geo-graphic Location.<br><br>
+	<b>Constructor:</b><br>
+	*We can create a local 
+	object by using the following constructor<br>
+	1)Locale l=new Locale(String language);<br>
+	2)Locale l=new Locale(String language, String Country);<br>
+	*Local class defines 
+	several constants to represent some standard Locales we can use These Locale 
+	Directly without creating on own.<br>
+	<b>Example:</b><br>Locale 
+	US
+	Locale.ENGLISH<br>
+Locale.ITALITAN 
+	Locale.UK<br>
+	<b>Note:</b><br>
+	Locale class is the 
+	final present in java.util package <br>
+*It is the direct 
+	class of object it implements clonable &amp; serializable interface.<br>
+	Importance method Of Locale Class:<br>
+	1)
+	public static Locale getDefault();<br>
+	2)public static Locale getDefault(Locale l);<br>
+	3)public String getLanguage();<br>
+	4)public String getDislpayLanguage();<br>
+	5)public String getCountry();<br>
+	6)public String getDisplayCountry();<br>
+	7)public static String[] getISOCountries();<br>
+	8)public static String[] getISOLanguage();<br>
+	9)public static Locale[] getAvailableLocale();<br>
+ <div class="border">	<b>Example:-</b><br>
+	Import java.io.*;<br>
+	Class LocaleDemo<br>
+	{<br>
+	 Public static void main(String args[])<br>
+	 {<br>
+	Locale l1=locale.getDefault();
+	<br> System.out.println(''l1.getCountry()+''---''+l1.getLanguage()'');<br>
+	 System.out.println(''l1.getDisplayCountry()+''---''+l1.getDislpayLanguage()'');<br>
+	Locale l2=new Locale(''pa'',''iN'');<br>
+	 Locale.setDefault(l2);2);<br>
+	 String[]s3=Locale.getISOLanguage();<br>
+	 for(String s4:s3)<br> {<br>
+	
+	 System.out.println(s4);<br>
+	   }<br>
+	String[] s4=Locale.getISOCountries();<br>
+	  for(String s4:s3)<br>
+	   {<br>
+	   System.out.println(s5);<br>
+	   }<br>   Locale[] s=Locale s=Locale.getAvailableLocales();<br>
+	   For(Locale s1,s)<br>
+	   {; {<br>   System.out.println(''s1.getDisplayCountry()+''---''+s1.getDislpayLanguage()'');<br>
+	   }; }<br>
+	  }<br>
+	}<br></div>
+	
+	<b>
+	Number Format Classes:-</b>
+	<br>Various countries 
+	follow various convention to represent number by using Number Format classes 
+	we can format a number according to a particular Locale.<br>
+	*Number Format class 
+	parent in java.next package &amp; it is an abstract class.hence we can,t create 
+	NumberFormat object directly<br>
+	NumberFormat nf=new Number Format(); //invalid<br>
+	*Creating NumberFormat object for the default Locale:-<br>
+	NumberFormat classes defines the following methods for this<br>
+	1)Public static NumberFormat getInstance();<br>
+	2)Public static NumberFormat getCurrencyInstance();<br>
+	3)Public static NumberFormat getParcentInstance();<br>
+	4)Public static NumberFormat getNumberInstance();<br><br>
+	<b>Getting NumberFormat object for a Specific Locale:-</b><br>
+	*We have to pass the 
+	corresponding Locale object as argument to the above methods<br>
+	1)Public static NumberFormat getCurrencyInstance(Locale l);<br>
+	*once we get 
+	NumberFormat object we can format &amp; parse numbers by using the Following 
+	methods of NumberFormat classes.<br>
+	1)public String format(lang l);<br>
+	2)public String format(double d);<br>
+	*To format or convert <br>
+	java specific NumberFormat to locale specific String Form.<br>
+	3)public Number parse(String s)Throws ParseException<br>
+	*To covert Locale <br>
+	specific string form to java Specific number form <br>
+	 <div class="border"><b>Example :<br></b>
+	Write a program to represent a java number in Italy Specific form.<br>
+	import java.io.*;<br>
+	import java.util.*;<br>
+	class NumberFormatDemo2<br>
+	{<br>
+	 public static void main(String args[])<br>
+	 {<br>
+	Double d=123456.789<br>
+	 NumberFormat nf=NumberFormat.getInstance(Locale.ITALY);<br>
+	
+	 System.out.println(''Italy format:''nf.format(d));<br>
+	}<br>
+	}<br>
+	<b>
+	Output:</b><br>
+	 Italy form is:123.456,789<br></div>
+	<b>
+	<br>DateFormated class:</b><br>
+	*Various countries 
+	follow various Convensions to represent date<br>
+	*By using dateFormat 
+	class we can format the DATE according to a particular Locale.<br>
+	*DateFormat class is 
+	an abstract class &amp; parent in java.Text pair.<br>
+	
+	<br><b>Getting 
+	DateFormat object for Default Locale:</b>
+	<br>
+	DateFormat class defines The Following methods for this<br>
+	1)Public static DateFormat getInstance();<br>
+	2)Public static DateFormat getDateInstance();
+<br>
+
+	3)Public 
+	static DateFormat getDateInstance(int Style);<br>
+
+
+	
+	
+	 DateFormat.Full 
+	
+	<br>
+	
+	DateFormat.Full 1
+	
+	<br>
+	DateFormat.Full 2 
+	
+	<br>
+	 DateFormat.Full 3
+	<br><b>
+	Getting DateFormat object for Specific Locale: </b>
+	
+	<br>
+	1)public static DateFormat getDateInstance(int Style,Locale l);<br>
+	
+	Once we get DateFormat object we can format &amp; pass dates by using the 
+	following methods.<br>
+	
+	1)<br>
+	public String format(Date d);<br>
+	
+	 To convert Java Date form to Locale specific String form.<br>
+	2)<br>
+	public date parse (String s)throws parseException. Example:
+	<br> <div class="border">
+	 Write a Program to display System Date in all Possible styles of US 
+	format.
+	<br>
+		
+	import.java.util.*;<br>
+	
+	import.java.test.*;<br>
+	
+	class DateFormatDemo1<br>
+	
+	{<br>
+	
+	 public static void main(String args[])<br>
+	
+	
+	 {<br>
+	System.out.println(''full form:''+DateFormat.getDateInstance(0).format(new Dates()));<br>
+	
+	(or) // DateFormat df=DateFormat.getDateInstance(0);<br>
+	 
+	System.out.println(''df.format(new Date())'');<br>
+    System.out.println(''Long form:''+DF.getDateInstance(1).format(new.Date()));<br>
+	System.out.println(''MEDIUM form:''+DF.getDateInstance(2).format(new.Date()));<br>
+	System.out.println(''Long form:''+DF.getDateInstance(3).format(new.Date()));<br>
+	
+	
+	 }<br>
+	
+	}<br>
+	OutPut:<br>
+	
+	Full form:Thursday,February.2.2010<br>
+	
+	Long form:February 18.2010<br>
+	
+	Medium form:Feb 18,2010.<br>
+	</div>
+	
+	<b>Note:</b></b><br>Default style is medium most of 
+	the cases default Locale is US.<br>Default style is Medium most of 
+	the cases default Locale is US.Development:<br><br>
+	<b>
+	
+	Javac:</b><br>
+	We can use this command to 
+	compile a single or group of java files.<br>
+	Syn: Javac [options]A.java/A.java <br>
+	B.java<br>
+	we can use java Command to run a .class file.<br><br>
+		
+	<b>Syn</b>
+	 java[option]; <br>
+	 Note:- we can compile a group 
+	of .java files at a time where as we can run only one .class file at a time.<br>
+	Class path:classpath described <br>
+	the location where required .class file are available.<br>>
+	JVM will always  
+	locate the required .class file.<br>
+	The Following are 
+	various possible ways to set the classpath.<br>
+	1)Permenently by using environment variable classpath This class path will 
+	be preserved after system restart also.<br>
+	
+	2)At command prompt level by using set Command.<br>
+	Set classpath=%classpath%;D:\path&gt;<br>This class path will 
+	be only for that particular command prompt once command execution completes 
+	automatically classpath will be lost.<br>
+	
+	3)At command level by using cp option<br>
+	java-cpD:\path&gt;<br>
+	This classpath is 
+	applicable only for this particular command. Once command execution 
+	completes automatically classpath.will be lost.<br>Among the above 3 
+	ways the most commonly used approach is setting classpath or command level. 
+Example:<br>
+	
+	Class Test<br>
+	
+	 public static void main(String args[])<br>
+	 { System.out.println(''Classpath Demo'');<br>
+	}<br>
+	
+	}<br>
+	1)Compiler will check only one 
+	level dependency where as JVM will check all Levels of dependency<br>
+	2) If any folder structure created because Of package statement it should be resolved Through import 
+	statement only &amp; Base package Location we have to update in classpath<br>
+	3) Within the classpath the order 
+	of location is very importance for the required .class file ,JVM will always 
+	search the location.Left Right in classpath.<br> 
+	Once JVM finds the required.file then the rest of the classpath won't to be 
+	searched.<br> 
+	C: D: E:<br>
+		<div class="border">	class Iqbal<br>Public static void main(-)<br>	 { 
+System.out.println(''C:Iqbal'');<br>
+			<br>}<br>}<br></div><div class="border">
+			class Iqbal<br>
+			Public static void main(-)<br>
+			{<br>
+			System.out.println(''D:Iqbal'');<br>	}<br>	}<br></td></div><div class="border">
+			<br>	class Iqbal<br>	{<br>	 Public static void main(-)<br>	 { 
+System.out.println(''E:Iqbal'');<br>	}<br>	}
+		C:\&gt; javac Iqbal.java //valid<br>
+	D:\&gt; javac Iqbal.java //valid<br>
+	E:\&gt; javac Iqbal.java //valid<br>
+	C:\&gt; java Iqbal //valid<br>
+	
+	Output:
+	c:Iqbal<br>
+	<br>D:\&gt;java-cp C:;D:;E: Iqbal<br>
+	<br> o/p= C:Iqbal<br>
+	<br>D:\&gt;java-cp E:;D:;C: Iqbal<br>
+	<br> o/p= E:Iqbal<br>
+	<br>D:\&gt;java-cp D:;E:;C: Iqbal<br>
+	<br> o/p= D:Iqbal<br></div>
+	JAR FileIf several dependent files are available then it is never recommended to set each class file 
+	individually in the classpath we have to group all those. <br>Class file into a 
+	single I/P file and we have to make that Zip file available in the class 
+	path.This zip file is nothing but JAR file.<br>
+	Example:<br>
+	To develope a servlet all required .class file are available in Servlet-api.jar.We have to make 
+	this Jar file available in the classpath then only servlet will be compiled.<br>
+	jar vs war vs ear<br>1)
+	jar : (java archive file)<br>
+	It contains a group of .class files<br>
+	
+	2)
+	war : (web archive file)<br>
+	it represent a web application which may contain 
+	servlets,JSPS,HTML,CSS.JavaScript,etc .......<br>
+
+	3)
+	ear : (enterprise archive file)<br>
+	
+	It represent an enterprise application which may contains 
+	Servlets,JSPS,EJBS,JNS Components etc.<br>
+	Various commands<br>1)<br>
+	To create a jar file:<br>
+	 jar - cvf durga.jar A.class B.class c.class *.class <br>
+	2)
+	To extract a jar File:<br>
+	jar<b>- </b>xvf durga.jar<br>3)<br>
+	To display of contains of a jar file:<br>
+	Jar-tvf durga.jar<br>
+	<div class="border"><b>Example:</b><br>public class Durga<br>
+	
+	 {<br>
+	
+	 public static int add(int x,int y)<br>
+	
+	 {<br>
+	
+	 return x*y; <br>
+	
+	 }<br>
+	
+	 public static int add(int x,int y)<br>
+	
+	 {<br>
+	
+	 return 2* x*y; <br>
+	
+	 }<br>
+	
+	<br>
+	
+	}<br></div>
+	<br>
+	<div class="border">c:\&gt;javac <br>
+	Durga.java<br>
+	c:\&gt; jar - cvf 
+	Durga.jar durga.class<br></div>
+	<br>
+	<div class="border">class Desha<br>
+	{<br>
+	 public static 
+	void main(String args[])<br>
+	 {<br>
+	 
+	System.out.println(''durga.add(10,20)'');<br>
+	 
+	System.out.println(''durga.multipy(10,20)'');<br>
+	 }<br>
+	a}<br>
+	D:\&gt; javac 
+	Desha.java //invalid<br>
+	D:\&gt;javac -cp 
+	c:Desha.java //invalid<br>
+	D:\&gt; javac 
+	-cp 
+	c:\Desha.java //valid<br>
+	D:\&gt; javac -cp;c:\ 
+	Desha.java<br>
+	<br>
+	O/P: 2000 &amp;400<br></div>
+	<br>
+	<b>Note:<br></b>
+	Whenever we are 
+	placing a jar file in the classpath compulsory name of the jar file we 
+	should include,just Location is not enough.<br>
+	<br>
+	<br><b>
+	ShortCut way to 
+	place jar file:-<br></b><br>
+	<br>
+	If we are placing the 
+	jar file in the following location then it is not required to set classpath 
+	explicitly bydefault it is available to JVM &amp; Java compiler.<br>
+	
+	<br>
+	JDK<br>
+	JRE<br>
+	LIB<br>
+	ext<br>
+	 *.jar<br>
+	System Properties<br>
+	For every system 
+	persistence information will be maintain in the form of system properties 
+	.These may include a name, virtual machine version, user country..etc<br>
+	
+	We can get System 
+	properties by using getProperties () method of System class<br>
+	<div class="border"><b>Example:</b><br>Demo program to print an System Properties<br>
+	import java.util.*;<br>
+	
+	 class Test<br>
+	
+	 {<br>
+	
+	 public static void main(String args[])<br>
+	
+	 {<br>
+	
+	 Properties p=System.getProperties();<br>
+	
+	 p.list(System.out);<br>
+	
+	 }<br>
+	
+	}<br></div>
+	We can set System 
+	Property from the command prompt by using option<br>
+<b>
+	
+	Que) <br></b>
+	
+	JDK vs JRE vs JVM<br>
+	JDK(Java Development Kit):- <br>
+	<br>To develop &amp; run java application 
+	the required environment provided by JDK.<br>
+	JRE(Java Runtime Environment):- <br>
+	<br>To run java application the 
+	required environment provided by JRE.<br>
+	JDK(Java Virtual 
+	Machine):- <br>
+	The machine is 
+	responsible to execute java program.<br>
+	<br>
+	 JDK=JRE+TOOLS<br>
+	 JRE=JVM+Libraries<br>
+	<br>
+	<b>Note:</b><br>
+	On client 
+	machine we have to install JRE,where as on the developess machine to install 
+	JDK.<br>
+	<br>
+	Difference Between Path And Classpath<br>
+	We can use classpath 
+	to describe the location where required.class files are available.<br>
+	<br><br>
+	If we are not setting 
+	the classpath then our program wan't be run.<br>
+	Path<br>
+	we can use path 
+	variable to describe the location where reguired binary executable are 
+	available .<br>
+	if we are not setting 
+	path variable then java &amp; javac commands wan't work.<br>
+	If m1() return type 
+	is void,then we will get compiletimeError saying''void type not allowed 
+	here''<br>
+	Various Runtime Flags <br>1)<br>
+	-ea: To enable assertions in every non-System class.<br>2)<br>
+	-enableassertions:- It is Exactly same as -ea<br>3)<br>
+	-da :- To disable assertion in every non-system class.<br>4)<br>
+	-disableassertions:- same as -da.<br>5)<br>
+	-esa:- To enabled assertions in every system class.<br>6)<br>
+	-enabledSystemassertions:- it is exactly same as -esa.<br>7)<br>
+	-dsa:- To disable assertions in nevery System class.<br>8)<br>
+	-disableSystemassertions:- it is same as -dsa.<br>
+	<br>
+	<b>Example:-</b>1)<br>
+	java -ea -esa -da -esa -ea -dsa <br>
+	<br>
+	we can use these flag in together &amp; all these flags executed from Left To 
+	Right<br>
+	<br>
+	<b>Example:-2)</b><br></b></p>
+	1)java -ea:pack1.A<br>
+	2)java -ea:pack1.B -ea:pack1 pack2.D<br>
+	3) java -ea -da packB<br>
+	<br>
+	<b>Example:-</b>3)<br>
+	pack1<br>
+	
+	 A.class<br>
+
+	 
+	B.class<br>
+	<br>
+	 pack2<br>
+	 
+	C.class<br>
+	D.class<br>
+	
+	TO anable assertion 
+	in only A class<br>
+	1)Java 
+	-ea:pack1.A<br>
+	TO anable assertion 
+	in both B &amp; D class<br>
+	2)Java 
+	-ea:pack1.B -ea:pack1:pack2.D<br>
+	
+	TO enable assertion 
+	in every non-System class except B<br>
+	<b>
+	3)</b>
+	Java 
+	-ea:pack1. -da:pack1.B<br>
+	<br><br>
+	TO anable assertion 
+	in every class of pack1 &amp; its sub except sub packages<br>
+	<b>
+	4)</b>
+	Java 
+	-ea:pack1. <br>
+	<br><br>
+	TO anable assertion 
+	in every where with in pack1 except pack2<br>
+	<b>
+	5)</b>
+	Java 
+	-ea:pack1. -da:pack1,pack2<br>
+	
+
+	6)<br>
+	Appropriate &amp; Inappopriate use of asserting<br></b></p>
+	1)<br>
+	It is always Inappropriate to mix progamimg logic with assert statement 
+	because there is no execution of assert statement at runtime.<br>
+	
+<div class="border"><b>	Example:</b><br>
+	
+	Withdraw(int x)<br>
+			{<br>
+			 If(x&lt;100)<br>
+			{<br>
+			Throw new IAE();<br>
+			}<br>
+			} //proper way<br>Withdraw(int x)<br>
+			{<br>
+			assert(x&lt;100)<br>
+			} //unproperway</div>
+			
+		
+		</div></div>
+		
+		 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>

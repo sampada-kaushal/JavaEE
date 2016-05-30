@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Garbage Collection| JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<a href="#top" class="top" title="Back to Top">&#8593;</a>
+<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                             <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp">Login</a></li>
+                                                        <li><a href="signup.jsp">Sign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li class="active"><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="advance.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a> 
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                       
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+<br>
+	<div class="container">
+	<hr class="hr">
+<div class="row" >
+	  <div id="sidebar-wrapper" style="float:left">
+             <ul class="sidebar-nav">
+                <li class="sidebar-brand main">
+                  <a href="core.html">Core</a>
+                </li>
+				<li class="main">
+				    <a href="core_fundamentals.html">  Java Fundamentals </a></li>
+					<li class="main"><a href="jdk.html"> JDK File Structure </a></li>
+                    <li> <a href="core_development.html">Development  </a></li>
+					<li>
+                     <a href="core_operators.html">  Operators and Assignments </a></li>
+					 <li>
+                     <a href="core_flowcontrol.html"> Flow Control </a></li>
+					 <li><a href="core_accessmodifiers.html">  Declarations and Access Modifiers</a></li>
+                     <li class="active_page"> <a href="core_garbage.html">Garbage Collector  </a></li>
+					 	<li class="main"><a href="core_oops.html"> Oops Concepts </a></li>
+							<li class="active_page"><a href="core_oops class and object.html"> Class and Object </a></li>
+							<li class="active_page"><a href="core_oops interface.html"> Interface </a></li>
+						<li class="active_page"><a href="core_oops abstraction.html"> Abstraction </a></li>
+						<li class="active_page"><a href="core_oops polymorphism.html"> polymorphisam</a></li>
+						<li class="active_page"><a href="core_oops inheritance.html">Inheritance</a></li>
+						<li class="active_page"><a href="core_oops encapsulation.html"> Encapsulation</a></li>
+						<li class ="main"><a href="java_object.html"> Java Object Class </a> </li>
+				   <li><a href="core_innerclasses.html">Inner classes  </a></li>
+				   <li><a href="core_package.html">Java Package</a></li>
+				    <li class="main"> <a href="core_lang.html">Java.lang package  </a></li>
+                    <li class="main"> <a href="core_io.html">Java.io package     </a></li>
+					 <li class="main"> <a href="core_exception.html">Exception handling </a></li>
+					 <li class="main"> <a href="core_multithreading.html">Multithreading </a>
+				<li><a href="core_expression.html">  Regular Expressions   </a></li>
+					 <li><a href="core_enumeration.html">  Enumerations </a></li>  
+                    <li> <a href="core_internationalization.html">	Internationalization   </a></li>
+					 <li><a href="core_assertion.html">Assertions  </a></li>
+					 <li class="main"><a href="core_collection.html">Collection Framework     </a></li>
+					 <li><a href="core_generics.html">  Generics   </a></li>
+					<li class="main"><a href="core_jdbc.html"> JDBC </a></li>
+					<li class="main"><a href="features_5.html"> Features of Java 5 </a></li>
+			</ul>
+        </div>
+	<div class="right">
+	<h1>
+	<b>Garbage Collection</h1></b><br>
+	* Introduction<br>
+* Various ways to make an object eligible for G.C.<br>
+* The methods for requesting JVM to run garbage collector.<br>
+* Finalization.<br>
+
+Garbage Collector<br>
+* In old languages like C++, creation and destruction of object is responsibility of programmer only.<br>
+* Usually programmer takes very much care while creating objects neglecting destruction of useless objects. Due to this negligence of certain point of time for creation of new object sufficient memory may not be available and entire program will collapse due to memory problems.<br>
+* But in java, programmer is responsible only for creation of objects and not for destruction of useless objects.<br>
+* Sun people provided one assistant which is always running in the background for destruction of useless objects, due to this assistant chance of failure java program with memory problem is very rare. This assistant is nothing but 'Garbage collector'.<br>
+* Hence, the main objective of garbage collection is to "Destroy useless Objects".<br>
+
+>
+The Various ways to make an object eligible for G.C.<br>
+* Even though programmer is not responsible to destroy useless objects, it is always good programming practice to make an object eligible for G.C. if it is no longer required.<br>
+* An object is said to be eligible for G.C. if it doesn't contain any references.<br>
+* The following are various possible ways to make an object eligible for G.C.<br>
+I) nullify the reference variable:<br>
+*If an object is no longer required then assign null to all its references, then automatically that object eligible for G.C.<br>
+<b>Example:</b>
+<div class="border">
+ Student s1=new Student ();<br>
+Student s1=new Student ();<br>
+- No objects are eligible for G.C.<br>
+-<br>
+-<br>
+s1=null;<br>
+- One objects are eligible for G.C<br>
+-<br>
+-<br>
+s2=null; Two object are eligible for G.C.<br>
+</div>
+II) Reassigning the reference variable:<br>
+*If an object is no longer required then reassign its eference variable to some other objects then that old object automatically eligible for G.C.<br>
+<b>Example:</b><br>
+<div class="border">
+Student s1=new Student();<br>
+Student s2=new Student();<br>
+- No objects are eligible for G.C.<br>
+-<br>
+-<br>
+s1=null;<br>
+- One objects are eligible for G.C<br>
+-<br>
+s2=s1; Two object are eligible for G.C.<br>
+</div>
+III) Reassigning the reference variable:<br>
+* The objects which are created inside a method one by default eligible for G.C. after completing that method.<br>
+*<b> Example:</b><br>
+<div class="border">
+class test<br>
+{<br>
+public static void main(String args[ ])<br>
+{<br>
+m1() Two objects are eligible for G.C.<br>
+}<br>
+public static void m1()<br>
+{<br>
+Student s1=new Student();<br>
+Student s2=new Student();<br>
+}<br>
+</div>
+
+Iv)Island of Isolation:<br>
+<div class="border">
+public class GarbageCollection1 {<br>
+Test i ;<br>
+public static void main(String[] args) {<br>
+Test t1=new Test(); Two objects are eligible for G.C.<br>
+Test t2=new Test();<br>
+Test t3=new Test();<br>
+- -<br>
+t1.i=t2;<br>
+t2.i=t3;<br>
+t3.i=t1;<br>
+-<br>
+-<br>
+t1=null;<br>
+-<br>
+t2=null;<br>
+-<br>
+t3=null; 3 objects eligible for G.C.-<br>
+}<br>
+}<br>
+</div>
+Note:<br>
+* If an object have any reference then it is always eligible for Garbage Collector..<br>
+* Even though object having the reference still it is eligible for G.C.sometimes(island of isolation).<br>
+The methods for requesting JVM to run Garbage Collector:<br>
+* Whenever we are making an object eligible for G.C. it may not be destroyed by G.C. immediately whenever JVM runs garbage collector then only that object will be destroyed.<br>
+* We can request JVM to run garbage collector, programmatically weather JVM accept over request are not there is no guarantee.<br>
+* The following are various ways for requesting JVM to run.<br>
+1)By System class:<br>
+*System class contains a static method G.C. for this<br>
+System.gc();<br>
+2)By Runtime class.<br>
+* By using runtime object a java application can communicate with JVM.<br>
+* Runtime class is a singleton class hence we can't create Runtime object by using constructor.<br>
+* We can create runtime object by using factory method getruntime()<br>
+Runtime r=Runtime.getRuntime();<br>
+* Once we got Runtime object we can apply the following methods on that object.<br>
+* A)freeMemory() returns freeMemory in the Heap.<br>
+b)totalMemory() returms totalmemory of the Heap.<br>
+c)gc() For requesting JVM to Run garbage collector.<br>
+<b>Example:</b><br>
+<div class="border">
+public class Runtime1 {<br>
+public static void main(String[] args) {<br>
+Runtime r=Runtime.getRuntime()<br>
+System.out.println(r.totalMemory());<br>
+System.out.println(r.freeMemory());<br>
+for(int i=1;i<=10000;i++)<br>
+{<br>
+Date d=new Date();d=null;<br>
+}<br>s
+System.out.println(r.freeMemory());<br>
+r.gc();<br>
+System.out.println(r.freeMemory());<br>
+}<br>
+}<br>
+</div>
+Qu)Which of the following is the proper way to requested JVM to run g.c.<br>
+1)System.gc(); //Valid<br>
+2)Runtime.gc(); //Invalid<br>
+3)(new Runtime()).gc(); //Invalid<br>
+4)Runtime.getRuntime().gc();<br>
+Note:gc() present in the System class is static mrthod.Where as gc() present in the Runtime class is instance method and recommended to use System.gc();<br>
+Finalization<br>
+* Just before destroying any object. Garbage collector always calls finalize() method to perform clean-up activities on that object.<br>
+* finalize () method declare in object class with following declaration.<br>
+Protected void finalize() throws Throwable<br>
+Case 1):<br>
+Garbage collector always calls finalize() on the object which is eligible for G.C. just before destruction, then the corresponding class finalize() will be executed. If String object eligible for G.C. then string class finalize() will be executed, but not test class finalize method.<br>
+<b>Example:</b><br>
+<div class="border">
+Class Test<br>
+{<br>
+public static void main(String ar[])<br>
+{<br>
+String s=new String("CST");<br>
+s=null;<br>
+System.gc();<br>
+System.out.println("End of main");<br>
+}<br>
+public void finalize()<br>
+{<br>
+System.out.println("Finalize called");<br>
+}<br>
+}<br>
+Output:End of main<br>
+</div>
+* In the above example String object is eligible for G.C. Hence String class finalize() method got executed which has empty implementation.<br>
+* If we are replacing String object with test object. Then test class finalize() will be executed.<br>
+* In this case the output is<br>
+1)Finalize called<br>
+End of main.<br>
+2)End of main<br>
+Finalize called.<br>
+Case 2)<br>
+* We can call finalize () explicitly in this case it will be executed just like a normal method call and object won't destroyed.<br>
+* But before destruction of an object G.C. always call finalize().<br>
+<b>Example:</b><br>
+<div class="border">
+class Test<br>
+{<br>
+public static void main(String ar[]);<br>
+Test t=new Test()<br>
+t.finalize();<br>
+t.finalize();<br>
+t=null;<br>
+System.gc();<br>
+System.out.println("End of main")<br>
+}<br>
+public void finalize()<br>
+{<br>
+System.out.println("Finalize method called");<br>
+}<br>
+}<br>
+Output:<br>
+
+Finalize method called<br>
+Finalize method called<br>
+End of main<br>
+Finalize method called<br>
+-<br>
+-<br>
+-
+</div>
+* In the above program finalize() got executed 3 times,2 times explicitly by the programmer and one time by the garbage collector.<br>
+Note:<br>
+* Before destruction of servlet object web container always calls destroy method, to perform clean-up activities.<br>
+* It is possible to called destroy explicitly from init() and service() in this case it will be executed, just like normal method call and servlet object won't be destroyed.<br>
+Case 3)<br>
+* If we were calling finalize() explicitly and while executing that finalize() if any exception raised and uncaught, then the program will be terminated abnormally.<br>
+* If G.C. calls finalize() and while Executing that finalize(),if any exception is uncaught then JVM simply ignores that uncaught exception and rest of the program will be executed normally.<br>
+<b>Example:</b><br>
+<div class="border">
+class test<br>
+{<br>
+public static void main(String ar[])<br>
+{<br>
+
+Test t=new test();<br>
+t.finalize(); Line 1<br>
+t=null;<br>
+System.gc();<br>
+System.out.println("End of main");<br>
+}<br>
+publc void finalize()<br>
+{<br>
+System.out.println("Finalize mehod called");<br>
+System.out.println(10/0);<br>
+}<br>
+}<br>
+</div>
+* If we are on comment line (1),were calling the finalize() explicitly and the program will be terminated abnormally.<br>
+* If we are commenting line(1),then G.C. calls finalize() and the raised Arithmetic Exception is ignored by JVM Hence in this case the Output is<br>
+* Output: End of main<br>
+Finalize method called<br>
+<b>Qu)Which of the following statement is true?<br></b>
+1)While executing finalize() all exceptions are ignored by JVM.<br>
+Ans:False<br>
+2) While executing finalize() all uncaught exceptions ignored by JVM.<br>
+Conclusion:<br>
+* On any object G.C. calls finalize() only once.<br>
+<b>Example:</b><br>
+<div class="border">
+class FinalizeDemo<br>
+{<br>
+public static void main(String ar[])<br>
+{<br>
+FinalizeDemo f=new FinalizeDemo();<br>
+System.out.println(f.hashCode());<br>
+f=null;<br>
+System.gc();<br>
+Thread.sleep(5000);<br>
+System.out.println(s.hashCode());<br>
+s=null;<br>
+System.gc();<br>
+Thread.sleep(5000);<br>
+System.out.println("End of main method");<br>
+}<br>
+public void finalize()<br>
+{<br>
+System.out.println("Finalize method called");<br>
+s=this;<br>
+}<br>
+}<br>
+Output:<br>
+4073475<br>
+Finalize method called<br>
+4073475<br>
+End of main method<br>
+</div>
+* The behavior of the G.C. is vendor dependent and hence we can't expect exactly because of this we can't answer the following questions exactly:<br>
+1)When JVM runs G.C. exactly.<br>
+2)What is the algorithm following by G.C.<br>
+3)In which order G.C. destroys the objects.<br>
+4)Wheather G.C. destroys all eligible objects or not e.t.c.<br>
+Note:<br>
+We can't tell exact algorithm followed by G.C.,but most of the cases it is mark and sweep Algorithm.<br>
+Memory Leak:<br>
+* If an object having the reference then it is not eligible for G.C. even though we are not using that object in our program still it is not destroyed by the G.C. such type of object is called "Memory Leak".(i.e. Memory Leak is useless object which is not eligible for G.C.).<br>
+* We can resolve memory leak by making useless objects for G.C. explicitly and by invoking G.C. programmatically.<br>
+	</div><br>
+	</div><br>
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>JDBC | JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	
+	<a href="#top" class="top" title="Back to Top">&#8593;</a>
+<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                             <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp">Login</a></li> 
+                                                        <li><a href="signup.jsp">Sign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li class="active"><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="advance.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a> 
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                      
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+<br>
+	
+	<div class="container">
+	<hr class="hr">
+<div class="row" >
+	  <div id="sidebar-wrapper" style="float:left">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand main">
+                  <a href="core.html">Core</a>
+                </li>
+				<li class="main">
+				    <a href="core_fundamentals.html">  Java Fundamentals </a></li>
+					<li class="main"><a href="jdk.html"> JDK File Structure </a></li>
+                    <li> <a href="core_development.html">Development  </a></li>
+					<li>
+                     <a href="core_operators.html">  Operators and Assignments </a></li>
+					 <li>
+                     <a href="core_flowcontrol.html"> Flow Control </a></li>
+					 <li><a href="core_accessmodifiers.html">  Declarations and Access Modifiers</a></li>
+                     <li class="main"> <a href="core_garbage.html">Garbage Collector  </a></li>
+					 	<li class="main"><a href="core_oops.html"> Oops Concepts </a></li>
+							<li ><a href="core_oops class and object.html"> Class and Object </a></li>
+							<li><a href="core_oops interface.html"> Interface </a></li>
+						<li><a href="core_oops abstraction.html"> Abstraction </a></li>
+						<li ><a href="core_oops polymorphism.html"> polymorphisam</a></li>
+						<li ><a href="core_oops inheritance.html">Inheritance</a></li>
+						<li ><a href="core_oops encapsulation.html"> Encapsulation</a></li>
+						<li class ="main"><a href="java_object.html"> Java Object Class </a> </li>
+				   <li><a href="core_innerclasses.html">Inner classes  </a></li>
+				   <li><a href="core_package.html">Java Package</a></li>
+				    <li class="main"> <a href="core_lang.html">Java.lang package  </a></li>
+                    <li class="main"> <a href="core_io.html">Java.io package     </a></li>
+					 <li class="main"> <a href="core_exception.html">Exception handling </a></li>
+					 <li class="main"> <a href="core_multithreading.html">Multithreading </a>
+				<li><a href="core_expression.html">  Regular Expressions   </a></li>
+					 <li><a href="core_enumeration.html">  Enumerations </a></li>  
+                    <li> <a href="core_internationalization.html">	Internationalization   </a></li>
+					 <li><a href="core_assertion.html">Assertions  </a></li>
+					 <li class="main"><a href="core_collection.html">Collection Framework     </a></li>
+					 <li><a href="core_generics.html">  Generics   </a></li>
+					<li class="active_page"><a href="core_jdbc.html"> JDBC </a></li>
+					<li class="main"><a href="features_5.html"> Features of Java 5 </a></li>
+			</ul>
+        </div>
+	<div class="right">
+	<b> JDBC</b><br>
+	<br>
+	JDBC is an acronym for <b>J</b>ava <b>D</b>ata <b>B</b>ase <b>C</b>onnectivity.This technology is an API for Java Programming that provides a way to connect to Database.<br>
+	JDBC was released as a part of JDK 1.1<br> <img border="0" src="images/servlet/sq.PNG" class="border" width="306" height="212"><br><br>
+	JDBC classes are contained in Java.sql and Javax.sql Package.<br><div class="border">
+	<img src="images/servlet/sql.PNG" ><img src="images/servlet/sql1.PNG" ></div><br>
+	 JDBC API mainly has:
+	<br><img src="images/servlet/sql2.PNG" class="border"><br>
+	<b>1. JDBC Driver :</b>A JDBC driver&nbsp; enables a Java application to interact with a database. <br>To connect with database, JDBC requires driver.<br>
+	The JDBC driver gives the connection to the database and implements the protocol for transferring the query written by user and result given by database.
+	<br><b>2. Connectors:</b> Connectors provide a way of interactaction to database 
+	and the applicattion.<br>
+	<b>3.Statement :</b> It helps us to write and execute the query.
+	<br>
+	<b>4.Result Set :</b> Result set is used to get the output.
+		<br>
+	<b>Steps to use Jdbc</b><br>
+	1.Install the Database Server.Download the JDBC Driver for your DBMS.Add the jar to libraries.Example if are using OracleXE in eclipse add ojdbc.jar in libraries.<br> 
+	<b>2. Establish the Connection:</b>
+	<br>
+	To load the driver we use Class.forName("Class_Name");<br>
+	<br>
+	Class_name for various database are:<br>
+	1. For MySql - com.mysql.jdbc.Driver<br>
+2. For Oracle - oracle.jdbc.driver.OracleDriver<br>
+3.For DB2 - com.ibm.db2.jdbc.app.DB2Driver<br>
+4. For sybase - com.sybase.jdbc.SybDriver	<br>
+<b> Note:</b>We can also use static registerDriver() method of the java.sql.DriverManager class in place of Class.forName();.<br><br>
+The getConnection() method of DriverManager is used to establish a connection to a database. It uses a username, password, and a jdbc url to establish a connection to the database and returns a connection object.
+<br>
+Connection connection=DriverManager.getConnection(url, username, password);<br>
+where url is jdbc:oracle:thin:@localhost:1521:xe for oracle 10g and jdbc:mysql://localhost/port_no/database_Name<br> for MySql.<br>
+Username is user name registered with data base and Password is the registered password.<br>
+<b>3. Create Statement and Execute query:</b> <br>
+   We can create Statement by 3 types:<br>
+1. Statement: Used to implement simple SQL statements with no parameters.<br>
+2. PreparedStatement:They Extends Statement,mainly used for the precompiled SQL statements that may contain input parameters. <br>
+3. CallableStatement:They Extends PreparedStatement, Used to execute stored procedures that may contain both input and output parameters. <br>
+	Statement stmt = connection.createStatement();<br>
+	
+	Now To execute a query, call an execute method from Statement
+	 ResultSet rs = stmt.executeQuery(query);<br>
+	 4.Process the result: <br>
+	 While(rs.hasNext())<br>
+	 {
+	 <br>
+	 System.out.print(rs.getString());<br>
+	 }<br>
+	 5. Close the Connection using 
+	 stmt.close();<p><br>
+	 <b>Basic example to use Jdbc Connection with Oracle 10g:</b><p><br>
+						<font face="Arial"></font></font><font size="5">
+						<span style="line-height:115%;font-family:&quot;Arial&quot;; font-weight:700">
+						Step-1
+						</span></p></font>
+						createte table emp in oracle10g with username=nitin and password=nitin
+						<div class="border">
+						<center><img src="images\jdbc\table.PNG"></center>
+						</div>
+						<br><br>
+						<br>
+						<font face="Arial"></font></font><font size="5">
+						<span style="line-height:115%;font-family:&quot;Arial&quot;; font-weight:700">
+						Step-2
+						</span></p></font>
+						create class Crudopr
+						<div class="border">
+						<center><img src="images\jdbc\1.PNG"></center>
+					
+						
+					
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\jdbc\2.PNG">
+					
+						<br>
+					
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\jdbc\3.PNG">
+					
+						<br>
+					
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\jdbc\4.PNG">
+					
+						<br>
+					
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\jdbc\5.PNG">
+					
+						<br>
+					
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\jdbc\6.PNG">
+						</div>
+						<br><br><br>
+						
+						<font face="Arial"></font></font><font size="5">
+						<span style="line-height:115%;font-family:&quot;Arial&quot;; font-weight:700">
+						OutPut
+						</span></p></font>
+						choose number to perfome operation
+						<div class="border">
+						<center><img src="images\jdbc\output.PNG"></center>
+						</div>
+						<br><br>
+						Table in Database
+						<div class="border">
+						<center><img src="images\jdbc\output1.PNG"></center>
+						</div>
+						<br><br>
+						
+	
+
+
+<a href="java_data/Jdbc.rar" download> <b>Download Example </b></a><bR><Br><Br><br>
+	 
+	</div>
+	</div>
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>

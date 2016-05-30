@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Multithreading| JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+
+	<a href="#top" class="top" title="Back to Top">&#8593;</a>
+<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                             <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp">Login</a></li>
+<li><a href="signup.jsp">Sign Up</a></li> 
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li class="active"><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="advance.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a> 
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                        
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+<br>
+	<div class="container">
+	<hr class="hr">
+<div class="row" >
+	  <div id="sidebar-wrapper" style="float:left">
+              <ul class="sidebar-nav">
+                <li class="sidebar-brand main">
+                  <a href="core.html">Core</a>
+                </li>
+				<li class="main">
+				    <a href="core_fundamentals.html">  Java Fundamentals </a></li>
+					<li class="main"><a href="jdk.html"> JDK File Structure </a></li>
+                    <li> <a href="core_development.html">Development  </a></li>
+					<li>
+                     <a href="core_operators.html">  Operators and Assignments </a></li>
+					 <li>
+                     <a href="core_flowcontrol.html"> Flow Control </a></li>
+					 <li><a href="core_accessmodifiers.html">  Declarations and Access Modifiers</a></li>
+                     <li class="main"> <a href="core_garbage.html">Garbage Collector  </a></li>
+					 	<li class="main"><a href="core_oops.html"> Oops Concepts </a></li>
+							<li ><a href="core_oops class and object.html"> Class and Object </a></li>
+							<li ><a href="core_oops interface.html"> Interface </a></li>
+						<li ><a href="core_oops abstraction.html"> Abstraction </a></li>
+						<li ><a href="core_oops polymorphism.html"> polymorphisam</a></li>
+						<li ><a href="core_oops inheritance.html">Inheritance</a></li>
+						<li ><a href="core_oops encapsulation.html"> Encapsulation</a></li>
+						<li class ="main"><a href="java_object.html"> Java Object Class </a> </li>
+				   <li><a href="core_innerclasses.html">Inner classes  </a></li>
+				   <li><a href="core_package.html">Java Package</a></li>
+				    <li class="main"> <a href="core_lang.html">Java.lang package  </a></li>
+                    <li class="main"> <a href="core_io.html">Java.io package     </a></li>
+					 <li > <a href="core_exception.html">Exception handling </a></li>
+					 <li class="active_page"> <a href="core_multithreading.html">Multithreading </a>
+				<li><a href="core_expression.html">  Regular Expressions   </a></li>
+					 <li><a href="core_enumeration.html">  Enumerations </a></li>  
+                    <li> <a href="core_internationalization.html">	Internationalization   </a></li>
+					 <li><a href="core_assertion.html">Assertions  </a></li>
+					 <li class="main"><a href="core_collection.html">Collection Framework     </a></li>
+					 <li><a href="core_generics.html">  Generics   </a></li>
+					<li class="main"><a href="core_jdbc.html"> JDBC </a></li>
+					<li class="main"><a href="features_5.html"> Features of Java 5 </a></li>
+			</ul>
+        </div>
+	<div class="right">
+	<header>
+									<h1><a href="#">Multi Threading</a></h1>
+								
+								
+									<a href="#intro"><b>1)	Introduction</b><br></a>
+									<a href="#ways"><b>2)The ways to define instantiate , and a start a thread.</b></a><br>
+									<a href="#set_name"><b>3)Getting and setting name of a thread.</b></a><br>
+									<a href="#priority"><b>4)Thread priorities.</b></a><br>
+									<a href="#th_exec"><b>5)The methods to prevent thread execution.</b></a><br>
+									a)yield()	<br>
+									b)join()<br>
+									c)sleep<br><br>
+									<a href="#Synchronization"><b>6)Synchronization</b></a><br>
+										<a href="#inter"><b>7)Inter Thread communication</b></a><br>
+									a)wait();<br>
+									b)notify<br>
+									c)notifyall();<br>
+									<a href="#deadlock"><b>8)Deadlock</b></a><br>
+									<a href="#daemon"><b>9)Daemon Threads</b></a>
+									<br><br>
+									
+									<Br>
+										<div class="border">
+										<center><img src="images\thread\t.PNG"></center>
+										</div>
+								
+									
+									<bR><Br>
+									<h2 id="intro"><b>Introduction</b></h2>
+									
+									
+								
+									<b>Multitasking:</b>
+								
+									
+								
+									 Executing several task simultaneously is called Multitasking.There are two types of multitasking.<br>
+									 1)Process based multitasking<br>
+									 2)Thread based multitasking<br>
+									 
+									<br>
+									
+					<b>1)Process based multitasking:</b>
+						
+						<br>
+									Executing several task simultaneously,where each task is separate independent process is called  process
+									based multitasking.<br><br>
+									
+
+									
+									<br>
+									
+				
+									<b>2)Thread based multitasking:</b>
+					<br>
+									
+							
+									Executing several task simultaneously, where each task is a separate independent part of the same
+									program is called Thread based multitasking.
+									And each independent part is called Thread.<br>
+									It is best suitable for programmatic level.<br>
+
+										Whether it is process based or thread based the main objective of multitasking is to improve 
+										performance of the system by reduces response time.<br>
+										The main important application areas of  multithreading are developing video games, multimedia 
+										graphics,implementing animations.<br>
+										Java provide inbuilt support for multithreading by introducing a rich API 
+										(Thread, Runnable, ThreadGroup, ThradLocal--) being a programmer we have to know how to use
+										this API and we are not responsible to define that API. Hence developing multithreading program 
+										is very easy in java when compared with c++.<br>
+
+									
+								<br>
+
+						
+									<h2 id="ways"><b>The Way to define Instantiate and start a new Thread</B></h2> <br><br>We can define a thread in the following two ways:
+								<br>
+								
+									1)By extending thread class.<br>
+									2)By implementing Runnable Interface.
+								<br><br>
+									
+									
+									
+									
+									
+							
+								<b>	Defining Thread by implementing Runnable Interface</b>
+								
+								<br>
+									 We acndefine a Thread even by implementing Runnable Interface also.<br>
+									Runnable Interface present in java.lang package and contains only one method run() method.<br><br>
+							
+					
+									<b>approach to define a Thread:</b>
+					<br>
+										Among  the two ways of defining a Thread  implements Runnable mechanism is recommended to use.<br>
+										 In first approach, Our class always extending Thread class and hence There is no chance of extending
+									any other class,but in the second approach we can extend some other class also while implementing Runnable
+									Interface hence second approach is recommended to use.																											
+							<br><br>
+									
+									
+									
+									
+				
+								<b>	Thread class Constructor:</b>
+			<br>
+									1)	Thread t=new Thread();<br>
+									2)	Thread t=new Thread(Runnable r);<br>
+									3)	Thread t=new Thread(Runnable r,String name);<br>
+									4)	Thread t=new Thread(ThreadGroup g ,String name);<br>
+									5)	Thread t=new Thread(ThreadGroup g ,Runnable r);<br>
+									6)	Thread t=new Thread(ThreadGroup g ,Runnable r,String name);<br>
+									7)	Thread t=new Thread(ThreadGroup g ,Runnable r,String name,long stacksize);<br>
+								<br>
+		
+									<h2><b id="set_name">Getting and Setting name of the Thread</b></h2>
+										<br>
+										Every Thread in java has some name.It may be provided by the the programmer or default name generated by JVM.<br>
+										We can get and set name of a thread by using The following  methods of the Thread class.<br>
+										1) public final String getName();<br>
+										2)public final String setName(String name);<br><br>
+							
+									<b>Note:</b>We can get current executing Thread Referance by using the following method of thread class<br>
+									Public static Thread currentThread();																	
+									<br><br>
+	
+								<h2><b id="priority">	Thread priority</b></h2>
+							<br>
+									 	Every thread in java has some priority but the range of thread ptiorities is 1 to 10
+										(1 is least and 10 is highest)<br>
+									 	Thread class defines the following constants to define some standard priorities.<br>
+										1)Thread MIN-PRIORITY                    1<br>
+										2)Thread NORM-PRIORITY                     5<br>
+										3)Thread NORM-PRIORITY                     10<br>
+										4)Thread LOW-PRIORITY     //Invalid<br>
+										5)Thread HIGH-PRIORITY     //Invalid<br><br>
+
+										Thread scheduler will use these priority while allocating cpu<br>
+										The thread ehich is having Highest priority will get chance first.<br>
+										If  two Threads having same priority then we 
+		can't expect exact execution order,it depends onThread Schedular.
+								<br><br>
+				
+								<b>	Default Priority:</b>
+			<br>
+										The default priority only for the main Thread is 5.bur for all the remaining Thread
+									it will be Inheritence from the parent that is whenever the priority parent has the same
+									priority will be inheriting to the child.<br>
+										Thread class defines the following two methods to get and set priority of the thread.<br>
+										1)	Public final int getPriority();<br>
+										2)	Public final void setPriority(int p); //The allowed values are 1 to 10 ,otherwise we    
+											will get IllegalAeegumentException<br><br>
+									
+							
+									<h2><b id="th_exec">The Methods to prevent Thread Execution</b></h2>
+							<br>
+									We can't prevent =thread from execution by using the following methods<br>
+									1)	yield()<br>
+									2)	join()<br>
+									3)	sleep()<br>
+									<br>
+								
+									<b>1)yield():-</b>
+							<br>
+										yield() method causes to pause current executing Thread for giving the chance to remaining
+										wating Threads of samePriority<br>
+										if there are no waiting Threads or all wating Threads low priority Then the same Thread will
+										continue its execution once again.<br><br>
+								1)Signature of yield Method<br>
+									public static void native void yield()<br><br>
+									
+										The Thread which is yielded,when it will get chance one again for execution is decided
+										by ThreadSchedular and we can't expect exactly.<br><br>
+								
+							
+									<b>II) join():</b>
+								<br>
+										If a Thread want™s to wait until completing some other Thread Then we should go for join().<br><br>
+										<div class="border"><b>Example:</b>1)<br>
+										Vienue fixing(t1)	cards printing(t2)	cards distributing(t3)<br>
+										{					{					{				<br>
+															t1.join;				t1.join;<br>
+										}					}					}<br><br></div>
+										
+										
+									<div class="border"><b>Example2)</b><br>
+									t1<br>
+									{<br>
+									t2.join()<br>
+									}</div><br>
+										If thread t1 executes t2.join() then t1 thread will entered into wating state until t2 completes.
+										Once t2 complete then t1 will continue its execution.<br>
+
+										i)publicfinal void join()throws InterruptedException<br>
+										ii) public final void join(long ms)throwsInterruptedException<br>
+										iii) public final void join(long ms,intns)throws InterruptedException<br><br>
+										
+										join() is overloaded and every join() throw InterruptedException.hence when error
+										we are using join() complusary we should handle InterruptedException either by try-catch
+										or by throws otherwise we will get compiletime error.<br><br>
+										
+								
+									
+							
+									<b>iii)Sleep():</b>
+							<br>
+									   If a Thread don™t to perform any operation for a particular amount of time (just pauseing) Then we 
+									should go for sleep()<br>
+                                    i)  public static void sleep(long ms)throws InterruptedException.<br>
+                                    ii) public static void sleep(long ms,int ns)throws InterruptedException.<br>
+										Whenever we are using sleep() method compulsory we should handle InteruptedException other wise 
+									we will get Compiletime Error.
+																		
+									
+									<br><br>
+						
+									<b>static:</b> 
+								<br>
+									because sleep method calls thread.sleeps means t.start();
+									t.start(); t is object it is instance(or)non-static.</p>
+		<p>
+								
+									
+									
+									
+							
+								<b>	Interruption Of Thread</b>
+									<br>
+										A Thread Can Interrupt another sleeping or waiting Thread.<br>
+										For this Thread calss defines interrupte()method.<br>
+   
+									Public void interrupts()<br><br>
+
+
+								<b>	Note:</b><br>
+										We may not see the impact of interrupt call immediately.<br>
+										When ever we are calling interrupt() method.if the target thread is not in sleeping or waiting
+										state then there is no impact immediately interrupt call will wait until target Thread entered 
+										inyo sleeping or waiting state.once trget thread entered into sleep or wating state the interrupt
+										call will impact the target thread.
+									
+									
+								<br><br>
+			
+									Comparision Between foe yield(),join(),sleep():-
+								
+																											
+									
+								<br>
+								<div class="border">	<img border="0" src="images/core_img/multit2.gif"><br></div><br><br>
+									
+						
+									<h2><b id="Synchronization"> Synchronization</b></h2>
+								<br>
+										Synchronization  is the modifier applicable only for methods and blocks and we 
+									can't apply for classes and variables.<br>
+										If a mehod or bloch declared or synchronized then  at a time only one Thread is allowed to execute that
+										method or block on the given object.<br>
+										The main advantage of synchronized keyword is we can resolve data inconsistency problem.<br>
+										The main limitation of synchronized keyword is it increase waiting time of the Threads and effects
+										performance of the system .
+										Hence if there is no specific requirement it™s never recommended to use Synchronized keyword.<br>
+										Every Object in java has a unique lock Synchronization concept internally implemented by using this lock concept.
+										When  ever we are using Synchronization then only lock concept will come into picture.<br>
+										If  a Thread wants to execute any synchronized method on givem object,first it has to get the lock of that object.
+										Once a Thread get a lock then it allowed to execute any synchronized method on that object.<br>
+										Once Synchronized method complete then automatically the lock will be released.<br>
+										While a Thread executing any Synchronized method on the give object.The remaining Threads are not
+										allowedto execute any synchronized
+										method on the given object simultaneously.<br>
+										But remaining Threads are allowed to execute any non-Synchronized methods.Simulteneously 
+										(lock concept is implemented based on object but not  based on method).<br><br>
+
+
+									<b>Case study:</b><br>
+									display d1=new display();<br>
+									display d2=new display();<br>
+									synchronizedmethod t1=new synchronizedmethod(d1,Punit);<br>
+									synchronizedmethod t2=new synchronizedmethod(d2,Dawinderjit);<br>
+									t1.start();<br>
+									t2.start();<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<div class="border"><img border="0" src="images/core_img/multit3.gif"></p></div>
+									<br>
+										Eventhough wish() method is synchronized we will get irregular output in this case because 
+										,The Thrads are operating on different objects.<br>
+										Reason:<br>
+									Whenever multiple Threads are operating on same object then only Synchronization play the role.
+									If multiple Threads are operating on multiple objects then there is no impact of synchronization.<br>
+
+							
+									
+								<br>
+
+									<b>Classlevel Lock:</b>
+								<br>
+									
+						
+										Every class in java has a unique lock.<br>
+										If a Thread want™s to execute a static Synchronized method then it required classlevel lock.<br>
+										While a Thread executing a static Synchronized mrthod then the remaining threads are allowed to execute
+										the following methods simultaneously<br>
+									1)normal static methods<br>
+									2)normal instance method<br>
+									3)Synchronized  instance mrthod<br><br>
+							&nbsp;<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									
+									<b>Note:</b>
+									There is no link between object level Lock and class level Lock both are independent of each other.<br>
+									ClassLevel Lock is different and Object Level Lock is different<br>
+																		
+									
+								<br>
+									
+									
+						
+								<b>	Synchronized Block:</b>
+								
+									
+				<br>
+										If very few lines of code requires  Synchronization then it is never recommended to declare entire method
+										as Synchronized,
+										wehave to declare those few lines of code inside Synchronized block.<br>
+										The main advantage of  Synchronized block over Synchronized method is it reduces the waiting 
+										time of the threads and improve performance of the system.<br><br>
+									
+
+										
+									
+									Every object in java has unique lock,but a thread can acquire  more than one lock at
+									atime(of course fromdifferent objects) <br><br>
+									
+									
+					
+									
+								<h2><b id="inter">	Inter Thread Communication:</b></h2>
+									
+									
+									
+									<br>
+										If Threads will communicate with each other by using wait(),notify(),notifyAll() methods.
+									The  Thread which requires  updation it has to call wait() method.The Thread which is responsible
+									to update it has to call notify() method.
+									With()   ,notify ,notifyAll() methods are available in Object class but not in Thread class.
+									Because Thread are required to call method on any shared Object.<br>
+										If a Thread wants to call  wait(),notify(),notifyAll() methods compulsory the Thread should be 
+									owner of the object.i.e. The Thread has to get lock of that object.i.e.Thr Thrad should be in the Synchronized area.
+									Hence,we can call wait(),notify(),notifyAll() methods only perform synchronized area otherwise we will get
+									runtime exception saying  IllegalMonitorStateException.<br>
+										If a Thread class wait(), method it releases the lock immediately and entered into waiting state.Thread realeses
+									the lock of only current object but not all locks.After calling  notify() and notifyAll()
+									methods Thread  releases the lock but may not immediately.Except these wait(),notify(),notifyAll() methods there 
+									is no other case where thread releases the lock.<br>
+									method	Is thread releases lock<br>
+									yield()	No<br>
+									join()	No<br>
+									sleep()	No<br>
+									wait()	Yes<br>
+									notify()	Yes<br>
+									notifyAll()	Yes<br>
+									<br><br>
+									
+								
+									<b>  notify() Vs.notifyAll() </b>
+									 
+								<br>
+										We can use notify() to notify only one waiting Thread.but which waiting thread notify we 
+	can't expect
+									exactly all remaining threads have to for the further notification.<br>
+										But in the case of notifyAll() all waiting threads will be notifying but the threads will be executed one by one.<br><br>
+									<b>Note:</b>
+									On which object we are calling wait(),notify(),notifyAll() we have to get the lock of that object.<br>
+									<br>
+									
+						
+									<h2><b id="deadlock"> DeadLock</b></h2>
+								<br>
+									If two Threads are waitng for each other forever such type of situation is called DeadLock.<br>
+									There are no resolution technique for DeadLock,but several prevention techniques are possible.<br>
+								
+									
+									
+									
+				
+									<b>DeadLock Vs. Starvetion:</b>
+								
+									<br>
+									In the case of DeadLock waiting never ends.<br>
+									A long waiting of as Threads which ends at certain point of time is called Starvetion.<br><br>
+								
+				
+								<h2><b id="daemon">	Daemon Threads</b></h2>
+								
+									
+								<br>
+									The Threads  which are executing in the background are called Daemon Threads<br><br>
+									
+							
+									 <b>How to kill Thread:</b><br>
+									 A Thread can stop or kill anoyher Thread by using stop() method then automatically running Thread will entered 
+									 Thread into DeadState. It is a deprecated method & hence not recommended to use.<br>
+									 public void stop();<br><br>
+									 <b>Suspending & reusing a Thread:-</b><br>
+									 A Thread can suspend another Thread by using suspend()method.<br>
+									 A Thread can resume a suspend Thread by using resume() method.<br>
+									 But these methods are reprecated methods & hence not recommended to use Threading Phases<br>
+									 <br><Br><br>
+									 <b>Creating Program With Thread priority</b>
+						<br><br>
+						Follow the below steps to write program .<br>
+						<font face="Arial"></font></font><font size="5">
+						<span style="line-height:115%;font-family:&quot;Arial&quot;; font-weight:700">
+						Step-1
+						</span></p></font>
+						Create the Class
+						“Priority.java”. Once you ready then write below code.<br>
+						
+						<div class="border">
+						
+						<center><img src="images\thread\priorty.PNG"></center>
+						</div><bR><br>
+						<font face="Arial"></font></font><font size="5">
+						<span style="line-height:115%;font-family:&quot;Arial&quot;; font-weight:700">
+						OutPut
+						</span></p></font>
+						<div class="border">
+						<center><img src="images\thread\priorty.PNG"></center>
+						</div><br><br><br><br>
+						<b>Creating Program With Thread Synchronize</b>
+						<br><br>
+						Follow the below steps to write program.<br>
+						<font face="Arial"></font></font><font size="5">
+						<span style="line-height:115%;font-family:&quot;Arial&quot;; font-weight:700">
+						Step-1
+						</span></p></font>
+						Create the Class
+						Once you ready then write below code.<br>
+						
+						<div class="border">
+						<center><img src="images\thread\synco1.PNG"></center>
+						<br>
+						<center><img src="images\thread\synco2.PNG"></center>
+						</div><bR><br>
+						<font face="Arial"></font></font><font size="5">
+						<span style="line-height:115%;font-family:&quot;Arial&quot;; font-weight:700">
+						OutPut
+						</span></p></font>
+						<div class="border">
+						<center><img src="images\thread\synco1.PNG"></center>
+						</div><br><br>
+						<b><a href ="images\thread\Thread.rar"> 
+						<font size="3">Download example and run it on Netbeans IDE</font></a></b>
+						<br><br><br><br>
+						
+						
+									 
+									 
+									 
+									 
+										</div>
+										
+	</div>
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>

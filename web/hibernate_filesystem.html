@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Hibernate File System| JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<a href="#top" class="top" title="Back to Top">&#8593;</a>
+
+	<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                             <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp">Login</a></li> 
+                                                        <li><a href="signup.jsp">Sign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li class="active"><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="advance.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a> 
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                     
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+<br>
+	<div class="container">
+	<hr class="hr">
+<div class="row" >
+	  <div id="sidebar-wrapper" style="float:left">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                  
+                </li>
+				<li class="main">
+			<a href="hibernate.html">Hibernate</a>
+				</li>
+                <li >
+				
+                    <a href="hibernate_intro.html">Introduction</a>
+                </li>
+                <li >
+                    <a href="hibernate_architecture.html">Architecture</a>
+                </li>
+                <li class="active_page">
+                    <a href="hibernate_filesystem.html">File System<a>
+                </li>
+	
+                <li >
+                    <a href="hibernate_annotation.html">Hibernate with  Annotation</a>
+                </li>
+                <li>
+                    <a href="hibernate_webapplication.html">Web Application</a>
+                </li>
+                <li class="main">
+                    <a href="hibernate_mapping.html">Hibernate Mapping</a>
+                </li>
+				    <li >
+                    <a href="hibernate_tableperhierarchy.html">Table Per Hierarchy </a>
+                </li>
+				<li>
+				 <a href="hibernate_concreate.html">Table Per Concrete </a>
+                </li>
+                <li >
+                    <a href="hibernate_subclass.html">Table Per Subclass</a>
+                </li>
+                <li class="main">
+                    <a href="hibernate_collection.html">Hibernate Collection</a>
+                </li>
+				<li class="main">
+                    <a href="hibernate_list.html">Collection list Example </a>
+                </li>
+				
+				
+				<li class="main">
+				<a href="hibernate_bagmap.htm">BagMap Example</a>
+				</li>
+				
+							
+				<li class="main">
+                    <a href="hibernate_onetomany.html">One to Many Mapping</a>
+                </li>
+                <li>
+                <li class="main">
+                    <a href="hibernate_namingqueries.html">Hibernate Naming Queries</a>
+                </li>
+                <li>
+                    <a href="hibernate_caching.html">Hibernate Caching</a>
+                </li>
+                <li >
+                    <a href="hibernate_second.html">Hibernate Second Level Caching</a>
+                </li>
+
+            </ul>
+        </div>
+	<div class="right" >
+	
+	
+	
+ <h1><b>Hibernate File System</h1></b>
+<br>
+File System of hibernate deals with the flow of control from one file to another. There are various files that are created while using hibernate framework.<br><br>
+<b>* Flow of Control of Hibernate Files</b><br>
+<b>1.</b> First diagram explains the flow by taking an example. A Register.html file is made which contains the requirements of username and password. On clicking Submit button, the control goes to web.xml which is used to match the URL pattern. After that the 
+flow goes to Servlet.java which contains the code for Hibernate explained in subsequent diagrams. Alongwith Servlet.java, another file named POJO.java is created which contains getters and setters and makes the object lightweight. The code of hibernate.cfg.xml 
+contains the mapping resource- hibernate.hbm.xml, which is used to match the POJO objects and the database values.<br>
+<br><img src="images/hibernate/hibernate1.png" width="900px" class="border"><br><br>
+<b>2.</b> This diagram explains the inner working of Servlet.java code. First of all, Configuration is a class that implements Serializable containing methods viz. readObject(),writeObject(), readObjectnoData(). The constructor Configuration() calls hibernate.properties 
+jar which writes the objects created by hibernate.cfg.xml, which are dialect,URL,driver_class,username,password etc.<br>
+<br><img src="images/hibernate/hibernate2.png" width="900px" class="border"><br><br>
+<b>3.</b> Given diagram explains that SessionFactory is an interface that implements Referenceable and Serializable and contains its respective methods.Now, buildSessionFactory method is used to execute the pre-defined values contained in hibernate.cfg.xml.<br>
+
+<br><img src="images/hibernate/hibernate3.png" width="900px" class="border"><br>
+We have already learnt that hibernate is an open source object/relational mapping tool for Java. It lets us develop persistent classes. The goal of Hibernate is to relieve the programmer from 95 percent of common data persistence related programming tasks.
+<br>Following diagram tells the files which are supposed to be created or/and is created by hibernate itself:<br><br>
+<center><img border="0" src="hibernate_file.jpg" width="356" height="495" class="border"></center><br><br>
+<b>1.</b> First, whenever Hibernate is created, a POJO class or the constructor oriented class is created which in the above diagram is&nbsp; DetailPojo.java.
+<br>
+<b>2.</b> Next, in hibernate.cfg.xml i.e. in hibernate configuration xml, mapping resource is added and is mapped to a mapping file.<br>
+<b>3.</b> After that, in hibernate.hbm.xml, which is the mapping file, object's name, classes, subclasses, properties and discriminator are added.<br>
+<b>4.</b> Finally, a servlet is made which is SignUp.java in the above example which includes SessionFactory, Transaction etc.<br>
+  That is how the basic files in hibernate is created.<br><br>
+  
+  <b>* Downloading Hibernate</b><br>
+  <b>1.</b> Considering you have latest Java version installed on your system, if you want to use Hibernate with Netbeans IDE then that can be done while installing Netbeans IDE.<br>
+  <b>2.</b> If any other editor is to be used then, download Hibernate tools and Distributions from http://www.hibernate.org/downloads.<br>
+  <b>3.</b> Zip files are downloaded that can later be unzipped and used as shown below.<br><br>
+  <img src="hibernate_file2.PNG" class="border"><br>
+  
+  <br>
+  <b>* Hibernate Prerequisites</b><br>
+  
+  Following are the basic list of packages/libraries that must be unstalled before using Hibernate.<br><br>
+  <img src="hibernate_file1.png" width="531" height="409" class="border"> 
+  <br><br>
+ <b>* Terms associated with Hibernate</b><br><br>
+ <b>1. HQL</b> - HQL is abbreviation of Hibernate Query Language. It is SQL inspired language provided by hibernate. Developer <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; can write SQL like queries to work with data objects.<br>
+ <b>2. Dialect</b> - Each SQL vendor has its own set of syntax. This is known as dialect. In order to generate appropriate 
+SQL<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; query Hibernate needs to know, for which DataBase, query is to be generated. Hibernate does<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; it by org.hibernate.dialect.Dialect class and its subclass for each vendor.<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b>&nbsp;
+<u>Example:</u></b><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DB2       :   org.hibernate.dialect.DB2Dialect<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MySQL  :   org.hibernate.dialect.MySQLDialect<br>
+<b>3. Hibernate Association</b> - Any Table in DataBase could be connected to other tables in same or other Database. And <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; these tables could be associated with each other via some keys (primary or foreign). This kind<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of scenario can be handled with association.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<u><b>Example:</b></u> There are two tables in a Database, Student  & Subject. A student can study one subject or more subjects. So, every student will have only one entry in Student table but Subject table could contain more than one values for corresponding record in Student table.
+
+Association mapping are used to map a Java Object to DataBase table's columns.<br>
+i. <u>Entities involved in mapping:</u><br>
+
+a)&nbsp;
+
+Class (Persistence) (POJO)<br>
+b)&nbsp;
+Database Table<br>
+c)&nbsp;
+Mapping file (.hbm)<br>
+ii. <u>Types of Association:</u><br>
+
+a) Unidirectional Association:<br>
+
+&nbsp;&nbsp;&nbsp;
+
+Many To One<br>
+&nbsp;&nbsp;&nbsp;
+One to One<br>
+&nbsp;&nbsp;&nbsp;
+One to Many<br>
+b) Unidirectional Association with join Table<br>
+
+&nbsp;&nbsp;&nbsp;
+
+Many To One<br>
+&nbsp;&nbsp;&nbsp;
+One to One<br>
+&nbsp;&nbsp;&nbsp;
+One to Many<br>
+&nbsp;&nbsp;&nbsp;
+Many to Many<br>
+c) Bidirectional Association<br>
+
+&nbsp;&nbsp;&nbsp;
+
+One to Many / Many to One<br>
+&nbsp;&nbsp;&nbsp;
+One to One<br>
+d) Bidirectional Association with join Table<br>
+
+&nbsp;&nbsp;&nbsp;
+
+One to Many / Many to One<br>
+&nbsp;&nbsp;&nbsp;
+One to One<br>
+&nbsp;&nbsp;&nbsp;
+Many to Many<br>
+
+	</div>
+	</div>
+
+
+<div class="container">
+
+  <div class="alert alert-success">
+    <strong>TAG(S) -> hibernate flowchart, hibernate control, hibernate file system</strong>
+  </div>
+</div>
+
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Tags Used in jsp | JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+<a href="#top" class="top" title="Back to Top">&#8593;</a>
+
+	<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                             <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp">Login</a></li>
+                                                        <li><a href="signup.jsp">Sign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li class="active"><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="advance.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a> 
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                        
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>            </div>
+        </div>
+    </header>
+<br>
+<div class="container">
+	<hr class="hr">
+<div class="row" >
+	  <div id="sidebar-wrapper" style="float:left">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                  
+                </li>
+				<li>
+			<a href="jsp.html">Java Server Pages</a>  
+				</li>
+				<li>
+				
+                    <a href="jsp_architecture.html">Architecture</a>          
+                </li>
+                
+                <li>
+				
+                    <a href="jsp_intro.html">Why JSP?</a>
+                </li>
+                <li>
+                    <a href="jsp_advantage.html">Advantages of JSP over Servlet</a>
+                </li>
+                <li >
+                    <a href="jsp_lifecycle.html">Life Cycle of JSP<a>
+                </li>
+				
+              
+                <li >
+                    <a href="jsp_structure.html">JSP Directory Structure</a>  
+                </li>
+                <li  class="active_page">
+                    <a href="jsp_tags.html">Tags used in JSP</a>
+                </li>
+                <li class="main">
+                    <a href="jsp_script.html">Scriptlet Tag</a>
+                </li>
+				    <li>
+                    <a href="jsp_expression.html">Expression Tag </a>
+                </li>
+				<li>
+				 <a href="jsp_declaration.html">Declaration Tag </a>
+                </li>
+                <li>
+                    <a href="jsp_objects.html">JSP Implicit Objects</a>
+                </li>
+                
+            </ul>
+        </div>
+	<div class="right" >
+
+<h1><b>Tags Used in JSP</b></h1><br>
+Various tags are used in JSP which help to use the functionalities if Java and HTML simultaneously. Java code is not required to be complete or self-contained within a single scriptlet block. It can straddle markup content, provided that the page as a whole is syntactically correct.
+
+JSP pages use several delimiters for scripting functions. The most basic is, <b>
+&lt;% ... %&gt;</b> which encloses a JSP scriptlet. A scriptlet is a fragment of Java code that is run when the user requests the page. Other common delimiters include  
+<b>&lt;%= ... %&gt; </b>for expressions, where the scriptlet and delimiters are replaced with the result of evaluating the expression, and directives, denoted with
+<b>&lt;%@ ... %&gt;</b>.<br>
+So, following are the types of tags commonly used:
+<br>
+ <br><b>* Directives:</b> In the directives we can import packages, define error handling pages or the session information of the JSP page.<br>
+ <br><b>* Declarations:</b> This tag is used for defining the functions and variables to be used in the JSP.<br>
+ <br><b>* Scriplets:</b> In this tag we can insert any amount of valid java code and these codes are placed in _jspService method by the JSP engine.<br>
+ <br><b>* Expressions:</b> We can use this tag to output any data on the generated page. These data are automatically converted to string and printed on the    output stream.<br>
+<br><b>* Custom Tags:</b><br>
+Custom tags are user-defined JSP language elements that encapsulate recurring tasks. Custom tags are distributed in a tag library, which defines a set of related custom tags and contains the objects that implement the tags.
+Syntax of custom tag is-
+
+
+<b>&lt;prefix:tag attr1=&quot;value&quot; ... attrN=&quot;value&quot; /&gt;</b><br><br><b>To use a custom tag in a JSP page, two things are to be kept in mind:</b><br>
+
+i.  Declare the tag library containing the tag<br>
+
+ii. Make the tag library implementation available to the web application<br><br>
+<b>* Expression language:</b><br>
+
+Simpler form for JSP Expressions came with JSTL 1.0, in the form of Expression Language. EL is used to set action attribute values from different sources at runtime. JSP Expression Language is also used without parameters but as actions directly in a webpage.
+JSP EL always starts with a "$" followed by a "{" and ends with a "}". The expression is specified inside the brackets. A set of implicit variables provide access to the requested data.
+<br>Example:<br>
+<b>${2+3+4}</b><br>
+JSP EL supports literal numbers, the boolean value "true,false", "null", the strings enclosed in single and double quotes.
+<br><br>
+<b>* Additional Tags:</b><br>
+The JSP syntax add additional tags, called JSP actions, to invoke built-in functionality. Additionally, the technology allows for the creation of custom JSP tag libraries that act as extensions to the standard JSP syntax. One such library is the JSTL, with support for common tasks such as iteration and conditionals (the equivalent of "for" and "if" statements in Java.)
+
+<br><br><br>
+
+</div>
+
+</div>
+<div class="container">
+
+  <div class="alert alert-success">
+    <strong>TAG(S) -> jsp tags, tags</strong>
+  </div>
+</div>
+
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>

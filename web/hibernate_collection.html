@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Hibernate Collection| JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<a href="#top" class="top" title="Back to Top">&#8593;</a>
+
+	<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                             <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp">Login</a></li> 
+                                                        <li><a href="signup.jsp">Sign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li class="active"><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="advance.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a> 
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                      
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+<br>
+	<div class="container">
+	<hr class="hr">
+<div class="row" >
+	  <div id="sidebar-wrapper" style="float:left">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                  
+                </li>
+				<li class="main">
+			<a href="hibernate.html">Hibernate</a>
+				</li>
+                <li >
+				
+                    <a href="hibernate_intro.html">Introduction</a>
+                </li>
+                <li >
+                    <a href="hibernate_architecture.html">Architecture</a>
+                </li>
+                <li>
+                    <a href="hibernate_filesystem.html">File System<a>
+                </li>
+				
+                
+                <li >
+                    <a href="hibernate_annotation.html">Hibernate with  Annotation</a>
+                </li>
+                <li>
+                    <a href="hibernate_webapplication.html">Web Application</a>
+                </li>
+                <li class="main">
+                    <a href="hibernate_mapping.html">Hibernate Mapping</a>
+                </li>
+				    <li >
+                    <a href="hibernate_tableperhierarchy.html">Table Per Hierarchy </a>
+                </li>
+				<li>
+				 <a href="hibernate_concreate.html">Table Per Concrete </a>
+                </li>
+                <li >
+                    <a href="hibernate_subclass.html">Table Per Subclass</a>
+                </li>
+                <li class="active_page">
+                    <a href="hibernate_collection.html">Hibernate Collection</a>
+                </li>
+				<li class="main">
+                    <a href="hibernate_list.html">Collection list Example </a>
+                </li>
+				
+				
+				<li class="main">
+				<a href="hibernate_bagmap.htm">BagMap Example</a>
+				</li>
+				
+							
+				<li class="main">
+                    <a href="hibernate_onetomany.html">One to Many Mapping</a>
+                </li>
+                <li>
+                <li class="main">
+                    <a href="hibernate_namingqueries.html">Hibernate Naming Queries</a>
+                </li>
+                <li >
+                    <a href="hibernate_caching.html">Hibernate Caching</a>
+                </li>
+                <li >
+                    <a href="hibernate_second.html">Hibernate Second Level Caching</a>
+                </li>
+              
+            </ul>
+        </div>
+	<div class="right" >
+
+
+<h1><b>Hibernate collection mapping</h1></b><br>
+Hibernate supports collection mapping as value type.<br>
+The interfaces supported by it are as follows:<br>
+1. Set<br>
+2. List<br>
+3. Map<br>
+4. Sorted Set<br>
+5. Sorted List<br>
+6. Sorted Map<br>
+All these are defined under <b>java.util package</b>. So we need to import java.util 
+package to use them.
+<br><br>
+Collection mapping can be performed as <br>
+<b>1. Persistent Collection :</b> The Persistent collections contains almost all Hibernate 
+type ie Basic Type, Custom type, Components and references to other entities.
+<br><br>
+The Object in a collection is handled with "value". 
+The collection instances have usual behaviour ie they are persisted automatically when they are 
+referred by a persisted object and like wise they are deleted when unreferenced.
+<br><br>
+Note: Two entities can't share a reference to same collection instance.
+<br><br>
+
+<b>2. Indexed Collections :</b><br>
+<b>Lists: </b>
+<br>
+We can map Lists as ordered list ,in this the order doesn't matter in the database 
+and as indexed list where order is important in the database.
+<br>
+To store the index value in a particular column ,we have to use @javax.persistence.Column_name annotation in the property.<br>
+<b>Maps:</b><br>The question with Maps is where the key value is stored?There are several options. 
+Maps can borrow their keys from one of the associated entity properties or have dedicated columns to store an explicit key.<br><br>
+<b>3.Bidirectional Associations in Hibernate Collection</b>
+<br>It allows navigation from both ends of the association.There are two types of bidirectional association
+<br>1. One to many : it set or bag value at one end and single value at the other end.
+<br>To use one of the target entity property as a key of the map, use @MapKey
+When using @MapKey without the name attribute, the target entity primary key is used.
+ The map key uses the same column as the property pointed out. 
+
+<br>2. Many to Many: it set or bag value at both ends.
+<br><br><b>
+Q : What is the main difference between the Set and Bag collections in Hibernate?</b><br>
+Ans: A bag is an unordered collection ,it contain duplicate elements, that means during retrival order can change.
+Note: Corresponding to bag we use java.util.List .
+     <br>set can contain only unique objects.When a same element is added , it will replace the old one.
+     <br>Note: Corresponding to set we use java.util.Set.
+
+
+	</div>
+	</div>
+<div class="container">
+
+  <div class="alert alert-success">
+    <strong>TAG(S) -> hibernate collection, collections in hibernate</strong>
+  </div>
+</div>
+
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>

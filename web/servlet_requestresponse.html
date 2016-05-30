@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Servlet Request and Response | JavaT</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+<a href="#top" class="top" title="Back to Top">&#8593;</a>
+		<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                           <li> <img src="images/mic.png" class="mic"height="24px"></li>
+							<li><a href="login.jsp ">Login</a></li>
+                                                        <li><a href="signup.jsp">Sign Up</a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo" id="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					
+                        <li ><a href="index.html">Home</a></li>
+						<li> <a href="core.html">Core Java</a></li>
+						<li class="show_drop"> <a href="servlet.html">Advance Java</a>
+						<ul class="drop">
+						<li>
+						<a href="servlet.html">Servlet</a>
+						</li>
+						<li>
+						<a href="jsp.html">JSp</a>
+						</li>
+						</ul>
+						</li>
+                        <li ><a href="hibernate.html">Hibernate</a>
+                        </li>                    
+                        <li><a href="spring.html">Spring
+                     </a>
+					 
+                        </li>
+						<li> <a href="index3.html">Android</a></li>
+                                             
+                       
+						<li><a href="feedback.html ">Feedback</a></li>
+						<li><a href="interview.html ">Interview Q/A </a></li>
+						
+						
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="servSearch" method="GET" role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+<div class="ui-widget">
+  
+   <input type="text" name="val" class="search-form" autocomplete="off" placeholder="Type the tag" >
+<input class="btn btn-primary" type="submit" value="SEARCH">
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+	<br>
+	<div class="container">
+	<hr class="hr">
+<div class="row" >
+  <div id="sidebar-wrapper" style="float:left">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                  
+                </li>
+                <li class="active">
+                
+                                    <a href="Server_Enviorment.html">Server Environment</a> 
+                </li>
+				<li >
+				<a href="Server Enviorment.html">Introduction to servlet</a>
+				</li>
+					<li >
+				<a href="servlet_architecture.html">Servlet Architecture</a>
+				</li>
+					<li >
+				<a href="servlet_basic.html">Basic Example</a>
+				</li>
+					<li class="active_page">
+				<a href="servlet_requestresponse.html">Request and Response Interface</a>
+				</li>
+				
+                <li>
+                    <a href="Servlet_LifeCycle&Method.html">Servlet LifeCycle and Method</a>
+                </li>
+					<li>
+				<a href="servlet_contextconfig.html">Servlet Context and Config</a>
+				</li>
+					<li>
+				<a href="servlet_intercommunication.html">Inter Servlet Communication</a>
+				</li>
+              	<li>
+				<a href="servlet_requestdispacture.html">Servlet Request Dispatcher</a>
+				</li>
+					<li>
+				<a href="servlet_sendredirect.html">Send Redirect</a>
+				</li>
+                  <li>
+                    <a href="Session_Management.html">Session Management</a> 
+                </li>
+             	<li>
+				<a href="servlet_httpsession.html">Http Session</a>
+				</li>
+					<li>
+				<a href="servlet_cookies.html">Cookies</a>
+				</li>
+					<li>
+				<a href="servlet_htmlhidden.html">HTML Hidden</a>
+				</li>
+					<li>
+				<a href="servlet_urlrewritten.html">URL Rewritten</a>
+				</li>
+				
+                <li>
+                    <a href="Handling_Error&Exception.html">Handling Error&Exception</a> 
+                </li>
+                	<li>
+				<a href="servlet_filter.html">Servlet filter</a>
+				</li>
+					<li>
+				<a href="servlet_filterlife.html">Servlet Filter LifeCycle</a>
+				</li>
+					<li>
+				<a href="servlet_allinone.html">All in one Servlet</a>
+				</li>
+                 </ul>
+        </div>
+	<div class="right">
+				<h1><b>Request And Response Interface</h1></b><br><br>
+         
+         <b>
+		 
+		 
+									
+									The ServletRequest Interface</b>
+									</span></p></font>
+      
+
+									The ServletRequest interface contains various methods to handle client requests to access a servlet.<br><br>
+
+									The following  describes various methods of the ServletRequest interface:<br>
+
+									<b>1. public String getParameter (String paramName)</b><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;-> Returns a String  object that specifies the value of  a particular    request parameter.<br>
+
+									<b>2. public String[] getParameterValues (String paramName)</b><br> 
+									&nbsp;&nbsp;&nbsp;&nbsp;-> Returns an array of String objects that contains all the values of the request parameter. <br>
+
+									<b>3. public Enumeration getParameterNames ()</b><br>
+ 
+									&nbsp;&nbsp;&nbsp;&nbsp;->  Returns an Enumeration containing all the parameter names as String objects that a servlet
+									request contains.<br>
+
+									<b>4. public String getRemoteHost () </b><br>
+  
+									&nbsp;&nbsp;&nbsp;&nbsp;-> Returns a String that specifies the full-qualified name of the computer from which the request
+									is sent.<br>
+
+									<b>5. public Sring getRemoteAddr ()</b><br>
+  
+									&nbsp;&nbsp;&nbsp;&nbsp;-> Returns a String  that specifies the IP address of the computer from which the request
+									is sent.<br><br><br>
+									
+									
+									
+									
+									<font face="Arial"></font></font><font size="5">
+									<span style="line-height:115%;font-family:&quot;Arial&quot;; font-weight:700">
+									 The following describes various methods of HttpservletRequest
+									</span></p></font>
+
+         
+									<b>1. public String getHeader (String fieldname)</b> <br>
+ 
+									&nbsp;&nbsp;&nbsp;&nbsp;->   Returns the value of the request  header field ,such as Cache-control and Accept - Langauge specified in parameter.<br>
+
+									<b>2. public Enumeration getHeaders (String sname)</b><br>
+ 
+									&nbsp;&nbsp;&nbsp;&nbsp;-> Returns all the values associated with a specific request haeader as an Enumeration of String objects.<br>
+
+									<b>3. public Enumeration getHeaderNames()</b><br>
+
+									The HttpServletResponse interface extends the ServletResponse interface and  provides method to handle response, 
+									status codes ,and response headers for servlets that communicates using HTTP.<br><br><br>
+									
+									<b>The ServletResponse Interface</b><br>
+									
+       
+								
+       
+									* The ServletResponse interface contains various methods that enable a servlet to respond to the client requests.<br>
+
+									*A servlet can send the response either as character or binary data.<br>
+
+									*The PrintWriter stream can be used to send character data as servlet response and ServletOutputStream stream
+									to send to binary data as servlet response.<br>
+
+
+									<b>The various methods of the ServletResponse interface are:<br>
+									</b>
+
+
+
+									<b>1. public  ServletOutputStream  getOutputstream() throws IOException</b><br>
+									-> Returns an object of the ServletOutputStream class that represents an output stream to send binary 
+										data as response.<br><br>
+									<b>2. public PrintWriter  getWriter () throws IOException</b><br>
+    
+									-> Returns an object of the PrintWriter class that  servlet uses to send character data as response.<br><br>
+	
+									<b>3. public void setContentType(String type) </b><br>
+
+									->  Sets  the Multipurpose Internet Mail Extensions (MIME) type for the servlet response. Some of the MIME 
+										types are text/plain, image/jpeg , and text/html.<br><br>
+
+									<b>4. void setHeader (String hname, String hvalue)</b><br>
+
+									->  Sets the value of header , hname to hvalue. If the header has already been set,
+									the new value overwrites the existingvalue.<br><br>
+
+									<b>5.  void setIntHeader (String hname ,int hvalue)</b><br>
+
+									-> Sets the value of the header, hname to the int value, hvalue.<br>
+									If the header has already been set , the new value overwrites the existing value.<br><br>
+									
+									<b>6. void setDateHeader (String hname,long datev)</b> <br>
+
+									->Sets the value of the header, hname with a long value datev. The datev represents the number
+									of milliseconds since the midnight of January 1, 1970 , GMT.<br><br>
+
+									<b>7. void addHeader (String hname , String hvalue)</b><br>
+   
+									-> Adds a header , hname with value , hvalue.This method adds a new header if the header 
+									already exists.<br><br>
+
+									<b>8. void addIntHeader (String hname , int hvalue)</b><br>
+   
+									-> Adds a header , hname with an integer value , hvalue<br><br>
+
+									<b>9. void addDateHeader (String hname , long datev)</b><br>
+   
+									-> Adds a header named hname with value equal to given date,
+									datev. The value of the datev must be in milliseconds, which starts since midnight , January 1, 1970 , GMT.<br><br>
+									
+									<b>10.boolean containsHeader (String hname)</b>  <br>
+									-> Returns true if the header , hname has already been set with a specific value  and false , if not.<br><br>
+
+									<b>11.  void sendRediect (String url)  </b><br> 
+
+									->  Redirects a request to the specified URL<br><br>
+
+
+         
+	</div>
+	</div>
+
+
+<div class="container">
+
+  <div class="alert alert-success">
+    <strong>TAG(S) -> request, response, httpservlet</strong>
+  </div>
+</div>
+
+	 <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+	</body>
+	</html>
